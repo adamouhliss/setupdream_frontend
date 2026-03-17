@@ -1,0 +1,82 @@
+{
+    "articles": [
+        {
+            "id": "1",
+            "slug": "science-of-impact-boxing-glove-foam",
+            "title": {
+                "en": "The Science of Impact: How Multi-Layer Foam Protects Your Hands",
+                "fr": "La Science de l'Impact : Choisir ses Gants de Boxe au Maroc"
+            },
+            "excerpt": {
+                "en": "We analyzed 50+ gloves in our lab. Here's why density gradation matters more than total thickness.",
+                "fr": "Le Guide Scientifique. Voici pourquoi la gradation de densité (système Venum) compte plus que l'épaisseur standard."
+            },
+            "content": {
+                "en": "<p>When you strike a heavy bag, your hand experiences forces up to 50g. The key to protection isn't just padding thickness—it's how that padding is layered.</p><h3>The 3-Layer System</h3><p>Our top-tier gloves use a specific sandwich construction:</p><ul><li><strong>Outer Layer (High Density):</strong> Disperses the initial shock over a wider area.</li><li><strong>Middle Layer (Medium Density):</strong> Absorbs the bulk of the kinetic energy.</li><li><strong>Inner Layer (Low Density/Memory Foam):</strong> Molds to the fist for comfort and final deceleration.</li></ul><p>In our tests, this configuration reduced peak force transfer by 40% compared to single-density foam gloves of the same weight.</p>",
+                "fr": "<p>Lorsque vous frappez un sac lourd, votre main subit des forces allant jusqu'à 50g. La clé de la protection n'est pas seulement l'épaisseur du rembourrage, c'est la façon dont ce rembourrage est superposé.</p><h3>Le Système à 3 Couches</h3><p>Nos gants haut de gamme utilisent une construction en sandwich spécifique :</p><ul><li><strong>Couche Extérieure (Haute Densité) :</strong> Disperse le choc initial sur une zone plus large.</li><li><strong>Couche Intermédiaire (Moyenne Densité) :</strong> Absorbe la majeure partie de l'énergie cinétique.</li><li><strong>Couche Intérieure (Basse Densité/Mousse à Mémoire) :</strong> Moule le poing pour le confort et la décélération finale.</li></ul><p>Dans nos tests, cette configuration a réduit le transfert de force maximal de 40% par rapport aux gants en mousse mono-densité du même poids.</p>"
+            },
+            "image": "/images/blog/boxing-impact.png",
+            "author": "Dr. Sarah Bennani, Biomechanics Lead",
+            "date": "2024-03-15",
+            "readTime": 5,
+            "relatedCategoryId": 5,
+            "tags": [
+                "Boxing",
+                "Safety",
+                "Materials Science"
+            ]
+        },
+        {
+            "id": "2",
+            "slug": "kettlebells-premium-equipment-casablanca",
+            "title": {
+                "en": "Premium Sports Equipment: The Role of Cast Iron Kettlebells",
+                "fr": "Équipement de Sport Premium à Casablanca : Les Kettlebells"
+            },
+            "excerpt": {
+                "en": "Discover why professional grade Livepro kettlebells are the cornerstone of functional training in our labs.",
+                "fr": "Découvrez pourquoi les kettlebells de qualité professionnelle Livepro sont la pierre angulaire de l'entraînement fonctionnel."
+            },
+            "content": {
+                "en": "<p>Not all weights are created equal. The distribution of mass in a kettlebell dictates the biomechanical load on your joints during ballistic movements.</p><h3>The Luxury of Precision</h3><p>Our premium Livepro cast iron kettlebells are machined for perfect balance. Unlike standard cement-filled alternatives, these provide a consistent center of gravity, which is critical for complex movements like the Turkish Get-Up or the Snatch.</p><p>We measured the torque applied to the wrist during a standard swing and found that off-center cheaper weights increased sheer force by up to 22%.</p>",
+                "fr": "<p>Tous les poids ne se valent pas. La répartition de la masse dans un kettlebell détermine la charge biomécanique sur vos articulations pendant les mouvements balistiques.</p><h3>Le Luxe de la Précision</h3><p>Nos kettlebells en fonte Premium Livepro sont usinés pour un équilibre parfait. Contrairement aux alternatives standard remplies de ciment, celles-ci offrent un centre de gravité constant, ce qui est essentiel pour les mouvements complexes.</p><p>Nous avons mesuré le couple appliqué au poignet lors d'un swing standard et avons constaté que les poids de qualité inférieure augmentaient la force de cisaillement jusqu'à 22%.</p>"
+            },
+            "image": "/images/blog/kettlebells-luxury.png",
+            "author": "Karim Tazi, Performance Coach",
+            "date": "2024-02-28",
+            "readTime": 4,
+            "relatedCategoryId": 7,
+            "tags": [
+                "Strength",
+                "Functional Training",
+                "Equipment Quality"
+            ]
+        },
+        {
+            "id": "3",
+            "slug": "notre-mission-excellence-sportive",
+            "title": {
+                "en": "Our Mission: Sporting Excellence in Morocco",
+                "fr": "Notre Mission : L'Excellence Sportive au Maroc"
+            },
+            "excerpt": {
+                "en": "Since 2020, Carré Sport has been democratizing access to certified quality sports equipment.",
+                "fr": "Depuis 2020, Carré Sport démocratise l'accès à des équipements de sport certifiés de qualité."
+            },
+            "content": {
+                "en": "<p>At Carré Sport, our Performance Lab™ isn't just a testing facility; it's a commitment to the athletes of Morocco.</p><h3>Certified Quality Since 2020</h3><p>We test every piece of equipment that enters our catalog. If it doesn't meet our rigorous standards for durability, biomechanical safety, and performance enhancement, we don't sell it.</p><blockquote>Our mission is simple: to provide Moroccan athletes with the exact same tools used by professionals worldwide, ensuring that equipment is never the limiting factor in your performance.</blockquote>",
+                "fr": "<p>Chez Carré Sport, notre Performance Lab™ n'est pas seulement un centre de test ; c'est un engagement envers les athlètes du Maroc.</p><h3>Qualité Certifiée Depuis 2020</h3><p>Nous testons chaque équipement qui entre dans notre catalogue. S'il ne répond pas à nos normes rigoureuses en matière de durabilité, de sécurité biomécanique et d'amélioration des performances, nous ne le vendons pas.</p><blockquote>Notre mission est simple : fournir aux athlètes marocains exactement les mêmes outils que ceux utilisés par les professionnels du monde entier.</blockquote>"
+            },
+            "image": "/images/blog/brand-mission.png",
+            "author": "Executive Team, Carré Sport",
+            "date": "2024-01-10",
+            "readTime": 3,
+            "relatedCategoryId": 1,
+            "tags": [
+                "Brand Story",
+                "Quality Standards",
+                "Carré Sport"
+            ]
+        }
+    ]
+}

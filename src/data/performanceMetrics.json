@@ -1,0 +1,358 @@
+{
+    "last_updated": "2024-05-20",
+    "version": "1.1.0",
+    "source": "Carré Sport Technical Lab",
+    "categories": [
+        {
+            "id": "boxing-gloves",
+            "name": {
+                "en": "Boxing Gloves",
+                "fr": "Gants de Boxe"
+            },
+            "metrics": [
+                {
+                    "name": {
+                        "en": "Impact Absorption",
+                        "fr": "Absorption d'Impact"
+                    },
+                    "value": "98%",
+                    "unit": {
+                        "en": "Force Reduction",
+                        "fr": "Réduction de Force"
+                    },
+                    "description": {
+                        "en": "Percentage of kinetic energy dissipated by the foam core upon impact.",
+                        "fr": "Pourcentage de l'énergie cinétique dissipée par le noyau en mousse lors de l'impact."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Wrist Stability",
+                        "fr": "Stabilité du Poignet"
+                    },
+                    "value": "9.5/10",
+                    "unit": {
+                        "en": "Score",
+                        "fr": "Note"
+                    },
+                    "description": {
+                        "en": "Rated stability index based on localized reinforcement testing.",
+                        "fr": "Indice de stabilité évalué basé sur des tests de renforcement localisés."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Surface Abrasion Resistance",
+                        "fr": "Résistance à l'Abrasion"
+                    },
+                    "value": ">50,000",
+                    "unit": {
+                        "en": "Rub Cycles",
+                        "fr": "Cycles de Frottement"
+                    },
+                    "description": {
+                        "en": "Martindale abrasion test results for outer synthetic leather.",
+                        "fr": "Résultats du test d'abrasion Martindale pour le cuir synthétique extérieur."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Thumb Locking Security",
+                        "fr": "Sécurité du Pouce"
+                    },
+                    "value": "Certified",
+                    "unit": "ISO 9001",
+                    "description": {
+                        "en": "Compliance with international safety standards for thumb attachment.",
+                        "fr": "Conformité aux normes internationales de sécurité pour l'attache du pouce."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "resistance-bands",
+            "name": {
+                "en": "Resistance Bands",
+                "fr": "Bandes de Résistance"
+            },
+            "metrics": [
+                {
+                    "name": {
+                        "en": "Tensile Strength",
+                        "fr": "Résistance à la Traction"
+                    },
+                    "value": "450",
+                    "unit": "PSI",
+                    "description": {
+                        "en": "Maximum stress the material can withstand while being stretched before breaking.",
+                        "fr": "Contrainte maximale que le matériau peut supporter lorsqu'il est étiré avant de se rompre."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Elasticity Modulus",
+                        "fr": "Module d'Élasticité"
+                    },
+                    "value": "1.2",
+                    "unit": "MPa",
+                    "description": {
+                        "en": "Measure of the material's resistance to being deformed elastically.",
+                        "fr": "Mesure de la résistance du matériau à être déformé élastiquement."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Snap Resistance",
+                        "fr": "Résistance à la Rupture"
+                    },
+                    "value": {
+                        "en": "High",
+                        "fr": "Élevée"
+                    },
+                    "unit": {
+                        "en": "Rating",
+                        "fr": "Classement"
+                    },
+                    "description": {
+                        "en": "Multi-layer latex construction prevents sudden improved safety.",
+                        "fr": "La construction en latex multicouche améliore la sécurité contre les ruptures soudaines."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Elongation Limit",
+                        "fr": "Limite d'Allongement"
+                    },
+                    "value": "300%",
+                    "unit": {
+                        "en": "Length",
+                        "fr": "Longueur"
+                    },
+                    "description": {
+                        "en": "Safe stretching limit relative to original resting length.",
+                        "fr": "Limite d'étirement sécurisée par rapport à la longueur au repos initiale."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "footwear",
+            "name": {
+                "en": "Training Footwear",
+                "fr": "Chaussures d'Entraînement"
+            },
+            "metrics": [
+                {
+                    "name": {
+                        "en": "Grip Coefficient (Dry)",
+                        "fr": "Coefficient d'Adhérence (Sec)"
+                    },
+                    "value": "0.85",
+                    "unit": "µ",
+                    "description": {
+                        "en": "Friction coefficient on standard gym flooring (rubber/wood).",
+                        "fr": "Coefficient de frottement sur sol de gym standard (caoutchouc/bois)."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Energy Return",
+                        "fr": "Retour d'Énergie"
+                    },
+                    "value": "72%",
+                    "unit": {
+                        "en": "Efficiency",
+                        "fr": "Efficacité"
+                    },
+                    "description": {
+                        "en": "Percentage of energy returned to the athlete per stride via midsole foam.",
+                        "fr": "Pourcentage d'énergie renvoyée à l'athlète par foulée via la mousse de la semelle intermédiaire."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Breathability Index",
+                        "fr": "Indice de Respirabilité"
+                    },
+                    "value": "8.4/10",
+                    "unit": "RET",
+                    "description": {
+                        "en": "Resistance to Evaporative Heat Transfer (lower is better, translated to score).",
+                        "fr": "Résistance au transfert de chaleur par évaporation (plus c'est bas, mieux c'est, traduit en note)."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Sole Durability",
+                        "fr": "Durabilité de la Semelle"
+                    },
+                    "value": {
+                        "en": "High",
+                        "fr": "Élevée"
+                    },
+                    "unit": "DIN",
+                    "description": {
+                        "en": "Abrasion resistance of the outsole rubber compound.",
+                        "fr": "Résistance à l'abrasion du composé caoutchouc de la semelle extérieure."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "apparel",
+            "name": {
+                "en": "Compression Apparel",
+                "fr": "Vêtements de Compression"
+            },
+            "metrics": [
+                {
+                    "name": {
+                        "en": "Moisture Wicking Rate",
+                        "fr": "Taux d'Évacuation de l'Humidité"
+                    },
+                    "value": "0.5",
+                    "unit": "ml/s",
+                    "description": {
+                        "en": "Speed at which fabric moves sweat from skin to outer surface.",
+                        "fr": "Vitesse à laquelle le tissu évacue la transpiration de la peau vers la surface extérieure."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Compression Gradient",
+                        "fr": "Gradient de Compression"
+                    },
+                    "value": "15-20",
+                    "unit": "mmHg",
+                    "description": {
+                        "en": "Active compression level to support muscle recovery and circulation.",
+                        "fr": "Niveau de compression active pour soutenir la récupération musculaire et la circulation."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Antibacterial Treatment",
+                        "fr": "Traitement Antibactérien"
+                    },
+                    "value": {
+                        "en": "Yes",
+                        "fr": "Oui"
+                    },
+                    "unit": {
+                        "en": "Silver Ion",
+                        "fr": "Ion Argent"
+                    },
+                    "description": {
+                        "en": "Presence of antimicrobial agents to prevent odor buildup.",
+                        "fr": "Présence d'agents antimicrobiens pour prévenir l'accumulation d'odeurs."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "UV Protection",
+                        "fr": "Protection UV"
+                    },
+                    "value": "UPF 50+",
+                    "unit": {
+                        "en": "Rating",
+                        "fr": "Indice"
+                    },
+                    "description": {
+                        "en": "Ultraviolet Protection Factor rating.",
+                        "fr": "Indice de protection contre les ultraviolets."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "yoga-mats",
+            "name": {
+                "en": "Yoga & Floor Mats",
+                "fr": "Tapis de Yoga & Sol"
+            },
+            "metrics": [
+                {
+                    "name": {
+                        "en": "Density",
+                        "fr": "Densité"
+                    },
+                    "value": "400",
+                    "unit": "kg/m³",
+                    "description": {
+                        "en": "Material density providing joint cushioning and stability.",
+                        "fr": "Densité du matériau offrant amorti articulaire et stabilité."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Slip Resistance (Wet)",
+                        "fr": "Résistance au Glissement (Humide)"
+                    },
+                    "value": "0.78",
+                    "unit": "µ",
+                    "description": {
+                        "en": "Grip level when surface is covered in sweat.",
+                        "fr": "Niveau d'adhérence lorsque la surface est couverte de transpiration."
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Recovery Time",
+                        "fr": "Temps de Récupération"
+                    },
+                    "value": "<0.5",
+                    "unit": {
+                        "en": "Seconds",
+                        "fr": "Secondes"
+                    },
+                    "description": {
+                        "en": "Time for foam to return to original shape after compression.",
+                        "fr": "Temps pour que la mousse retrouve sa forme originale après compression."
+                    }
+                }
+            ]
+        }
+    ],
+    "faq": [
+        {
+            "question": {
+                "en": "How is the impact absorption of boxing gloves measured?",
+                "fr": "Comment l'absorption d'impact des gants de boxe est-elle mesurée ?"
+            },
+            "answer": {
+                "en": "We utilize a drop-test methodology consistent with EN 13277 standards. A standard weight is dropped onto the glove foam from a fixed height, and the transmitted force is measured by a load cell underneath. The '98% Force Reduction' means only 2% of the impact force reaches the hand compared to a direct strike.",
+                "fr": "Nous utilisons une méthodologie de test de chute conforme aux normes EN 13277. Un poids standard est lâché sur la mousse du gant depuis une hauteur fixe, et la force transmise est mesurée par une cellule de charge en dessous. La 'Réduction de Force de 98%' signifie que seulement 2% de la force d'impact atteint la main par rapport à un coup direct."
+            }
+        },
+        {
+            "question": {
+                "en": "What is the difference between Venum foam and generic EVA?",
+                "fr": "Quelle est la différence entre la mousse Venum et l'EVA générique ?"
+            },
+            "answer": {
+                "en": "Venum utilizes a proprietary triple-density foam aimed at progressive absorption. Layer 1 absorbs the initial shock wave, Layer 2 disperses the energy, and Layer 3 provides the soft fit against the hand. Generic EVA often uses a single density which can bottom out under heavy impact, reducing protection.",
+                "fr": "Venum utilise une mousse exclusive à triple densité visant une absorption progressive. La couche 1 absorbe l'onde de choc initiale, la couche 2 disperse l'énergie, et la couche 3 offre un ajustement doux contre la main. L'EVA générique utilise souvent une densité unique qui peut s'écraser sous un impact lourd, réduisant la protection."
+            }
+        },
+        {
+            "question": {
+                "en": "Does the tensile strength of resistance bands degrade over time?",
+                "fr": "La résistance à la traction des bandes de résistance diminue-t-elle avec le temps ?"
+            },
+            "answer": {
+                "en": "Yes, all latex products degrade with UV exposure and oxidation. However, our multi-layered latex bands are treated with UV inhibitors. Under normal gym use (indoor, stored away from direct sun), they retain >90% of their tensile strength for up to 2 years.",
+                "fr": "Oui, tous les produits en latex se dégradent avec l'exposition aux UV et l'oxydation. Cependant, nos bandes en latex multicouches sont traitées avec des inhibiteurs UV. En utilisation normale en salle (intérieur, rangé à l'abri du soleil direct), elles conservent >90% de leur résistance à la traction jusqu'à 2 ans."
+            }
+        },
+        {
+            "question": {
+                "en": "How do you calculate the grip coefficient?",
+                "fr": "Comment calculez-vous le coefficient d'adhérence ?"
+            },
+            "answer": {
+                "en": "The Coefficient of Friction (COF) is tested using a tribometer on standardized athletic surfaces (rubber gym mats and varnished wood). A weighted sled with the shoe's outsole material is dragged across the surface, and the force required to maintain motion is measured.",
+                "fr": "Le Coefficient de Frottement (COF) est testé à l'aide d'un tribomètre sur des surfaces athlétiques standardisées (tapis de gym en caoutchouc et bois verni). Un traîneau lesté avec le matériau de la semelle extérieure de la chaussure est traîné sur la surface, et la force nécessaire pour maintenir le mouvement est mesurée."
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Google Tag Manager -->
+  <!-- Google Tag Manager (Deferred to reduce TBT) -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+
+      // Defer loading until after load or interaction to improve TBT
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+
+      // Execute only after the page has largely finished loading
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          f.parentNode.insertBefore(j, f);
+        }, 1000); // 1s delay after load
+      });
+    })(window, document, 'script', 'dataLayer', 'GTM-WZQCLTMP');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-96Z7WN9WSM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-96Z7WN9WSM');
+  </script>
+
+  <meta charset="UTF-8" />
+
+  <!-- Favicon links -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carré Sport - Équipements Sportifs au Maroc</title>
+  <!-- Dynamic meta description managed by useSEO hook -->
+  <meta name="theme-color" content="#d4af37" />
+
+  <!-- Critical preconnect hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <!-- Preload critical fonts -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap">
+  </noscript>
+
+  <!-- Critical CSS will be inlined by Vite -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZQCLTMP" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

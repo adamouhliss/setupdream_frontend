@@ -1,0 +1,923 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "update": "Update",
+    "close": "Close",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "view": "View",
+    "actions": "Actions",
+    "status": "Status",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "currency": "MAD",
+    "retry": "Retry",
+    "resultsFor": "Results for",
+    "searchPlaceholder": "Search for premium equipment...",
+    "searchNoResults": "No results found.",
+    "viewAllResults": "View all results for \"{{query}}\"",
+    "quickAdd": "QUICK ADD",
+    "soldOut": "SOLD OUT"
+  },
+  "ramadan": {
+    "greeting": "Ramadan Mubarak",
+    "offer": "Shop our special holy month collection.",
+    "heroTitle": "Push Your Limits",
+    "heroSecondary": "This Ramadan",
+    "heroSubtitle": "Maintain your athletic excellence during the holy month with our premium equipment designed for professional performance."
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "newArrivals": "New Arrivals",
+    "sale": "Sale",
+    "about": "About",
+    "contact": "Contact",
+    "search": "Search",
+    "cart": "Cart",
+    "account": "Account",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "admin": "Admin",
+    "wishlist": "Wishlist"
+  },
+  "hero": {
+    "title": "Premium Sports Equipment",
+    "subtitle": "Elevate your game with professional-grade sports gear. From beginners to champions, we have everything you need to excel.",
+    "cta": "Shop Now",
+    "exploreCollection": "Explore Collection",
+    "learnMore": "Learn More",
+    "secondary": "New Collection",
+    "stats": {
+      "athletes": "Happy Athletes",
+      "products": "Premium Products",
+      "satisfaction": "Satisfaction Rate"
+    }
+  },
+  "features": {
+    "title": "Why Choose Carré Sports?",
+    "subtitle": "We're committed to providing athletes with the finest equipment and exceptional service.",
+    "quality": {
+      "title": "Premium Quality",
+      "description": "Every product is carefully selected and tested by professional athletes to ensure top performance."
+    },
+    "authentic": {
+      "title": "Secure Payment",
+      "description": "Cash on delivery available. Order with confidence with our dedicated customer service."
+    },
+    "delivery": {
+      "title": "Fast Delivery",
+      "description": "Get your gear quickly with our express shipping options available nationwide."
+    }
+  },
+  "categories": {
+    "title": "Shop by Category",
+    "exploreTitle": "Explore Our Categories",
+    "exploreSubtitle": "Equipment for all sports and all levels",
+    "viewAll": "View All Categories",
+    "football": "Football",
+    "basketball": "Basketball",
+    "tennis": "Tennis",
+    "running": "Running",
+    "fitness": "Fitness",
+    "accessories": "Accessories",
+    "clothing": "Clothing",
+    "shoes": "Shoes",
+    "footwear": "Shoes",
+    "equipment": "Equipment",
+    "training": "Training"
+  },
+  "collections": {
+    "title": "Collections",
+    "subtitle": "Explore professional equipment tailored for your discipline.",
+    "searchPlaceholder": "Search collection...",
+    "defaultDescription": "Professional grade {{category}} for elite performance.",
+    "more": "+{{count}} more",
+    "noResults": "No collections found matching \"{{term}}\""
+  },
+  "sale": {
+    "hero": {
+      "title": "Limited Time Offers",
+      "subtitle": "Exceptional savings on professional-grade equipment. Don't miss out on these exclusive deals.",
+      "badge": "FLASH SALE LIVE"
+    }
+  },
+  "newArrivals": {
+    "hero": {
+      "title": "Just Dropped",
+      "subtitle": "Be the first to experience the future of fitness. Our latest collection defines the cutting edge of performance.",
+      "badge": "LATEST COLLECTION"
+    },
+    "intro": {
+      "badge": "Updated Daily",
+      "title": "Experience the Innovation",
+      "subtitle": "Each new arrival is selected for its superior quality, durability, and performance. Upgrade your training with the latest professional-grade equipment."
+    }
+  },
+  "products": {
+    "title": "Products",
+    "ourProducts": "Our",
+    "pageDescription": "Discover premium sports equipment and gear designed for champions",
+    "loading": "Loading products...",
+    "loadError": "Failed to load products. Please try again.",
+    "errorTitle": "Error Loading Products",
+    "filteringBy": "Filtering by",
+    "searchPlaceholder": "Search products...",
+    "allProducts": "All Products",
+    "filters": "Filters",
+    "allCategories": "All Categories",
+    "subcategories": "Subcategories",
+    "noResults": "No products found",
+    "tryAdjusting": "Try adjusting your search terms or filters",
+    "noProductsYet": "Products will appear here once they are added to the store",
+    "clearFilters": "Clear Filters",
+    "featured": "Featured",
+    "onlyLeft": "Only {{count}} left",
+    "viewing": "viewing",
+    "color": "Color",
+    "save": "Save",
+    "added": "Added!",
+    "youMightLike": "🔥 You might also like",
+    "featuredSubtitle": "Discover our most popular and highest-rated sports equipment",
+    "noFeatured": "No featured products available at the moment",
+    "viewAll": "View All Products",
+    "bestSellers": "Best Sellers",
+    "trending": "Trending Now",
+    "newArrivals": "New Arrivals",
+    "onSale": "On Sale",
+    "addToCart": "Add to Cart",
+    "selectSize": "Select Size",
+    "size": "Size",
+    "add": "Add",
+    "details": "Details",
+    "buyNow": "Buy Now",
+    "quickView": "Quick View",
+    "viewDetails": "View Details",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "lowStock": "Low Stock",
+    "sku": "SKU",
+    "brand": "Brand",
+    "category": "Category",
+    "description": "High-quality sports equipment designed for performance and durability.",
+    "specifications": "Specifications",
+    "relatedProducts": "Related Products",
+    "sortBy": "Sort by",
+    "priceRange": "Price Range",
+    "filterBy": "Filter by",
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "loadingMore": "Loading more products...",
+    "scrollForMore": "Scroll to load more",
+    "notFound": "Product Not Found",
+    "backToProducts": "Back to Products",
+    "starProduct": "Star Product",
+    "sizeGuide": "Size Guide",
+    "orderWhatsApp": "Order easily via WhatsApp",
+    "whatsappMessage": "Hello, I am interested in this product: {{name}} ({{price}}). Is it available?",
+    "careInstructions": "Care Instructions",
+    "care": {
+      "wash": "Machine wash cold with like colors",
+      "bleach": "Do not bleach",
+      "dry": "Tumble dry low",
+      "iron": "Iron on low heat if needed"
+    },
+    "shippingReturns": "Shipping & Returns",
+    "shippingReturnsDesc": "Free standard shipping on orders over 500 MAD. We offer a 30-day return policy for all unused items in original packaging. Express delivery available at checkout.",
+    "authenticity": "Authenticity Guarantee",
+    "authenticityDesc": "All products sold on Carré Sport are 100% authentic and sourced directly from verified manufacturers and distributors.",
+    "question": "Have a Question?",
+    "questionDesc": "Contact our support team 24/7 via WhatsApp or email (support@carresports.ma). We typically reply within 15 minutes.",
+    "peopleViewing": "people are viewing this right now",
+    "noImages": "No images available"
+  },
+  "trending": {
+    "titleSelection": "The Selection",
+    "subtitle": "Curated equipment that is defining the current standard of performance.",
+    "dragHint": "Drag to Explore"
+  },
+  "recentlyViewed": {
+    "title": "Recently Viewed",
+    "subtitle": "Pick up where you left off"
+  },
+  "cta": {
+    "title": "Ready to start your sports journey?",
+    "titlePrefix": "Ready to start your",
+    "titleHighlight": "sports journey",
+    "titleSuffix": "?",
+    "subtitle": "Join thousands of athletes who trust us",
+    "subtitlePremium": "Join thousands of athletes who trust us for their premium equipment.",
+    "shop": "Start Shopping",
+    "shopEmoji": "🛍️ Start Shopping",
+    "contact": "Contact Us",
+    "contactEmoji": "💬 Contact Us"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyDescription": "Looks like you haven't added any items to your cart yet. Start exploring our premium sports equipment!",
+    "addProducts": "Add some products to get started!",
+    "shopNow": "Shop Now",
+    "startShopping": "Start Shopping",
+    "continueShopping": "Continue Shopping",
+    "clearCart": "Clear Cart",
+    "inYourCart": "in your cart",
+    "qty": "Qty",
+    "free": "Free",
+    "freeShippingAt": "Free shipping at",
+    "toGo": "to go",
+    "qualifiesForFreeShipping": "You qualify for free shipping!",
+    "proceedToCheckout": "Proceed to Checkout",
+    "secureCheckout": "Secure checkout with SSL encryption",
+    "youMightAlsoLike": "You might also like",
+    "viewCart": "View Cart",
+    "item": "Item",
+    "items": "Items",
+    "removeItem": "Remove Item",
+    "updateQuantity": "Update Quantity",
+    "checkout": "Checkout",
+    "summary": "Order Summary",
+    "shipping": "Shipping",
+    "tax": "Tax",
+    "discount": "Discount",
+    "total": "Total",
+    "itemAdded": "Item added to cart",
+    "itemRemoved": "Item removed from cart",
+    "itemUpdated": "Cart updated"
+  },
+  "checkout": {
+    "reviewYourOrder": "Review Your Order",
+    "cashOnDelivery": "Cash on Delivery",
+    "payWhenReceive": "Pay when you receive your order",
+    "color": "Color",
+    "size": "Size",
+    "qty": "Qty",
+    "backToShipping": "Back to Shipping",
+    "placeOrderBtn": "Place Order",
+    "promoCode": "Promo Code",
+    "enterPromoCode": "Enter promo code",
+    "apply": "Apply",
+    "youSaved": "You saved {{amount}}!",
+    "secureCheckout": "Secure Checkout",
+    "dataProtection": "Data Protection",
+    "moneyBackGuarantee": "Money-back guarantee",
+    "orderPlacedSuccessfully": "Order Placed Successfully!",
+    "orderNumber": "Order #{{id}}",
+    "totalAmount": "Total Amount:",
+    "payment": "Payment:",
+    "deliveryTo": "Delivery to:",
+    "whatHappensNext": "What Happens Next?",
+    "confirmationCall": "Confirmation Call",
+    "confirmationCallDesc": "We'll call you within 24 hours to confirm your order details",
+    "orderPreparation": "Order Preparation",
+    "orderPreparationDesc": "Once confirmed, we'll prepare your order for shipping",
+    "deliveryPayment": "Delivery & Payment",
+    "deliveryPaymentDesc": "Pay when you receive your order (Cash on Delivery)",
+    "importantKeepPhone": "Important: Please keep your phone {{phone}} available",
+    "callUsChanges": "If you need to make changes, call us immediately at {{phone}}",
+    "continueShopping": "Continue Shopping",
+    "browseProducts": "Browse Products",
+    "thankYouChoosing": "Thank you for choosing",
+    "excitedToHelp": "We're excited to help you achieve your athletic goals with our premium equipment.",
+    "itemsCount": "Items",
+    "title": "Checkout",
+    "shippingInfo": "Shipping Information",
+    "paymentInfo": "Payment Information",
+    "orderSummary": "Order Summary",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "postalCode": "Postal Code",
+    "country": "Country",
+    "placeOrder": "Place Order",
+    "orderPlaced": "Order placed successfully!",
+    "processingOrder": "Processing your order...",
+    "paymentMethod": "Payment Method",
+    "cardNumber": "Card Number",
+    "expiryDate": "Expiry Date",
+    "cvv": "CVV",
+    "billingAddress": "Billing Address",
+    "sameAsShipping": "Same as shipping address"
+  },
+  "account": {
+    "title": "My Profile",
+    "profile": "Profile",
+    "profileDescription": "Manage your personal information and preferences",
+    "userProfile": "User Profile",
+    "loadingProfile": "Loading profile...",
+    "profileUpdated": "Profile updated successfully!",
+    "profileUpdateError": "Failed to update profile",
+    "editProfile": "Edit Profile",
+    "saveChanges": "Save Changes",
+    "personalInfo": "Personal Information",
+    "addressInfo": "Address Information",
+    "accountInfo": "Account Information",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "enterFirstName": "Enter your first name",
+    "enterLastName": "Enter your last name",
+    "emailNotEditable": "Email cannot be changed. Contact support if needed.",
+    "phone": "Phone Number",
+    "streetAddress": "Street Address",
+    "streetAddressPlaceholder": "Street address, apartment, suite, etc.",
+    "city": "City",
+    "cityPlaceholder": "Casablanca, Rabat, etc.",
+    "postalCode": "Postal Code",
+    "country": "Country",
+    "morocco": "Morocco",
+    "france": "France",
+    "spain": "Spain",
+    "germany": "Germany",
+    "other": "Other",
+    "memberSince": "Member since",
+    "lastUpdated": "Last updated",
+    "never": "Never",
+    "orders": "Orders",
+    "addresses": "Addresses",
+    "settings": "Settings",
+    "changePassword": "Change Password",
+    "orderHistory": "Order History",
+    "orderNumber": "Order Number",
+    "orderDate": "Order Date",
+    "orderStatus": "Order Status",
+    "orderTotal": "Order Total",
+    "viewOrder": "View Order",
+    "reorder": "Reorder",
+    "trackOrder": "Track Order",
+    "noOrders": "No orders found"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "overview": "Overview",
+    "products": "Products",
+    "orders": "Orders",
+    "customers": "Customers",
+    "inventory": "Inventory",
+    "settings": "Settings",
+    "analytics": "Analytics",
+    "reports": "Reports",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "deleteProduct": "Delete Product",
+    "manageProducts": "Manage Products",
+    "orderManagement": "Order Management",
+    "orderDetails": "Order Details",
+    "confirmOrder": "Confirm Order",
+    "processOrder": "Process Order",
+    "shipOrder": "Ship Order",
+    "cancelOrder": "Cancel Order",
+    "customerInfo": "Customer Information",
+    "inventoryManagement": "Inventory Management",
+    "stockLevel": "Stock Level",
+    "restock": "Restock",
+    "lowStockAlert": "Low Stock Alert",
+    "outOfStockAlert": "Out of Stock Alert",
+    "thresholds": "Thresholds",
+    "editThresholds": "Edit Thresholds",
+    "viewDetails": "View Details",
+    "lastRestocked": "Last Restocked",
+    "never": "Never",
+    "totalProducts": "Total Products",
+    "lowStock": "Low Stock",
+    "outOfStock": "Out of Stock",
+    "needsReorder": "Needs Reorder",
+    "inventoryValue": "Inventory Value",
+    "inventoryAlerts": "Inventory Alerts",
+    "refresh": "Refresh",
+    "productName": "Product Name",
+    "costPrice": "Cost Price",
+    "sellingPrice": "Selling Price",
+    "stockQuantity": "Stock Quantity",
+    "lowStockThreshold": "Low Stock Threshold",
+    "reorderLevel": "Reorder Level",
+    "performance": "Performance",
+    "totalSales": "Total Sales",
+    "pageViews": "Page Views",
+    "unitsSold": "units sold",
+    "views": "views",
+    "units": "units",
+    "basicInfo": "Basic Information",
+    "subcategory": "Subcategory",
+    "currentStock": "Current Stock",
+    "stockValue": "Stock Value",
+    "productDetails": "Product Details",
+    "pricing": "Pricing",
+    "alertWhenStockFalls": "Alert when stock falls below this level",
+    "criticalAlertWhenStock": "Critical alert when stock falls below this level",
+    "quantityToAdd": "Quantity to Add",
+    "costPricePerUnit": "Cost Price per Unit",
+    "optional": "Optional",
+    "enterQuantity": "Enter quantity",
+    "whenToShowLowStock": "When to show low stock warning",
+    "whenToReorderStock": "When to reorder stock",
+    "updateThresholds": "Update Thresholds"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "rememberMe": "Remember me",
+    "createAccount": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "signIn": "Sign In",
+    "signUp": "Sign up",
+    "signOut": "Sign Out",
+    "signingIn": "Signing in...",
+    "welcome": "Welcome",
+    "welcomeBack": "Welcome Back",
+    "signInToAccount": "Sign in to your Carré Sports account",
+    "user": "User",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password",
+    "loginSuccess": "Login successful",
+    "loginError": "Login failed",
+    "registerSuccess": "Account created successfully",
+    "registerError": "Registration failed",
+    "invalidCredentials": "Invalid credentials",
+    "passwordTooShort": "Password too short",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "demoAccount": "Demo Account"
+  },
+  "footer": {
+    "premiumAthletics": "Premium Athletics",
+    "followFacebook": "Follow us on Facebook",
+    "followInstagram": "Follow us on Instagram",
+    "followTwitter": "Follow us on X (Twitter)",
+    "subscribeYoutube": "Subscribe to our YouTube channel",
+    "followTiktok": "Follow us on TikTok",
+    "connectLinkedin": "Connect with us on LinkedIn",
+    "quickLinks": "Quick Links",
+    "giftCards": "Gift Cards",
+    "customerService": "Customer Service",
+    "shipping": "Shipping Info",
+    "sizeGuide": "Size Guide",
+    "faq": "FAQ",
+    "getInTouch": "Get in Touch",
+    "phone": "Phone",
+    "address": "Address",
+    "stayUpdated": "Stay Updated with",
+    "newsletterDesc": "Get the latest updates on new products, exclusive offers, and sports insights delivered to your inbox.",
+    "enterEmailAddress": "Enter your email",
+    "subscribe": "Subscribe",
+    "copyright": "© {{year}} {{storeName}}. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "subscribeNewsletter": "Subscribe to our newsletter",
+    "help": "Help",
+    "paymentMethods": "Payment Methods",
+    "returns": "Returns",
+    "joinInnerCircle": "Join the Inner Circle",
+    "subscribePromise": "Subscribe to receive exclusive offers, early access to new collections, and performance insights.",
+    "brandDescription": "Engineered for the elite. Carré Sports provides professional-grade equipment designed to push the boundaries of human performance.",
+    "shop": "Shop",
+    "company": "Company",
+    "support": "Support",
+    "careers": "Careers",
+    "sustainability": "Sustainability",
+    "press": "Press"
+  },
+  "language": {
+    "english": "English",
+    "french": "Français",
+    "selectLanguage": "Select Language",
+    "changeLanguage": "Change Language"
+  },
+  "notifications": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "itemAddedToCart": "Item added to cart",
+    "itemRemovedFromCart": "Item removed from cart",
+    "orderPlaced": "Order placed successfully",
+    "orderCancelled": "Order cancelled",
+    "profileUpdated": "Profile updated",
+    "passwordChanged": "Password changed",
+    "settingsSaved": "Settings saved",
+    "productAdded": "Product added",
+    "productUpdated": "Product updated",
+    "productDeleted": "Product deleted",
+    "inventoryUpdated": "Inventory updated",
+    "stockRestocked": "Stock restocked",
+    "thresholdsUpdated": "Thresholds updated"
+  },
+  "status": {
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "processing": "Processing",
+    "shipped": "Shipped",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled",
+    "returned": "Returned",
+    "refunded": "Refunded",
+    "paid": "Paid",
+    "unpaid": "Unpaid",
+    "active": "Active",
+    "inactive": "Inactive",
+    "available": "Available",
+    "unavailable": "Unavailable"
+  },
+  "seo": {
+    "home": {
+      "title": "Carré Sport - Premium Sports Equipment in Morocco | Fitness Gear Casablanca, Rabat, Marrakech",
+      "description": "🏆 #1 Sports Equipment Store in Morocco! Fitness, gym, running gear. Stores in Casablanca, Rabat, Marrakech. Free shipping from 500 MAD. ⚡ Satisfaction guaranteed.",
+      "keywords": "sports equipment morocco, fitness equipment morocco, gym equipment morocco, sports gear morocco, athletic equipment morocco, workout equipment morocco, sports shop morocco, fitness store morocco, gym gear morocco, athletic wear morocco, sports accessories morocco, exercise equipment morocco, yoga mats morocco, dumbbells morocco, elliptical bike morocco, treadmill morocco, weight bench morocco"
+    },
+    "products": {
+      "title": "Sports Equipment & Fitness Gear in Morocco | Carré Sport - Casablanca, Rabat",
+      "description": "🔥 1000+ Products! Fitness, gym, cardio, team sports equipment. Best prices in Morocco. 24h shipping Casablanca-Rabat. Cash on delivery available.",
+      "keywords": "cheap sports equipment morocco, used gym equipment morocco, fitness equipment sale casablanca, sports store rabat, gym equipment marrakech, where to buy sports equipment morocco, best sports store casablanca, fitness equipment shop rabat, gym equipment store marrakech, sports gear delivery morocco, online sports shop morocco"
+    },
+    "product": {
+      "titleTemplate": "%s | Sports Equipment Morocco - Carré Sport Casablanca",
+      "descriptionTemplate": "✅ %s in stock in Morocco! Fast delivery Casablanca, Rabat, Marrakech. Competitive price, 2-year warranty. Secure payment. Free expert advice.",
+      "keywordsTemplate": "%s morocco, %s casablanca, %s rabat, buy %s morocco, %s price morocco, free shipping morocco"
+    },
+    "newArrivals": {
+      "title": "New Sports Equipment 2024 Morocco | Latest Fitness Gear - Carré Sport",
+      "description": "🆕 Discover new sports equipment 2024! Latest fitness gear, new running collections. Exclusive to Morocco. Pre-orders now open.",
+      "keywords": "new sports equipment 2024 morocco, latest fitness equipment morocco, new sports gear collections morocco, trending sports equipment 2024, fitness innovation morocco"
+    },
+    "sale": {
+      "title": "Sports Equipment SALE Morocco | Fitness Gear -50% | Carré Sport Casablanca",
+      "description": "🔥 EXCEPTIONAL SALE! Up to -70% on sports equipment. Fitness, running, team sports. Limited stock. Free shipping from 300 MAD during sale.",
+      "keywords": "sports equipment sale morocco, fitness gear discounts morocco, cheap sports equipment casablanca, sports equipment deals morocco, gym equipment clearance morocco, black friday sports morocco"
+    },
+    "organization": {
+      "description": "Carré Sport is Morocco's leading sports equipment retailer since 2020. Stores in Casablanca, Rabat, Marrakech. Over 10,000 satisfied customers. Official partner of Moroccan sports clubs."
+    }
+  },
+  "urgency": {
+    "lowStock": "Hurry! Only {{count}} left in stock",
+    "highDemand": "This product is in high demand",
+    "viewersCount": "{{count}} people are viewing this product",
+    "soldInLast24h": "{{count}} sold in the last 24 hours",
+    "limitedTimeOffer": "🔥 Limited Time Offer!",
+    "saleEndsIn": "Sale ends in {{time}}",
+    "saleEndingSoon": "Sale ending soon!",
+    "addForFreeShipping": "Add {{amount}} MAD more for FREE shipping!",
+    "bestSeller": "🏆 Best Seller",
+    "topRated": "Top-rated product in this category",
+    "limitedTime": "Limited Time"
+  },
+  "time": {
+    "day": "day",
+    "days": "days",
+    "hour": "hour",
+    "hours": "hours",
+    "minute": "minute",
+    "minutes": "minutes"
+  },
+  "contactPage": {
+    "form": {
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What's this about?"
+      },
+      "title": "Send us a Message",
+      "email": {
+        "label": "Email Address",
+        "placeholder": "your@email.com"
+      },
+      "description": "Fill out the form below and we'll get back to you as soon as possible.",
+      "submit": "Send Message",
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Your full name"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us how we can help you..."
+      }
+    },
+    "hero": {
+      "subtitle": "Have a question about our products or need assistance? We're here to help!",
+      "title": "Get in",
+      "titleHighlight": "Touch"
+    },
+    "info": {
+      "phone": {
+        "description": "Call us during business hours",
+        "title": "Phone"
+      },
+      "hours": {
+        "saturday": "Saturday: 9:00 AM - 6:00 PM",
+        "description": "When we're available",
+        "weekdays": "Monday - Friday: 9:00 AM - 7:00 PM",
+        "title": "Business Hours",
+        "sunday": "Sunday: 10:00 AM - 5:00 PM"
+      },
+      "address": {
+        "description": "Visit our store",
+        "title": "Address"
+      },
+      "title": "Contact Information",
+      "email": {
+        "description": "Send us an email anytime",
+        "title": "Email"
+      }
+    }
+  },
+  "returns": {
+    "title": "Return Policy",
+    "subtitle": "Returns for defective products only",
+    "important": {
+      "title": "Important Notice",
+      "description": "We only accept returns for products that are defective or damaged upon delivery. Returns are NOT accepted for size, color, or personal preference reasons."
+    },
+    "policy": {
+      "title": "Return Policy Overview",
+      "timeframe": {
+        "title": "Return Window",
+        "description": "You have 7 days from the date of delivery to report defective products and request a return."
+      },
+      "condition": {
+        "title": "Product Condition",
+        "description": "Products must be reported as defective within 7 days with photographic evidence of the defect."
+      }
+    },
+    "defective": {
+      "title": "What Qualifies as Defective"
+    },
+    "examples": {
+      "manufacturing": "Manufacturing defects (broken parts, poor assembly)",
+      "damaged": "Products damaged during shipping",
+      "malfunction": "Equipment that doesn't function as advertised",
+      "missing": "Missing components or accessories"
+    },
+    "notAccepted": {
+      "title": "Returns NOT Accepted For"
+    },
+    "nonExamples": {
+      "change": "Change of mind or personal preference",
+      "size": "Wrong size selection (size charts are available)",
+      "color": "Color not as expected (monitor variations)",
+      "normal": "Normal wear and tear from use"
+    },
+    "process": {
+      "title": "Return Process"
+    },
+    "steps": {
+      "contact": {
+        "title": "Contact Us",
+        "description": "Call or email us within 7 days of delivery with your order number and photos of the defect."
+      },
+      "evaluation": {
+        "title": "Defect Evaluation",
+        "description": "Our team will review your photos and determine if the issue qualifies for a return."
+      },
+      "authorization": {
+        "title": "Return Authorization",
+        "description": "If approved, we'll provide return instructions and a prepaid shipping label."
+      },
+      "return": {
+        "title": "Send Back Product",
+        "description": "Package the item securely and send it back using our provided shipping label."
+      }
+    },
+    "contact": {
+      "title": "Contact Information for Returns",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "legal": {
+      "notice": "This policy is in accordance with Moroccan consumer protection laws.",
+      "rights": "Your statutory rights as a consumer are not affected by this policy."
+    }
+  },
+  "discount": {
+    "banner": {
+      "newCustomerTitle": "New Customer Special!",
+      "authenticatedTitle": "Your 10% Discount Awaits!",
+      "newCustomerDescription": "Get 10% OFF your first order when you create an account",
+      "authenticatedDescription": "Your first-time customer discount is ready to use at checkout",
+      "signUpNow": "Sign Up Now",
+      "shopNow": "Shop Now",
+      "signIn": "Sign In"
+    }
+  },
+  "cro": {
+    "marquee": {
+      "premiumGear": "PREMIUM GEAR",
+      "worldwideShipping": "NATIONWIDE SHIPPING",
+      "professionalQuality": "PROFESSIONAL QUALITY",
+      "officialDistributor": "OFFICIAL DISTRIBUTOR",
+      "satisfactionGuaranteed": "SATISFACTION GUARANTEED"
+    },
+    "trust": {
+      "delivery": {
+        "title": "Delivery Everywhere in Morocco",
+        "subtitle": "Free starting from 500 DH"
+      },
+      "payment": {
+        "title": "Cash on Delivery",
+        "subtitle": "Pay securely"
+      },
+      "guarantee": {
+        "title": "Money Back Guarantee",
+        "subtitle": "30 days to change your mind"
+      },
+      "support": {
+        "title": "Customer Service 24/7",
+        "subtitle": "A team at your service"
+      }
+    },
+    "flashSale": {
+      "title": "Flash Sale",
+      "headline": "-30% on collection",
+      "subheadline": "Performance",
+      "description": "Enjoy the best offers before the timer ends!",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "cta": "Grab Deal"
+    },
+    "newsletter": {
+      "join": "Join the",
+      "innerCircle": "Inner Circle",
+      "description": "Subscribe to receive exclusive offers, early access to new drops, and expert training tips directly to your inbox.",
+      "placeholder": "Enter your email address",
+      "success": "Welcome to the club! Check your inbox soon.",
+      "disclaimer": "By subscribing, you agree to our Terms & Privacy Policy. No spam, ever."
+    },
+    "testimonials": {
+      "badge": "Over 10,000 satisfied customers",
+      "title": "They Trust Us",
+      "subtitle": "Discover why professional and amateur athletes choose Carré Sport for their equipment."
+    }
+  },
+  "performanceLab": {
+    "title": "PERFORMANCE DATA HUB",
+    "subtitle": "Quantifying the invisible advantages of professional equipment. Verified metrics for the data-driven athlete.",
+    "badge": "LABORATORY ANALYTICS",
+    "indexVersion": "INDEX V{{version}} // UPDATED {{date}}",
+    "technicalSpecs": "Technical Specifications",
+    "introText": "We believe in total transparency. Explore the engineering data behind our top-tier equipment.",
+    "selectCategory": "Select Category",
+    "analysis": "{{category}} Analysis",
+    "liveData": "LIVE DATA",
+    "metric": "Metric",
+    "value": "Value",
+    "description": "Technical Description",
+    "verifiedBy": "Data verified by independent 3rd party laboratory testing.",
+    "faqTitle": "Technical FAQ",
+    "faqSubtitle": "Common questions from our engineering team to yours.",
+    "isoCertified": "ISO 9001:2015 Certified Manufacturing",
+    "seo": {
+      "title": "Performance Lab | Technical Data Hub - Carré Sport",
+      "description": "Technical performance metrics for Carré Sport equipment. Grip coefficients, tensile strength, and impact absorption data for professional athletes."
+    },
+    "latestResearch": "Latest Research",
+    "readArticle": "Read Article"
+  },
+  "partnerships": {
+    "hero": {
+      "title": "Partner with Carré Sport",
+      "subtitle": "Join the elite network of coaches, athletes, and organizations shaping the future of sports in Morocco.",
+      "badge": "Official Partnerships"
+    },
+    "press": {
+      "title": "Media & Brand Assets",
+      "subtitle": "High-resolution logos, brand guidelines, and product imagery for press use.",
+      "downloadKit": "Download Brand Kit",
+      "accessLab": "Access Lab Data"
+    },
+    "affiliate": {
+      "title": "Affiliate Program",
+      "subtitle": "Earn commissions and exclusive perks by recommending professional equipment to your community.",
+      "benefit1": "10-15% Commission on Sales",
+      "benefit2": "Exclusive Discounts for Your Team",
+      "benefit3": "Early Access to New Drops"
+    },
+    "sponsorship": {
+      "title": "Club Sponsorships",
+      "subtitle": "We support Moroccan sports associations with equipment grants and event sponsorships.",
+      "cta": "Request Sponsorship Deck"
+    },
+    "form": {
+      "title": "Apply for Partnership",
+      "fullName": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "type": "Partner Type",
+      "socials": "Social Media Handles",
+      "message": "Why do you want to partner with us?",
+      "messagePlaceholder": "Tell us about your audience and goals...",
+      "submit": "Submit Application",
+      "successTitle": "Application Received",
+      "successMessage": "Thank you for your interest. Our partnerships team will review your application and get back to you within 48 hours.",
+      "submitAnother": "Submit another application"
+    },
+    "types": {
+      "coach": "Professional Coach",
+      "athlete": "Elite Athlete",
+      "gymOwner": "Gym/Club Owner",
+      "influencer": "Content Creator"
+    }
+  },
+  "mediaKit": {
+    "seo": {
+      "title": "Media Kit & Brand Resources | Carré Sports",
+      "description": "Download official Carré Sports logos, brand guidelines, and access technical citations for press usage."
+    },
+    "hero": {
+      "title": "Brand Resources",
+      "subtitle": "Everything you need to tell the Carré Sports story correctly.",
+      "badge": "Press Room"
+    },
+    "assets": {
+      "title": "Brand Assets",
+      "logos": "Official Logo Pack",
+      "guidelines": "Brand Guidelines"
+    },
+    "pinterest": {
+      "title": "Pinterest Marketing Assets"
+    },
+    "story": {
+      "title": "Our Mission",
+      "p1": "Carré Sports was founded in 2020 with a singular mission: to democratize access to professional-grade sports equipment in Morocco. We bridge the gap between elite manufacturing certification and local availability.",
+      "p2": "By testing every product in our local Performance Lab against global standards (ISO 9001:2015), we guarantee that Moroccan athletes train with gear that respects their ambition."
+    },
+    "citation": {
+      "title": "Technical Citations",
+      "subtitle": "Use these snippets to properly credit our Performance Lab data in your articles.",
+      "copy": "Copy HTML",
+      "copied": "Copied!",
+      "noteTitle": "Note",
+      "noteText": "Please do not modify the links within the citation snippet to ensure data integrity.",
+      "snippet": {
+        "text": "Carré Sports' Performance Lab verification process represents a new standard in localized equipment testing, ensuring ISO 9001:2015 compliance for all domestic manufacturing.",
+        "source": "Performance Lab™ Data"
+      }
+    }
+  },
+  "influencerDashboard": {
+    "accessDenied": {
+      "title": "Access Denied",
+      "message": "You must be an approved influencer to view this page."
+    },
+    "header": {
+      "title": "Influencer Dashboard",
+      "subtitle": "Welcome back, {{name}}. Track your performance and earnings.",
+      "promoCode": "Your Promo Code"
+    },
+    "error": "Failed to load your dashboard data.",
+    "stats": {
+      "revenue": "Revenue Generated",
+      "commission": "Earned Commission",
+      "uses": "Total Uses",
+      "structure": "Your Structure",
+      "structureSubtext": "Commission / Discount"
+    },
+    "referrals": {
+      "title": "Recent Referrals",
+      "subtitle": "Orders generated using your promo code.",
+      "empty": {
+        "title": "No referrals yet.",
+        "message": "Share your promo code <strong className=\"text-gold-400\">{{code}}</strong> to start earning!"
+      },
+      "table": {
+        "orderId": "Order ID",
+        "date": "Date",
+        "customer": "Customer",
+        "total": "Order Total",
+        "commission": "Your Commission"
+      }
+    }
+  }
+}
