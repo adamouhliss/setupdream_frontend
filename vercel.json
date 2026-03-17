@@ -1,0 +1,40 @@
+{
+  "rewrites": [
+    {
+      "source": "/_vercel/insights/:path*",
+      "destination": "https://va.vercel-scripts.com/:path*"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "https://carre-sport-production.up.railway.app/api/v1/seo/sitemap.xml"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/_vercel/insights/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}
