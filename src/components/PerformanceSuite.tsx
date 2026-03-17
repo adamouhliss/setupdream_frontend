@@ -193,7 +193,7 @@ export default function PerformanceSuite() {
       const hints = [
         { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
         { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' },
-        { rel: 'preconnect', href: 'https://carre-sport-production.up.railway.app', crossorigin: true },
+        { rel: 'preconnect', href: 'https://projects-backend.mlqyyh.easypanel.host', crossorigin: true },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com', crossorigin: true },
         { rel: 'dns-prefetch', href: 'https://vercel.live' },
         { rel: 'dns-prefetch', href: 'https://vitals.vercel-analytics.com' }

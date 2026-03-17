@@ -21,7 +21,7 @@ import { getProductPrimaryImage } from '../utils/productImages'
 // Automatically detect the environment and use appropriate API URL
 const API_BASE_URL = window.location.hostname === 'localhost'
   ? 'http://localhost:8000/api/v1'  // Development
-  : 'https://carre-sport-production.up.railway.app/api/v1'  // Production
+  : 'https://projects-backend.mlqyyh.easypanel.host/api/v1'  // Production
 
 interface ShippingInfo {
   firstName: string

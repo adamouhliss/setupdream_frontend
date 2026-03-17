@@ -64,7 +64,7 @@ export const addResourceHints = () => {
   const preconnectDomains = [
     'https://fonts.googleapis.com',
     'https://fonts.gstatic.com',
-    'https://carre-sport-production.up.railway.app'
+    'https://projects-backend.mlqyyh.easypanel.host'
   ]
   
   preconnectDomains.forEach(domain => {

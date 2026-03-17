@@ -25,7 +25,7 @@ import ProductFormModal from './ProductFormModal'
 // API Configuration
 const API_BASE_URL = window.location.hostname === 'localhost'
   ? 'http://localhost:8000/api/v1'
-  : 'https://carre-sport-production.up.railway.app/api/v1'
+  : 'https://projects-backend.mlqyyh.easypanel.host/api/v1'
 
 interface Category {
   id: number

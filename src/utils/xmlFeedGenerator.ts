@@ -84,10 +84,10 @@ export class XMLFeedGenerator {
     }
 
     if (imageUrl.startsWith('/')) {
-      return `https://carre-sport-production.up.railway.app${imageUrl}`
+      return `https://projects-backend.mlqyyh.easypanel.host${imageUrl}`
     }
 
-    return `https://carre-sport-production.up.railway.app/uploads/products/${imageUrl}`
+    return `https://projects-backend.mlqyyh.easypanel.host/uploads/products/${imageUrl}`
   }
 
   private getAvailability(stockQuantity: number): string {

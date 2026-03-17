@@ -23,7 +23,7 @@ export function fixImageUrl(url: string | any | null | undefined): string | null
   if (url.startsWith('http')) {
     // If it points to carresports.ma, replace with Railway URL
     if (url.includes('carresports.ma')) {
-      return url.replace(/https?:\/\/(www\.)?carresports\.ma/, 'https://carre-sport-production.up.railway.app');
+      return url.replace(/https?:\/\/(www\.)?carresports\.ma/, 'https://projects-backend.mlqyyh.easypanel.host');
     }
     return url;
   }
@@ -33,7 +33,7 @@ export function fixImageUrl(url: string | any | null | undefined): string | null
   const path = url.startsWith('/') ? url : `/${url}`;
 
   // If it's a path that looks like an upload or static asset from backend
-  return `https://carre-sport-production.up.railway.app${path}`;
+  return `https://projects-backend.mlqyyh.easypanel.host${path}`;
 }
 
 // Helper function to get the correct image URL for display
