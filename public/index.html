@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F59E0B" />
+  
+  <!-- Morocco-specific SEO and Geographic Targeting -->
+  <meta name="geo.region" content="MA" />
+  <meta name="geo.country" content="Morocco" />
+  <meta name="geo.placename" content="Morocco" />
+  <meta name="ICBM" content="33.5731, -7.5898" />
+  <meta name="distribution" content="local" />
+  <meta name="coverage" content="Morocco" />
+  <meta name="target" content="Morocco" />
+  <meta name="audience" content="Morocco" />
+  
+  <!-- Business Information -->
+  <meta name="business:contact_data:country_name" content="Morocco" />
+  <meta name="business:contact_data:region" content="Grand Casablanca" />
+  <meta name="business:contact_data:locality" content="Casablanca" />
+  <meta name="business:contact_data:phone_number" content="+212632253960" />
+  
+  <!-- Enhanced SEO -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="rating" content="4.8" />
+  <meta name="review-count" content="247" />
+  
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+  
+  <!-- Preconnect to critical domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://carre-sport-production.up.railway.app">
+  
+  <!-- Critical CSS for Morocco branding -->
+  <style>
+    /* Critical CSS for initial paint */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #111827;
+      color: #ffffff;
+    }
+    
+    /* Loading state optimized for Morocco theme */
+    .loading-morocco {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 3px solid #F59E0B;
+      border-radius: 50%;
+      border-top-color: #DC2626;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+  
+  <!-- Manifest -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <!-- Default meta tags - will be replaced by React components -->
+  <meta name="description"
+    content="🏆 N°1 des équipements sportifs au Maroc ! Matériel fitness, musculation, running. Magasins à Casablanca, Rabat, Marrakech. Livraison gratuite dès 500 MAD." />
+  <meta name="keywords" 
+    content="équipement sport maroc, matériel sport maroc, équipement sportif maroc, magasin sport casablanca, matériel fitness rabat, équipement gym marrakech" />
+  
+  <title>Carré Sport - Équipements Sportifs Premium au Maroc | Matériel Sport Casablanca, Rabat, Marrakech</title>
+  
+  <!-- Performance: Critical CSS inlined -->
+  <style>
+    /* Critical above-the-fold styles for immediate rendering */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #111827; 
+      color: #f9fafb; 
+      line-height: 1.6;
+    }
+    .hero-container { min-height: 100vh; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .loading-spinner {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      border: 3px solid #374151;
+      border-radius: 50%;
+      border-top-color: #f59e0b;
+      animation: spin 1s ease-in-out infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+  
+  <!-- Performance: DNS prefetch and preconnect -->
+  <link rel="dns-prefetch" href="//carre-sport-production.up.railway.app">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//vercel.live">
+  <link rel="dns-prefetch" href="//vitals.vercel-analytics.com">
+  
+  <link rel="preconnect" href="https://carre-sport-production.up.railway.app" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Performance: Preload critical resources -->
+  <link rel="preload" href="/uploads/products/placeholder.jpg" as="image" fetchpriority="high">
+  
+  <!-- Performance: Critical API prefetch -->
+  <link rel="prefetch" href="/api/v1/products/?limit=12" as="fetch" crossorigin="anonymous">
+  <link rel="prefetch" href="/api/v1/categories/" as="fetch" crossorigin="anonymous">
+  
+  <!-- Performance: Font optimization with display=swap -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap"></noscript>
+  
+  <!-- SEO: Canonical URL (will be updated dynamically) -->
+  <link rel="canonical" href="https://carresports.ma/" />
+  
+  <!-- SEO: Title and meta description -->
+  <title>Carré Sports - Équipements Sportifs de Qualité | Magasin Sport en Ligne</title>
+  <meta name="description" content="Découvrez notre gamme d'équipements sportifs de qualité. Livraison gratuite, retours faciles. Votre magasin sport en ligne de confiance." />
+  
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="Carré Sports - Équipements Sportifs de Qualité" />
+  <meta property="og:description" content="Découvrez notre gamme d'équipements sportifs de qualité. Livraison gratuite, retours faciles." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://carresports.ma/" />
+  <meta property="og:site_name" content="Carré Sports" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Carré Sports - Équipements Sportifs" />
+  <meta name="twitter:description" content="Votre magasin sport en ligne de confiance" />
+  
+  <!-- SEO: Hreflang tags -->
+  <link rel="alternate" href="https://carresports.ma/" hreflang="fr" />
+  <link rel="alternate" href="https://carresports.ma/?lang=en" hreflang="en" />
+  <link rel="alternate" href="https://carresports.ma/" hreflang="x-default" />
+  
+  <!-- Performance: Resource hints for better loading -->
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  
+  <!-- Performance: Optimize rendering -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <!-- Performance: Service Worker registration (inline for speed) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('✅ SW registered:', registration.scope);
+          })
+          .catch(error => {
+            console.warn('❌ SW registration failed:', error);
+          });
+      });
+    }
+    
+    // Performance: Early performance monitoring
+    if ('PerformanceObserver' in window) {
+      const observer = new PerformanceObserver(list => {
+        list.getEntries().forEach(entry => {
+          if (entry.entryType === 'navigation') {
+            const nav = entry;
+            const ttfb = nav.responseStart - nav.fetchStart;
+            const domLoad = nav.domContentLoadedEventEnd - nav.fetchStart;
+            console.log(`🚀 TTFB: ${ttfb.toFixed(0)}ms, DOM: ${domLoad.toFixed(0)}ms`);
+          }
+        });
+      });
+      observer.observe({ entryTypes: ['navigation'] });
+    }
+  </script>
+</head>
+<body>
+  <div id="root">
+    <!-- Loading fallback with inline styles for speed -->
+    <div style="
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      background: #111827; 
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    ">
+      <div style="text-align: center;">
+        <div class="loading-spinner" style="margin: 0 auto 1rem;"></div>
+        <div style="font-size: 1.125rem; font-weight: 600;">Loading Carré Sports...</div>
+        <div style="color: #9ca3af; font-size: 0.875rem; margin-top: 0.5rem;">
+          Optimizing performance for you
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Performance: Module preload for main script -->
+  <script type="module" src="/src/index.tsx" fetchpriority="high"></script>
+  
+  <!-- Performance: Non-blocking analytics -->
+  <script>
+    // Defer analytics loading
+    setTimeout(() => {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+          // Analytics will be loaded by the main app
+        });
+      }
+    }, 2000);
+  </script>
+</body>
+</html> 
