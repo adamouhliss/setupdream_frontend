@@ -278,7 +278,7 @@ async function handleHTMLRequestUltra(request) {
       <!DOCTYPE html>
       <html><head><title>Offline</title></head>
       <body style="font-family:system-ui;text-align:center;padding:50px;background:#111827;color:white;">
-        <h1>⚡ Setup Dream</h1>
+        <h1>⚡ Setup dream</h1>
         <p>Connection temporarily unavailable</p>
         <button onclick="location.reload()">Retry</button>
       </body></html>
