@@ -85,7 +85,7 @@ const TrendingSection = () => {
         <section className="py-24 bg-gray-950 relative overflow-hidden border-t border-gray-900">
             {/* Dynamic Background Elements */}
             <div className="absolute top-1/2 left-1/4 w-[800px] h-[800px] bg-indigo-900/10 rounded-full blur-[120px] pointer-events-none -translate-y-1/2" />
-            <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gold-600/5 rounded-full blur-[100px] pointer-events-none translate-y-1/3" />
+            <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-primary-600/5 rounded-full blur-[100px] pointer-events-none translate-y-1/3" />
 
             <div className="max-w-[1920px] mx-auto relative z-10 group/section">
 
@@ -94,7 +94,7 @@ const TrendingSection = () => {
                     <motion.span
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="inline-block py-1 px-3 border border-gold-500/30 rounded-full bg-gold-500/10 text-gold-400 text-xs font-bold tracking-widest uppercase font-montserrat mb-4"
+                        className="inline-block py-1 px-3 border border-primary-500/50 bg-primary-500/10 text-primary-400 text-xs font-bold tracking-widest uppercase font-display mb-4 shadow-[0_0_10px_rgba(239,68,68,0.2)]"
                     >
                         {t('products.trending', 'Tendances du moment')}
                     </motion.span>
@@ -103,7 +103,7 @@ const TrendingSection = () => {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-4xl md:text-6xl font-black font-playfair text-white mb-6"
+                        className="text-4xl md:text-6xl font-black font-display uppercase tracking-wider text-white mb-6"
                     >
                         {t('trending.titleSelection')}
                     </motion.h2>
@@ -112,7 +112,7 @@ const TrendingSection = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-400 font-lora text-lg max-w-2xl mx-auto"
+                        className="text-gray-400 font-sans text-lg max-w-2xl mx-auto"
                     >
                         {t('trending.subtitle')}
                     </motion.p>
@@ -121,14 +121,14 @@ const TrendingSection = () => {
                     <div className="hidden md:flex justify-end gap-2 absolute bottom-0 right-8">
                         <button
                             onClick={() => scroll('left')}
-                            className="w-12 h-12 rounded-full border border-gray-700 bg-gray-900/50 hover:bg-gold-500 hover:border-gold-500 hover:text-gray-900 text-white flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+                            className="w-12 h-12 rounded-none border border-dark-600 bg-dark-900 hover:bg-primary-600 hover:border-primary-500 hover:text-white hover:shadow-neon flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                             aria-label="Scroll left"
                         >
                             <ChevronLeftIcon className="w-6 h-6" />
                         </button>
                         <button
                             onClick={() => scroll('right')}
-                            className="w-12 h-12 rounded-full border border-gray-700 bg-gray-900/50 hover:bg-gold-500 hover:border-gold-500 hover:text-gray-900 text-white flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+                            className="w-12 h-12 rounded-none border border-dark-600 bg-dark-900 hover:bg-primary-600 hover:border-primary-500 hover:text-white hover:shadow-neon flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                             aria-label="Scroll right"
                         >
                             <ChevronRightIcon className="w-6 h-6" />
@@ -144,10 +144,10 @@ const TrendingSection = () => {
 
                     {/* Drag Hint Overlay - Fades out on first scroll */}
                     <div className={`absolute inset-0 z-30 pointer-events-none flex items-center justify-center transition-opacity duration-700 ${showDragHint ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="bg-black/40 backdrop-blur-md px-6 py-3 rounded-full border border-white/10 flex items-center gap-3 text-white/80 animate-pulse">
-                            <ArrowLongRightIcon className="w-5 h-5 rotate-180" />
-                            <span className="text-xs font-bold uppercase tracking-widest font-montserrat">{t('trending.dragHint')}</span>
-                            <ArrowLongRightIcon className="w-5 h-5" />
+                        <div className="bg-black/60 backdrop-blur-md px-6 py-3 border border-primary-500/30 shadow-neon flex items-center gap-3 text-white/80 animate-pulse">
+                            <ArrowLongRightIcon className="w-5 h-5 rotate-180 text-primary-500" />
+                            <span className="text-xs font-bold uppercase tracking-widest font-display text-primary-400">{t('trending.dragHint')}</span>
+                            <ArrowLongRightIcon className="w-5 h-5 text-primary-500" />
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@ const TrendingSection = () => {
                         {loading ? (
                             // Skeleton Loading
                             Array.from({ length: 4 }).map((_, i) => (
-                                <div key={i} className="min-w-[280px] md:min-w-[350px] aspect-[3/5] bg-gray-900 rounded-3xl animate-pulse border border-white/5" />
+                                <div key={i} className="min-w-[280px] md:min-w-[350px] aspect-[3/5] bg-dark-900 border border-dark-700 animate-pulse" />
                             ))
                         ) : (
                             products.map((product, idx) => (
@@ -176,7 +176,7 @@ const TrendingSection = () => {
                                 >
                                     <ProductCard
                                         product={product}
-                                        className="bg-gray-900 border-gray-800 h-full !shadow-none hover:!shadow-2xl hover:!shadow-gold-900/10 hover:!border-gold-500/30 transition-all duration-500"
+                                        className="bg-dark-900 border-dark-700 h-full !shadow-none hover:shadow-neon hover:border-primary-500/50 transition-all duration-500"
                                         showRating={false}
                                         priority={idx < 2} // Eager load first 2 items
                                         layout="grid"
@@ -192,11 +192,11 @@ const TrendingSection = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 className="min-w-[200px] flex items-center justify-center"
                             >
-                                <Link to="/products?sort=trending" className="group flex flex-col items-center gap-4 text-white hover:text-gold-400 transition-colors">
-                                    <div className="w-20 h-20 rounded-full border-2 border-white/10 group-hover:border-gold-500 flex items-center justify-center transition-all duration-300 bg-white/5 group-hover:bg-gold-500/10">
-                                        <ArrowLongRightIcon className="w-8 h-8" />
+                                <Link to="/products?sort=trending" className="group flex flex-col items-center gap-4 text-white hover:text-primary-400 transition-colors">
+                                    <div className="w-20 h-20 rounded-none border border-dark-600 group-hover:border-primary-500 flex items-center justify-center transition-all duration-300 bg-dark-900 group-hover:bg-primary-600/20 group-hover:shadow-neon">
+                                        <ArrowLongRightIcon className="w-8 h-8 text-white group-hover:text-primary-400" />
                                     </div>
-                                    <span className="font-montserrat font-bold tracking-widest uppercase text-sm">
+                                    <span className="font-display font-bold tracking-widest uppercase text-sm">
                                         {t('products.viewAll', 'View All')}
                                     </span>
                                 </Link>

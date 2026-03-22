@@ -77,7 +77,7 @@ export default function ProductCard({
     if (layout === 'list') {
         return (
             <div
-                className={`group flex bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700/50 ${className}`}
+                className={`group flex bg-dark-900 rounded-none overflow-hidden transition-all duration-300 border border-dark-700 hover:border-primary-500/50 hover:shadow-neon ${className}`}
             >
                 {/* Image Section - Left */}
                 <div className="relative w-1/3 min-w-[120px] aspect-[4/5] sm:aspect-square">
@@ -99,8 +99,8 @@ export default function ProductCard({
                                     </span>
                                 )}
                                 {product.is_featured && (
-                                    <span className="bg-gold-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
-                                        Star
+                                    <span className="bg-primary-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-none uppercase tracking-widest shadow-neon border border-primary-500">
+                                        Premier
                                     </span>
                                 )}
                                 {product.sale_price && (
@@ -127,19 +127,19 @@ export default function ProductCard({
                 <div className="flex-1 p-4 flex flex-col justify-between">
                     <div>
                         <div className="flex justify-between items-start mb-1">
-                            <span className="text-xs font-semibold text-gold-500 uppercase tracking-wide">
+                            <span className="text-[10px] font-bold font-display text-primary-500 uppercase tracking-widest">
                                 {product.category?.name || 'Equipment'}
                             </span>
                             {showRating && (
                                 <div className="flex items-center gap-1">
-                                    <StarSolidIcon className="w-3 h-3 text-gold-400" />
-                                    <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">4.8</span>
+                                    <StarSolidIcon className="w-3 h-3 text-primary-500" />
+                                    <span className="text-xs text-gray-400 font-display font-medium tracking-widest">4.8</span>
                                 </div>
                             )}
                         </div>
 
                         <Link to={getProductUrl(product)}>
-                            <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-gray-100 group-hover:text-gold-500 transition-colors mb-2 line-clamp-2">
+                            <h3 className="text-base sm:text-lg font-bold font-display uppercase tracking-wider text-gray-100 group-hover:text-primary-400 transition-colors mb-2 line-clamp-2">
                                 {product.name}
                             </h3>
                         </Link>
@@ -164,9 +164,9 @@ export default function ProductCard({
                         <button
                             onClick={handleQuickAdd}
                             disabled={product.stock_quantity <= 0}
-                            className={`flex-1 px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center justify-center gap-2 ${product.stock_quantity <= 0
-                                ? 'bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
-                                : 'bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gold-500 dark:hover:bg-gold-500 hover:text-white dark:hover:text-white'
+                            className={`flex-1 px-4 py-2 rounded-none text-sm font-bold font-display tracking-widest uppercase transition-all flex items-center justify-center gap-2 border ${product.stock_quantity <= 0
+                                ? 'bg-dark-800 border-dark-600 text-gray-500 cursor-not-allowed'
+                                : 'bg-primary-600 border-primary-500 text-white hover:bg-primary-500 hover:shadow-neon hover:-translate-y-0.5'
                                 }`}
                             aria-label={product.stock_quantity <= 0 ? `${product.name} is Sold Out` : `Add ${product.name} to cart`}
                         >
@@ -176,7 +176,7 @@ export default function ProductCard({
                         {showWishlist && (
                             <button
                                 onClick={handleWishlist}
-                                className="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gold-500 hover:text-gold-500 transition-colors"
+                                className="w-10 h-10 flex items-center justify-center rounded-none border border-dark-600 hover:border-primary-500 hover:text-primary-500 hover:bg-primary-500/10 transition-all hover:shadow-neon"
                                 aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
                             >
                                 {isWishlisted ? (
@@ -195,7 +195,7 @@ export default function ProductCard({
     // Default Grid Layout
     return (
         <div
-            className={`group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-gold-900/20 transition-all duration-500 border border-gray-100 dark:border-white/5 hover:-translate-y-2 ${className}`}
+            className={`group relative bg-dark-900 rounded-none overflow-hidden transition-all duration-500 border border-dark-700 hover:border-primary-500/50 hover:shadow-neon hover:-translate-y-2 ${className}`}
         >
             {/* Image Container */}
             <div className="relative aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-gray-700">
@@ -225,7 +225,7 @@ export default function ProductCard({
                                 </span>
                             )}
                             {product.is_featured && (
-                                <span className="bg-gold-500 text-gray-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg flex items-center gap-1 font-montserrat border border-gold-400">
+                                <span className="bg-primary-600 text-white text-[10px] font-bold px-3 py-1 rounded-none uppercase tracking-widest shadow-neon flex items-center gap-1 font-display border border-primary-500">
                                     <StarSolidIcon className="w-3 h-3" /> Premier
                                 </span>
                             )}
@@ -243,7 +243,7 @@ export default function ProductCard({
                     {showWishlist && (
                         <button
                             onClick={handleWishlist}
-                            className="w-10 h-10 bg-white/95 dark:bg-gray-900/95 backdrop-blur rounded-full flex items-center justify-center shadow-lg hover:bg-gold-500 hover:text-white dark:hover:text-gray-900 transition-all text-gray-700 dark:text-gray-200"
+                            className="w-10 h-10 bg-dark-900/95 border border-dark-600 backdrop-blur rounded-none flex items-center justify-center shadow-lg hover:bg-primary-600 hover:border-primary-500 hover:text-white transition-all text-gray-200 hover:shadow-neon"
                             title="Add to Wishlist"
                             aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
                         >
@@ -256,13 +256,13 @@ export default function ProductCard({
                     )}
                     <Link
                         to={getProductUrl(product)}
-                        className="w-10 h-10 bg-white/95 dark:bg-gray-900/95 backdrop-blur rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 hover:text-white transition-all text-gray-700 dark:text-gray-200"
+                        className="w-10 h-10 bg-dark-900/95 border border-dark-600 backdrop-blur rounded-none flex items-center justify-center shadow-lg hover:bg-blue-600 hover:border-blue-500 hover:text-white transition-all text-gray-200 hover:shadow-[0_0_15px_rgba(37,99,235,0.5)]"
                         title="Quick View"
                         aria-label={`View details for ${product.name}`}
                     >
                         <EyeIcon className="w-5 h-5" />
                     </Link>
-                    <div className="w-10 h-10 bg-white/95 dark:bg-gray-900/95 backdrop-blur rounded-full flex items-center justify-center shadow-lg hover:bg-red-600 hover:text-white transition-all text-gray-700 dark:text-gray-200">
+                    <div className="w-10 h-10 bg-dark-900/95 border border-dark-600 backdrop-blur rounded-none flex items-center justify-center shadow-lg hover:bg-red-600 hover:border-red-500 hover:text-white transition-all text-gray-200 hover:shadow-[0_0_15px_rgba(220,38,38,0.5)]">
                         <PinterestSaveButton
                             url={window.location.origin + getProductUrl(product)}
                             media={getProductPrimaryImage(product.id, product.image_url)}
@@ -280,9 +280,9 @@ export default function ProductCard({
                         <button
                             onClick={handleQuickAdd}
                             disabled={product.stock_quantity <= 0}
-                            className={`w-full backdrop-blur-xl py-3.5 rounded-2xl font-bold shadow-2xl transition-all flex items-center justify-center gap-2 text-sm font-montserrat tracking-wide border border-white/10 ${product.stock_quantity <= 0
-                                ? 'bg-gray-300/90 dark:bg-gray-800/90 text-gray-500 dark:text-gray-400 cursor-not-allowed'
-                                : 'bg-white/95 dark:bg-gray-900/95 text-gray-900 dark:text-white hover:bg-gold-500 hover:text-gray-900 dark:hover:bg-gold-500 dark:hover:text-gray-900'
+                            className={`w-full backdrop-blur-xl py-3.5 rounded-none font-bold shadow-2xl transition-all flex items-center justify-center gap-2 text-sm font-display uppercase tracking-widest border border-dark-600 ${product.stock_quantity <= 0
+                                ? 'bg-dark-900/90 text-gray-500 cursor-not-allowed'
+                                : 'bg-primary-600/95 text-white hover:bg-primary-500 border-primary-500 hover:shadow-neon'
                                 }`}
                             aria-label={product.stock_quantity <= 0 ? `${product.name} is Sold Out` : `Add ${product.name} to cart`}
                         >
@@ -296,29 +296,29 @@ export default function ProductCard({
             {/* Product Details */}
             <div className="p-5">
                 <div className="mb-2 flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-gold-500 uppercase tracking-[0.2em] font-montserrat">
+                    <span className="text-[10px] font-bold text-primary-500 uppercase tracking-widest font-display">
                         {product.category?.name || 'PC Gamer'}
                     </span>
                     {showRating && (
                         <div className="flex items-center gap-1">
-                            <StarSolidIcon className="w-3 h-3 text-gold-400" />
-                            <span className="text-xs font-bold text-gray-400 font-montserrat">4.8</span>
+                            <StarSolidIcon className="w-3 h-3 text-primary-500" />
+                            <span className="text-xs font-bold text-gray-400 font-display tracking-widest">4.8</span>
                         </div>
                     )}
                 </div>
 
-                <Link to={getProductUrl(product)} className="block group-hover:text-gold-500 transition-colors duration-300">
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-1 font-playfair tracking-tight">
+                <Link to={getProductUrl(product)} className="block group-hover:text-primary-400 transition-colors duration-300">
+                    <h3 className="text-lg font-bold text-white mb-2 line-clamp-1 font-display uppercase tracking-wider">
                         {product.name}
                     </h3>
                 </Link>
 
                 <div className="flex items-baseline gap-2 mt-1">
-                    <span className="text-lg font-bold text-gray-900 dark:text-white font-montserrat">
+                    <span className="text-lg font-bold text-white font-display tracking-widest">
                         {formatMAD(product.sale_price || product.price)}
                     </span>
                     {product.sale_price && (
-                        <span className="text-xs font-medium text-gray-400 line-through font-montserrat">
+                        <span className="text-xs font-medium text-gray-500 line-through font-display tracking-widest">
                             {formatMAD(product.price)}
                         </span>
                     )}

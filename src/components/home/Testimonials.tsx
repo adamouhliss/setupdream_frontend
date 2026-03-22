@@ -43,10 +43,10 @@ const Testimonials = () => {
                         <CheckBadgeIcon className="w-5 h-5" />
                         Plus de 10,000 clients satisfaits
                     </motion.div>
-                    <h2 className="text-4xl md:text-5xl font-bold font-playfair text-white mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-wider text-white mb-6">
                         Ils nous font confiance
                     </h2>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto font-lora">
+                    <p className="text-xl text-gray-400 max-w-2xl mx-auto font-sans">
                         Découvrez pourquoi les gamers professionnels et amateurs choisissent SetupDream pour leur setup.
                     </p>
                 </div>
@@ -59,24 +59,24 @@ const Testimonials = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="bg-gray-800 p-8 rounded-3xl relative shadow-lg hover:shadow-2xl hover:shadow-gold-500/10 hover:-translate-y-2 transition-all duration-300 border border-gray-700/50"
+                            className="bg-dark-900 p-8 rounded-none relative hover:border-primary-500/50 hover:shadow-neon hover:-translate-y-2 transition-all duration-300 border border-dark-700"
                         >
-                            <div className="absolute -top-6 left-8 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-4xl text-gold-500 font-serif">
+                            <div className="absolute -top-6 left-8 w-12 h-12 bg-dark-800 border border-dark-600 rounded-none flex items-center justify-center text-3xl text-primary-500 font-display font-bold">
                                 "
                             </div>
 
                             <div className="flex gap-1 mb-6 mt-2">
                                 {[...Array(5)].map((_, i) => (
-                                    <StarIcon key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-gold-400' : 'text-gray-600'}`} />
+                                    <StarIcon key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-primary-500' : 'text-gray-700'}`} />
                                 ))}
                             </div>
 
-                            <p className="text-gray-300 font-lora text-lg mb-6 leading-relaxed">
+                            <p className="text-gray-300 font-sans text-lg mb-6 leading-relaxed">
                                 {testimonial.content}
                             </p>
 
-                            <div className="flex items-center gap-4 border-t border-gray-700/50 pt-6">
-                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-gray-900 font-bold text-lg">
+                            <div className="flex items-center gap-4 border-t border-dark-700 pt-6">
+                                <div className="w-10 h-10 rounded-none bg-primary-600 flex items-center justify-center text-white font-bold text-lg font-display">
                                     {testimonial.name.charAt(0)}
                                 </div>
                                 <div>

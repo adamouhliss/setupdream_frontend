@@ -28,10 +28,10 @@ const OptimizedHero = memo(() => {
         style={{ y, opacity, scale }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/80 via-gray-900/90 to-transparent z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-emerald-950/20 to-transparent z-10" />
-        {/* Subtle Ramadan motif / lantern glow */}
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gold-500/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-dark-900/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-primary-950/20 to-transparent z-10" />
+        {/* Subtle Cyber Neon glow */}
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary-600/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none z-10" />
 
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
@@ -62,9 +62,9 @@ const OptimizedHero = memo(() => {
               transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
               className="inline-flex items-center gap-2 bg-white/5 border border-white/10 backdrop-blur-md rounded-full px-6 py-2 mb-8"
             >
-              <div className="w-1.5 h-1.5 bg-gold-400 rounded-full animate-pulse shadow-[0_0_10px_#FACC15]"></div>
-              <span className="text-gold-100 font-medium font-montserrat text-xs uppercase tracking-[0.2em]">
-                {t('ramadan.greeting') || t('hero.title') || "PREMIUM PERFORMANCE"}
+              <div className="w-1.5 h-1.5 bg-primary-500 rounded-full animate-pulse-fast shadow-[0_0_10px_#ef4444]"></div>
+              <span className="text-primary-100 font-bold font-display text-xs uppercase tracking-[0.2em]">
+                {t('ramadan.greeting') || t('hero.title') || "EXTREME PERFORMANCE"}
               </span>
             </motion.div>
 
@@ -74,11 +74,11 @@ const OptimizedHero = memo(() => {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.3, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                className="text-5xl sm:text-6xl lg:text-8xl font-black font-playfair text-white leading-[1.1] tracking-tight"
+                className="text-5xl sm:text-6xl lg:text-8xl font-black font-display text-white leading-[1.1] tracking-tight uppercase"
               >
                 <span className="block">{t('ramadan.heroTitle') || t('hero.title') || "Elevate Your"}</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-emerald-400">
-                  {t('ramadan.heroSecondary') || t('hero.secondary') || "Game"}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-500 to-primary-700">
+                  {t('ramadan.heroSecondary') || t('hero.secondary') || "Setup"}
                 </span>
               </motion.h1>
             </div>
@@ -88,9 +88,9 @@ const OptimizedHero = memo(() => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-lora font-light leading-relaxed"
+              className="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-sans font-light leading-relaxed"
             >
-              {t('ramadan.heroSubtitle') || t('hero.subtitle') || "Discover professional-grade equipment designed for athletes who refuse to compromise."}
+              {t('ramadan.heroSubtitle') || t('hero.subtitle') || "Discover professional-grade hardware designed for gamers who refuse to bottleneck."}
             </motion.p>
 
             {/* CTA Buttons */}
@@ -102,19 +102,21 @@ const OptimizedHero = memo(() => {
             >
               <Link
                 to="/products"
-                className="group relative overflow-hidden bg-white text-gray-900 font-bold py-4 px-10 rounded-full transition-all duration-300 hover:bg-gray-100 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:-translate-y-1"
+                className="group relative overflow-hidden bg-primary-600 text-white font-bold py-4 px-10 rounded-none transition-all duration-300 hover:bg-primary-500 hover:shadow-neon hover:-translate-y-1 clipping-path-btn"
+                style={{ clipPath: "polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)" }}
               >
-                <span className="relative z-10 font-montserrat tracking-wide">
-                  {t('hero.cta') || "SHOP NOW"}
+                <span className="relative z-10 font-display tracking-widest uppercase">
+                  {t('hero.cta') || "UPGRADE NOW"}
                 </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
               </Link>
 
               <Link
                 to="/categories"
-                className="group flex items-center justify-center gap-2 text-white hover:text-gold-400 font-medium py-4 px-8 transition-all duration-300 font-montserrat tracking-wide"
+                className="group flex items-center justify-center gap-2 text-white hover:text-primary-500 font-bold py-4 px-8 transition-all duration-300 font-display tracking-widest uppercase"
               >
-                <span>{t('hero.exploreCollection', "Explore Collection")}</span>
-                <span className="transform transition-transform group-hover:translate-x-1">→</span>
+                <span>{t('hero.exploreCollection', "VIEW CATALOG")}</span>
+                <span className="transform transition-transform group-hover:translate-x-2 text-primary-500">→</span>
               </Link>
             </motion.div>
 
@@ -126,18 +128,18 @@ const OptimizedHero = memo(() => {
               className="mt-16 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 sm:gap-8 lg:gap-12 border-t border-white/5 pt-8 w-full"
             >
               <div className="text-center min-w-[80px]">
-                <p className="text-2xl sm:text-3xl font-bold text-white font-playfair">50k+</p>
-                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-montserrat mt-1">{t('hero.stats.athletes') || "Gamers"}</p>
+                <p className="text-2xl sm:text-3xl flex items-baseline justify-center font-bold text-white font-display">144<span className="text-primary-500 text-lg ml-1">Hz+</span></p>
+                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-display mt-1">{t('hero.stats.athletes') || "Average FPS"}</p>
               </div>
               <div className="hidden sm:block w-px h-8 bg-white/10" />
               <div className="text-center min-w-[80px]">
-                <p className="text-2xl sm:text-3xl font-bold text-white font-playfair">1000+</p>
-                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-montserrat mt-1">{t('hero.stats.products') || "Products"}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-white font-display">5K+</p>
+                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-display mt-1">{t('hero.stats.products') || "Hardware Parts"}</p>
               </div>
               <div className="hidden sm:block w-px h-8 bg-white/10" />
               <div className="text-center min-w-[80px]">
-                <p className="text-2xl sm:text-3xl font-bold text-white font-playfair">4.9</p>
-                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-montserrat mt-1">{t('hero.stats.satisfaction') || "Rating"}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-white font-display text-primary-400">#1</p>
+                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-display mt-1">{t('hero.stats.satisfaction') || "In Morocco"}</p>
               </div>
             </motion.div>
 

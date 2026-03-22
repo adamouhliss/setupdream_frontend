@@ -24,14 +24,14 @@ const LuxuryNewsletter = () => {
             <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
 
             {/* Glow effects */}
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-                <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-xl border border-gray-700/50 rounded-[2.5rem] p-8 md:p-16 text-center shadow-2xl relative overflow-hidden">
+                <div className="bg-gradient-to-br from-dark-900/80 to-black/80 backdrop-blur-xl border border-primary-500/30 rounded-none p-8 md:p-16 text-center shadow-neon relative overflow-hidden">
 
                     {/* Decorative border line */}
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></div>
+                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-primary-500 to-transparent"></div>
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -39,16 +39,16 @@ const LuxuryNewsletter = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-8 border border-gray-700 shadow-lg group hover:border-gold-500/50 transition-colors">
-                            <EnvelopeIcon className="w-8 h-8 text-gold-400" />
+                        <div className="w-16 h-16 bg-dark-800 rounded-none flex items-center justify-center mx-auto mb-8 border border-dark-600 shadow-neon group hover:border-primary-500 transition-colors">
+                            <EnvelopeIcon className="w-8 h-8 text-primary-500" />
                         </div>
 
-                        <h2 className="text-3xl md:text-5xl font-bold font-playfair text-white mb-6">
-                            {t('cro.newsletter.join', 'Join the')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-600">{t('cro.newsletter.innerCircle', 'Inner Circle')}</span>
+                        <h2 className="text-3xl md:text-5xl font-bold font-display uppercase tracking-wider text-white mb-6">
+                            {t('cro.newsletter.join', 'Join the')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">{t('cro.newsletter.innerCircle', 'Elite Squad')}</span>
                         </h2>
 
-                        <p className="text-gray-400 font-lora text-lg mb-10 max-w-2xl mx-auto">
-                            {t('cro.newsletter.description', 'Subscribe to receive exclusive offers, early access to new drops, and expert training tips directly to your inbox.')}
+                        <p className="text-gray-400 font-sans text-lg mb-10 max-w-2xl mx-auto">
+                            {t('cro.newsletter.description', 'Subscribe to receive exclusive offers, early access to new drops, and expert hardware tips directly to your inbox.')}
                         </p>
 
                         <form onSubmit={handleSubmit} className="max-w-md mx-auto relative group">
@@ -59,12 +59,12 @@ const LuxuryNewsletter = () => {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
-                                    className="w-full bg-gray-900/50 border border-gray-600 text-white placeholder-gray-500 px-6 py-4 rounded-full focus:outline-none focus:border-gold-500/50 focus:ring-2 focus:ring-gold-500/20 transition-all font-montserrat pr-16"
+                                    className="w-full bg-dark-900/80 border border-dark-600 text-white placeholder-gray-500 px-6 py-4 rounded-none focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all font-sans pr-16"
                                 />
                                 <button
                                     type="submit"
                                     disabled={status === 'loading' || status === 'success'}
-                                    className="absolute right-2 bg-gold-500 hover:bg-gold-400 text-black font-bold p-2.5 rounded-full transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+                                    className="absolute right-2 bg-primary-600 hover:bg-primary-500 text-white font-bold p-2.5 rounded-none transition-all hover:shadow-neon disabled:opacity-70 disabled:cursor-not-allowed"
                                 >
                                     {status === 'loading' ? (
                                         <svg className="animate-spin h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

@@ -53,41 +53,41 @@ const FlashSale = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="max-w-6xl mx-auto bg-gray-900/60 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden relative pointer-events-auto"
+                className="max-w-6xl mx-auto bg-dark-900/80 backdrop-blur-xl border border-primary-500/20 rounded-none p-8 md:p-10 shadow-dark overflow-hidden relative pointer-events-auto"
             >
                 {/* Decorative gradients */}
-                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></div>
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-500 to-transparent"></div>
                 <div className="absolute -left-32 -top-32 w-80 h-80 bg-red-600/20 rounded-full blur-[120px]"></div>
-                <div className="absolute -right-32 -bottom-32 w-80 h-80 bg-gold-600/10 rounded-full blur-[120px]"></div>
+                <div className="absolute -right-32 -bottom-32 w-80 h-80 bg-primary-600/10 rounded-full blur-[120px]"></div>
 
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10 mb-12">
 
                     {/* Left: Heading */}
                     <div className="text-center md:text-left">
                         <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
-                            <div className="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center border border-red-500/20">
-                                <BoltIcon className="w-4 h-4 text-red-500 animate-pulse" />
+                            <div className="w-8 h-8 rounded-none bg-primary-500/10 flex items-center justify-center border border-primary-500/30">
+                                <BoltIcon className="w-4 h-4 text-primary-500 animate-pulse" />
                             </div>
-                            <span className="text-red-400 font-bold uppercase tracking-[0.2em] text-xs font-montserrat">
+                            <span className="text-primary-400 font-bold uppercase tracking-widest text-[10px] font-display">
                                 {t('urgency.limitedTime', 'Offre Limitée')}
                             </span>
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-bold text-white font-playfair leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white font-display uppercase tracking-wider leading-tight">
                             {t('cro.flashSale.title', 'Vente Flash')}
                         </h2>
-                        <p className="text-gray-400 mt-2 font-light font-lora text-sm md:text-base max-w-sm">
+                        <p className="text-gray-400 mt-2 font-sans text-sm md:text-base max-w-sm">
                             {t('cro.flashSale.description', 'Une sélection exclusive de produits premium à prix exceptionnel.')}
                         </p>
                     </div>
 
                     {/* Center: Timer */}
-                    <div className="flex gap-4 md:gap-8 bg-gray-950/30 p-6 rounded-2xl border border-white/5">
+                    <div className="flex gap-4 md:gap-8 bg-dark-900/50 p-6 rounded-none border border-dark-600">
                         {Object.entries(timeLeft).map(([unit, value]) => (
                             <div key={unit} className="flex flex-col items-center min-w-[60px]">
-                                <span className="text-3xl md:text-4xl font-bold text-gold-400 font-playfair tabular-nums">
+                                <span className="text-3xl md:text-4xl font-bold text-primary-500 font-display tabular-nums shadow-[0_0_15px_rgba(239,68,68,0.2)]">
                                     {value.toString().padStart(2, '0')}
                                 </span>
-                                <span className="text-[10px] text-gray-500 uppercase mt-1 font-montserrat tracking-widest">
+                                <span className="text-[10px] text-gray-500 uppercase mt-1 font-display tracking-widest font-bold">
                                     {unit}
                                 </span>
                             </div>
@@ -98,7 +98,7 @@ const FlashSale = () => {
                     <div>
                         <Link
                             to="/products?sale=true"
-                            className="group inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-8 py-4 rounded-full font-bold hover:bg-gold-400 hover:text-gray-900 transition-all duration-300 shadow-xl hover:shadow-[0_0_30px_rgba(250,204,21,0.3)] font-montserrat hover:-translate-y-1"
+                            className="group inline-flex items-center justify-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-none font-bold hover:bg-primary-500 transition-all duration-300 shadow-neon font-display tracking-widest uppercase hover:-translate-y-1"
                         >
                             {t('cro.flashSale.cta', 'Accéder aux Offres')}
                             <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -114,7 +114,7 @@ const FlashSale = () => {
                             <ProductCard
                                 key={product.id}
                                 product={product}
-                                className="bg-gray-900/40 backdrop-blur-sm border-white/5"
+                                className="bg-dark-900/60 border-dark-600"
                             />
                         ))}
                     </div>

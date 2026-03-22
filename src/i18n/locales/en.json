@@ -156,7 +156,7 @@
     "color": "Color",
     "save": "Save",
     "added": "Added!",
-    "youMightLike": "🔥 You might also like",
+    "youMightLike": "You might also like",
     "featuredSubtitle": "Discover our most popular and highest-rated gaming setups",
     "noFeatured": "No featured products available at the moment",
     "viewAll": "View All Products",
@@ -227,9 +227,9 @@
     "subtitle": "Join thousands of gamers who trust us",
     "subtitlePremium": "Join thousands of gamers who trust us for their premium equipment.",
     "shop": "Start Shopping",
-    "shopEmoji": "🛍️ Start Shopping",
+    "shopEmoji": "Start Shopping",
     "contact": "Contact Us",
-    "contactEmoji": "💬 Contact Us"
+    "contactEmoji": "Contact Us"
   },
   "cart": {
     "title": "Shopping Cart",
@@ -554,12 +554,12 @@
   "seo": {
     "home": {
       "title": "SetupDream - Premium PC Gamer & Setups in Morocco | Casablanca, Rabat, Marrakech",
-      "description": "🏆 #1 Gaming Equipment Store in Morocco! Custom PCs, Consoles, Monitors. Stores in Casablanca, Rabat, Marrakech. Free shipping from 500 MAD.",
+      "description": "1 Gaming Equipment Store in Morocco! Custom PCs, Consoles, Monitors. Stores in Casablanca, Rabat, Marrakech. Free shipping from 500 MAD.",
       "keywords": "pc gamer morocco, gaming setups morocco, ps5 morocco, gaming equipment morocco, gaming pc casablanca, rtx 4060 pc, gaming shop morocco"
     },
     "products": {
       "title": "PC Components & Gaming Gear in Morocco | SetupDream - Casablanca, Rabat",
-      "description": "🔥 1000+ Products! PC builds, components, consoles, peripherals. Best prices in Morocco. 24h shipping. Cash on delivery available.",
+      "description": "1000+ Products! PC builds, components, consoles, peripherals. Best prices in Morocco. 24h shipping. Cash on delivery available.",
       "keywords": "cheap gaming pc morocco, buy pc casablanca, graphics card morocco, setup gamer rabat, ps5 sale morocco, gaming mouse casablanca"
     },
     "product": {
@@ -569,12 +569,12 @@
     },
     "newArrivals": {
       "title": "New Gaming Equipment 2024 Morocco | Latest Hardware - SetupDream",
-      "description": "🆕 Discover new gaming equipment 2024! Latest RTX graphics, new monitors. Exclusive to Morocco. Pre-orders now open.",
+      "description": "Discover new gaming equipment 2024! Latest RTX graphics, new monitors. Exclusive to Morocco. Pre-orders now open.",
       "keywords": "new pc gamer 2024 morocco, latest hardware morocco, new rtx gpu morocco"
     },
     "sale": {
       "title": "Gaming Equipment SALE Morocco | PC Gear -30% | SetupDream Casablanca",
-      "description": "🔥 EXCEPTIONAL SALE! Up to -30% on setups and peripherals. Limited stock. Free shipping from 500 MAD during sale.",
+      "description": "EXCEPTIONAL SALE! Up to -30% on setups and peripherals. Limited stock. Free shipping from 500 MAD during sale.",
       "keywords": "gaming equipment sale morocco, pc gamer discounts morocco, cheap setups casablanca, black friday gaming morocco"
     },
     "organization": {
@@ -586,11 +586,11 @@
     "highDemand": "This product is in high demand",
     "viewersCount": "{{count}} people are viewing this product",
     "soldInLast24h": "{{count}} sold in the last 24 hours",
-    "limitedTimeOffer": "🔥 Limited Time Offer!",
+    "limitedTimeOffer": "Limited Time Offer!",
     "saleEndsIn": "Sale ends in {{time}}",
     "saleEndingSoon": "Sale ending soon!",
     "addForFreeShipping": "Add {{amount}} MAD more for FREE shipping!",
-    "bestSeller": "🏆 Best Seller",
+    "bestSeller": "Best Seller",
     "topRated": "Top-rated product in this category",
     "limitedTime": "Limited Time"
   },

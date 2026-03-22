@@ -92,14 +92,14 @@ export default function Header() {
                     className="w-10 h-10 object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
-                  <div className="w-10 h-10 bg-gradient-to-br from-gold-400 via-gold-500 to-gold-600 rounded-xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-gold-500/20 transition-all duration-300">
-                    <span className="text-xl font-black text-white font-playfair">
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 rounded-md flex items-center justify-center group-hover:shadow-neon transition-all duration-300">
+                    <span className="text-xl font-black text-white font-display">
                       {settings?.store_name?.charAt(0) || 'S'}
                     </span>
                   </div>
                 )}
                 <div className="hidden sm:block">
-                  <h1 className="text-xl font-black font-playfair text-white tracking-tight group-hover:text-gold-400 transition-colors duration-300">
+                  <h1 className="text-xl font-black font-display text-white tracking-wider uppercase group-hover:text-primary-500 transition-colors duration-300">
                     {settings?.store_name || 'SetupDream'}
                   </h1>
                 </div>

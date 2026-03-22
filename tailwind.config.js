@@ -7,32 +7,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Gaming theme colors
+        // Red/Black Gaming theme colors
         primary: {
-          50: '#ecfeff',
-          100: '#cffafe',
-          200: '#a5f3fc',
-          300: '#67e8f9',
-          400: '#22d3ee',
-          500: '#06b6d4',
-          600: '#0891b2',
-          700: '#0e7490',
-          800: '#155e75',
-          900: '#164e63',
-          950: '#083344',
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444', // Core Primary Red
+          600: '#dc2626',
+          700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
+          950: '#450a0a',
         },
-        gold: {
-          50: '#ecfeff',
-          100: '#cffafe',
-          200: '#a5f3fc',
-          300: '#67e8f9',
-          400: '#22d3ee',
-          500: '#06b6d4',
-          600: '#0891b2',
-          700: '#0e7490',
-          800: '#155e75',
-          900: '#164e63',
-          950: '#083344',
+        gold: { // Keeping the gold key so we don't break existing components immediately, mapping to Red
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444', // Mapped to Red
+          600: '#dc2626',
+          700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
+          950: '#450a0a',
         },
         dark: {
           50: '#f8fafc',
@@ -45,7 +45,7 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
-          950: '#020617',
+          950: '#020617', // Pitch Black
         },
         accent: {
           50: '#faf5ff',
@@ -62,8 +62,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'], // Body
+        display: ['Orbitron', 'Rajdhani', 'system-ui', 'sans-serif'], // Headings
       },
       fontSize: {
         'xs': '0.75rem',
@@ -89,6 +89,7 @@ export default {
         'gradient': 'gradient 15s ease infinite',
         'float': 'float 6s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
+        'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         'fade-in': {
@@ -120,27 +121,29 @@ export default {
           '50%': { transform: 'translateY(-10px)' },
         },
         'glow': {
-          '0%': { boxShadow: '0 0 20px rgba(247, 147, 30, 0.3)' },
-          '100%': { boxShadow: '0 0 40px rgba(247, 147, 30, 0.6)' },
+          '0%': { boxShadow: '0 0 20px rgba(239, 68, 68, 0.3)' }, // Red glow
+          '100%': { boxShadow: '0 0 40px rgba(239, 68, 68, 0.6)' }, // Red glow
         },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-gold': 'linear-gradient(135deg, #06b6d4 0%, #22d3ee 50%, #0891b2 100%)',
+        'gradient-gold': 'linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%)', // Red gradient
         'gradient-dark': 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%)',
-        'mesh-gradient': 'radial-gradient(at 40% 20%, rgba(6, 182, 212, 0.4) 0px, transparent 50%), radial-gradient(at 80% 0%, rgba(168, 85, 247, 0.4) 0px, transparent 50%), radial-gradient(at 0% 50%, rgba(6, 182, 212, 0.2) 0px, transparent 50%), radial-gradient(at 80% 50%, rgba(168, 85, 247, 0.2) 0px, transparent 50%), radial-gradient(at 0% 100%, rgba(6, 182, 212, 0.3) 0px, transparent 50%), radial-gradient(at 80% 100%, rgba(168, 85, 247, 0.3) 0px, transparent 50%), radial-gradient(at 0% 0%, rgba(6, 182, 212, 0.4) 0px, transparent 50%)',
+        'mesh-gradient': 'radial-gradient(at 40% 20%, rgba(239, 68, 68, 0.2) 0px, transparent 50%), radial-gradient(at 80% 0%, rgba(153, 27, 27, 0.2) 0px, transparent 50%), radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%), radial-gradient(at 80% 50%, rgba(153, 27, 27, 0.1) 0px, transparent 50%), radial-gradient(at 0% 100%, rgba(239, 68, 68, 0.2) 0px, transparent 50%), radial-gradient(at 80% 100%, rgba(153, 27, 27, 0.2) 0px, transparent 50%), radial-gradient(at 0% 0%, rgba(239, 68, 68, 0.2) 0px, transparent 50%)',
       },
       backdropBlur: {
         xs: '2px',
       },
       boxShadow: {
-        'gold': '0 10px 40px rgba(6, 182, 212, 0.3)',
-        'gold-lg': '0 20px 60px rgba(6, 182, 212, 0.4)',
+        'gold': '0 10px 40px rgba(239, 68, 68, 0.3)', // mapped to red
+        'gold-lg': '0 20px 60px rgba(239, 68, 68, 0.4)', // mapped to red
         'dark': '0 10px 40px rgba(15, 23, 42, 0.3)',
         'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-        'glow': '0 0 20px rgba(6, 182, 212, 0.5)',
-        'inner-glow': 'inset 0 2px 4px 0 rgba(6, 182, 212, 0.1)',
+        'glow': '0 0 20px rgba(239, 68, 68, 0.5)', // red glow
+        'inner-glow': 'inset 0 2px 4px 0 rgba(239, 68, 68, 0.1)',
+        'neon': '0 0 5px theme("colors.primary.500"), 0 0 10px theme("colors.primary.500")',
+        'neon-hover': '0 0 10px theme("colors.primary.500"), 0 0 20px theme("colors.primary.500"), 0 0 30px theme("colors.primary.500")',
       },
       borderRadius: {
         '4xl': '2rem',

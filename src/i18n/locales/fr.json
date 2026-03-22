@@ -156,7 +156,7 @@
     "color": "Couleur",
     "save": "Économiser",
     "added": "Ajouté!",
-    "youMightLike": "🔥 Vous pourriez aussi aimer",
+    "youMightLike": "Vous pourriez aussi aimer",
     "featuredSubtitle": "Découvrez nos setups PC les plus populaires et les mieux notés",
     "noFeatured": "Aucun produit vedette disponible pour le moment",
     "viewAll": "Voir Tous les Produits",
@@ -229,9 +229,9 @@
     "subtitle": "Rejoignez des milliers de gamers qui nous font confiance",
     "subtitlePremium": "Rejoignez des milliers de gamers qui nous font confiance pour leur équipement premium.",
     "shop": "Commencer mes achats",
-    "shopEmoji": "🛍️ Commencer mes achats",
+    "shopEmoji": "Commencer mes achats",
     "contact": "Nous contacter",
-    "contactEmoji": "💬 Nous contacter"
+    "contactEmoji": "Nous contacter"
   },
   "cart": {
     "title": "Panier d'Achat",
@@ -559,12 +559,12 @@
   "seo": {
     "home": {
       "title": "SetupDream - PC Gamer & Setups Premium au Maroc | Casablanca, Rabat, Marrakech",
-      "description": "🏆 N°1 du PC Gamer au Maroc ! PC sur mesure, Consoles, Écrans, Chaises Gamer. Magasins à Casablanca, Rabat, Marrakech. Livraison gratuite dès 500 MAD. ⚡ Spécialiste Gaming.",
+      "description": "N°1 du PC Gamer au Maroc ! PC sur mesure, Consoles, Écrans, Chaises Gamer. Magasins à Casablanca, Rabat, Marrakech. Livraison gratuite dès 500 MAD. Spécialiste Gaming.",
       "keywords": "pc gamer maroc, setup gamer complet, rtx 4060, ps5 maroc, chaise gamer casablanca, écran 144hz rabat, clavier mécanique marrakech, vente composant pc maroc, asus rog, msi, corsair"
     },
     "products": {
       "title": "Composants PC & Matériel Gaming au Maroc | SetupDream",
-      "description": "🔥 Plus de 1000 produits Gaming ! PC, Consoles, Périphériques. Prix imbattables au Maroc. Expédition 24h Casablanca-Rabat. Paiement à la livraison disponible.",
+      "description": "Plus de 1000 produits Gaming ! PC, Consoles, Périphériques. Prix imbattables au Maroc. Expédition 24h Casablanca-Rabat. Paiement à la livraison disponible.",
       "keywords": "composant pc maroc, carte graphique pas cher, accessoires gaming casablanca, console ps5 rabat, pc portable gamer marrakech"
     },
     "product": {
@@ -574,12 +574,12 @@
     },
     "newArrivals": {
       "title": "Nouveautés Gaming 2024 Maroc | SetupDream",
-      "description": "🆕 Découvrez les nouveautés Gaming 2024 ! Dernières RTX, nouveaux écrans 240Hz. Exclusivités au Maroc. Pré-commandes ouvertes.",
+      "description": "Découvrez les nouveautés Gaming 2024 ! Dernières RTX, nouveaux écrans 240Hz. Exclusivités au Maroc. Pré-commandes ouvertes.",
       "keywords": "nouveauté pc gamer 2024 maroc, nouvelle rtx maroc, setup dream nouveautés"
     },
     "sale": {
       "title": "Vente Flash Gaming Maroc | SetupDream Casablanca",
-      "description": "🔥 VENTES FLASH ! Jusqu'à -30% sur les PC et accessoires. Stock limité. Livraison gratuite dès 500 MAD pendant les soldes.",
+      "description": "VENTES FLASH ! Jusqu'à -30% sur les PC et accessoires. Stock limité. Livraison gratuite dès 500 MAD pendant les soldes.",
       "keywords": "soldes pc gamer maroc, promotion setup gamer maroc, réduction matériel informatique casablanca"
     },
     "organization": {
@@ -591,11 +591,11 @@
     "highDemand": "Ce produit est très demandé",
     "viewersCount": "{{count}} personnes consultent ce produit",
     "soldInLast24h": "{{count}} vendus dans les dernières 24 heures",
-    "limitedTimeOffer": "🔥 Offre à durée limitée!",
+    "limitedTimeOffer": "Offre à durée limitée!",
     "saleEndsIn": "La vente se termine dans {{time}}",
     "saleEndingSoon": "Vente se terminant bientôt!",
     "addForFreeShipping": "Ajoutez {{amount}} MAD de plus pour la livraison GRATUITE!",
-    "bestSeller": "🏆 Meilleure vente",
+    "bestSeller": "Meilleure vente",
     "topRated": "Produit le mieux noté dans cette catégorie",
     "limitedTime": "Durée limitée"
   },

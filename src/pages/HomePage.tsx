@@ -25,9 +25,9 @@ import { generateWebSiteSchema, generateLocalBusinessSchema } from '../utils/seo
 import ScrollProgress from '../components/ui/ScrollProgress'
 
 const CATEGORY_COLORS: { [key: string]: string } = {
-  'PC Gamer': 'border-l-gold-500',
-  'Composants': 'border-l-green-500',
-  'Consoles': 'border-l-blue-500',
+  'PC Gamer': 'border-l-primary-500',
+  'Composants': 'border-l-red-500',
+  'Consoles': 'border-l-orange-500',
   'Accessoires': 'border-l-purple-500'
 }
 
@@ -125,10 +125,10 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold font-playfair text-gray-100 mb-6 relative inline-block">
-              {t('categories.title', 'Collections Premium')}
+            <h2 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-wider text-white mb-6 relative inline-block">
+              {t('categories.title', 'GEAR ARSENAL')}
               <motion.div
-                className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full"
+                className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-primary-700 shadow-neon"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
@@ -155,12 +155,12 @@ export default function HomePage() {
                   >
                     <div className={`h-full flex flex-col justify-center bg-gray-900/50 border border-gray-800 ${accentClass} border-l-4 rounded-xl p-8 relative overflow-hidden transition-all duration-300 group-hover:bg-gray-900 group-hover:-translate-y-1 group-hover:shadow-lg`}>
 
-                      <h3 className="text-2xl font-playfair font-bold text-gray-200 group-hover:text-white transition-colors duration-300 z-10 mb-2">
+                      <h3 className="text-2xl font-display uppercase tracking-widest font-bold text-gray-200 group-hover:text-primary-400 transition-colors duration-300 z-10 mb-2">
                         {i18n.language === 'fr' && (category as any).name_fr ? (category as any).name_fr : category.name}
                       </h3>
 
-                      <div className="flex items-center gap-2 text-gray-500 group-hover:text-gold-400 transition-colors text-xs font-montserrat font-bold tracking-widest uppercase">
-                        <span>{t('hero.exploreCollection')}</span>
+                      <div className="flex items-center gap-2 text-gray-500 group-hover:text-primary-500 transition-colors text-xs font-display font-bold tracking-widest uppercase">
+                        <span>{t('hero.exploreCollection', 'SYSTEM INIT')}</span>
                         <span className="transform transition-transform group-hover:translate-x-1">→</span>
                       </div>
 
@@ -180,9 +180,9 @@ export default function HomePage() {
           >
             <Link
               to="/categories"
-              className="inline-flex items-center gap-3 text-gold-400 hover:text-gold-300 transition-colors group"
+              className="inline-flex items-center gap-3 text-primary-500 hover:text-primary-400 font-bold transition-colors group"
             >
-              <span className="font-montserrat font-medium tracking-widest uppercase text-sm">{t('categories.viewAll')}</span>
+              <span className="font-display tracking-widest flex items-center gap-2 uppercase text-sm border-b border-primary-500/0 group-hover:border-primary-500/100 pb-1">{t('categories.viewAll')}</span>
               <span className="transform transition-transform group-hover:translate-x-1">→</span>
             </Link>
           </motion.div>
@@ -216,10 +216,10 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold font-playfair text-gray-100 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-wider text-white mb-6">
               {t('features.title')}
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto font-lora">
+            <p className="text-xl text-primary-100 max-w-2xl mx-auto font-sans">
               {t('features.subtitle')}
             </p>
           </motion.div>
@@ -237,30 +237,30 @@ export default function HomePage() {
                 icon: TrophyIcon,
                 title: t('features.quality.title'),
                 description: t('features.quality.description'),
-                color: "text-gold-400",
-                bgGradient: "from-gold-400/20 via-gold-500/5 to-transparent",
-                borderColor: "group-hover:border-gold-500/50",
-                hoverShadow: "group-hover:shadow-gold/20"
+                color: "text-primary-500",
+                bgGradient: "from-primary-600/20 via-primary-700/5 to-transparent",
+                borderColor: "group-hover:border-primary-500/50",
+                hoverShadow: "group-hover:shadow-neon"
               },
               {
                 id: "02",
                 icon: ShieldCheckIcon,
                 title: t('features.authentic.title'),
                 description: t('features.authentic.description'),
-                color: "text-blue-400",
-                bgGradient: "from-blue-400/20 via-blue-500/5 to-transparent",
+                color: "text-blue-500",
+                bgGradient: "from-blue-600/20 via-blue-700/5 to-transparent",
                 borderColor: "group-hover:border-blue-500/50",
-                hoverShadow: "group-hover:shadow-blue/20"
+                hoverShadow: "hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]"
               },
               {
                 id: "03",
                 icon: TruckIcon,
                 title: t('features.delivery.title'),
                 description: t('features.delivery.description'),
-                color: "text-green-400",
-                bgGradient: "from-green-400/20 via-green-500/5 to-transparent",
-                borderColor: "group-hover:border-green-500/50",
-                hoverShadow: "group-hover:shadow-green/20"
+                color: "text-red-500",
+                bgGradient: "from-red-600/20 via-red-700/5 to-transparent",
+                borderColor: "group-hover:border-red-500/50",
+                hoverShadow: "hover:shadow-[0_0_20px_rgba(239,68,68,0.5)]"
               }
             ].map((feature, index) => (
               <motion.div
@@ -272,7 +272,7 @@ export default function HomePage() {
                 <div className={`absolute -top-24 -right-24 w-64 h-64 rounded-full bg-gradient-to-br ${feature.bgGradient} blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
                 {/* Big Number */}
-                <span className="absolute top-6 right-8 text-7xl font-black text-gray-800/40 group-hover:text-gray-700/40 transition-colors duration-500 font-montserrat select-none z-0">
+                <span className="absolute top-6 right-8 text-7xl font-black text-gray-800/40 group-hover:text-primary-900/40 transition-colors duration-500 font-display select-none z-0">
                   {feature.id}
                 </span>
 
@@ -284,10 +284,10 @@ export default function HomePage() {
                   </div>
 
                   {/* Text */}
-                  <h3 className="text-2xl font-bold text-white mb-4 font-playfair group-hover:text-gold-100 transition-colors">
+                  <h3 className="text-2xl font-bold uppercase text-white mb-4 font-display tracking-widest group-hover:text-primary-400 transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-400 font-lora leading-relaxed group-hover:text-gray-300 transition-colors text-lg">
+                  <p className="text-gray-400 font-sans leading-relaxed group-hover:text-gray-300 transition-colors text-lg">
                     {feature.description}
                   </p>
                 </div>
@@ -320,30 +320,32 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 font-playfair text-white leading-tight">
-              {t('cta.titlePrefix')} <span className="text-gold-500 italic">{t('cta.titleHighlight')}</span>{t('cta.titleSuffix')}
+            <h2 className="text-4xl md:text-6xl font-bold font-display uppercase tracking-wider mb-6 text-white leading-tight">
+              {t('cta.titlePrefix')} <span className="text-primary-500 italic drop-shadow-[0_0_10px_rgba(239,68,68,0.8)]">{t('cta.titleHighlight')}</span>{t('cta.titleSuffix')}
             </h2>
-            <p className="text-xl md:text-2xl mb-10 text-gray-300 font-lora max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl mb-10 text-gray-300 font-sans max-w-2xl mx-auto">
               {t('cta.subtitlePremium')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link
                 to="/products"
-                className="group relative px-8 py-4 bg-gold-500 rounded-full text-gray-900 font-bold text-lg overflow-hidden shadow-[0_0_20px_rgba(250,204,21,0.3)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(250,204,21,0.5)] font-montserrat"
+                className="group relative px-8 py-4 bg-primary-600 rounded-none text-white font-bold text-lg overflow-hidden transition-all hover:-translate-y-1 hover:shadow-neon font-display tracking-widest uppercase"
+                style={{ clipPath: "polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)" }}
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  {t('cta.shopEmoji')}
+                  {t('cta.shopEmoji')} {t('hero.cta', 'SHOP NOW')}
                 </span>
                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
               </Link>
 
               <Link
                 to="/contact"
-                className="group px-8 py-4 bg-transparent border border-white/20 rounded-full text-white font-bold text-lg hover:bg-white/5 hover:border-white/40 transition-all font-montserrat backdrop-blur-sm"
+                className="group px-8 py-4 bg-dark-900 border border-dark-600 rounded-none text-white font-bold text-lg hover:border-primary-500 transition-all font-display tracking-widest uppercase shadow-dark"
+                style={{ clipPath: "polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)" }}
               >
                 <span className="flex items-center gap-2">
-                  {t('cta.contactEmoji')}
+                  {t('cta.contactEmoji')} {t('navigation.contact')}
                 </span>
               </Link>
             </div>

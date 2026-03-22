@@ -278,7 +278,7 @@ export default function ProductsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white pb-24">
+    <div className="min-h-screen bg-dark-950 pb-24 text-gray-200">
       {/* Dynamic Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-600/5 rounded-full blur-[100px]" />
@@ -291,17 +291,17 @@ export default function ProductsPage() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-gray-200 pb-8"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-dark-700 pb-8"
         >
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold font-playfair text-gray-900 mb-2">
+            <h1 className="text-4xl md:text-5xl font-bold font-display uppercase tracking-wider text-white mb-2">
               {searchTerm
                 ? `${t('common.resultsFor', 'Results for')} "${searchTerm}"`
                 : selectedCategoryObj
                   ? selectedCategoryObj.name
                   : t('products.allProducts', 'All Products')}
             </h1>
-            <p className="text-gray-600 font-lora text-lg max-w-xl">
+            <p className="text-gray-400 font-sans text-lg max-w-xl">
               {selectedCategoryObj?.description || t('products.pageDescription')}
             </p>
           </div>
@@ -315,14 +315,14 @@ export default function ProductsPage() {
                 placeholder={t('products.searchPlaceholder', 'Search...')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-gray-50 border border-gray-200/50 rounded-xl py-2.5 pl-10 pr-4 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-600/50 transition-all font-montserrat text-sm"
+                className="w-full bg-dark-900 border border-dark-700 rounded-none py-2.5 pl-10 pr-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-600/50 transition-all font-display tracking-widest uppercase text-sm"
               />
             </div>
 
             {/* Mobile Filter Button */}
             <button
               onClick={() => setIsMobileFilterOpen(true)}
-              className="lg:hidden flex items-center justify-center gap-2 bg-gray-50 border border-gray-200 text-gray-900 px-4 py-2.5 rounded-xl font-medium"
+              className="lg:hidden flex items-center justify-center gap-2 bg-dark-900 border border-dark-700 text-white px-4 py-2.5 rounded-none font-medium"
             >
               <AdjustmentsHorizontalIcon className="w-5 h-5 text-primary-600" />
               {t('products.filters', 'Filters')}
@@ -375,26 +375,26 @@ export default function ProductsPage() {
             {loading && products.length === 0 ? (
               <ProductGridSkeleton />
             ) : error ? (
-              <div className="text-center py-20 bg-gray-50 rounded-3xl border border-red-900/30">
-                <h3 className="text-xl font-bold text-red-400 mb-2">{t('products.errorTitle')}</h3>
-                <p className="text-gray-600 mb-6">{error}</p>
+              <div className="text-center py-20 bg-dark-900 rounded-none border border-red-900/30">
+                <h3 className="text-xl font-bold font-display tracking-wider uppercase text-red-500 mb-2">{t('products.errorTitle')}</h3>
+                <p className="text-gray-400 mb-6 font-sans">{error}</p>
                 <button
                   onClick={() => fetchProducts(0, true, selectedCategory, selectedSubcategory, searchTerm, currentSort)}
-                  className="px-6 py-2 bg-red-900/20 text-red-400 border border-red-900/50 rounded-xl hover:bg-red-900/30 transition-colors"
+                  className="px-6 py-2 bg-red-900/20 text-red-400 border border-red-900/50 rounded-none hover:bg-red-900/30 transition-colors shadow-neon"
                 >
                   {t('common.retry')}
                 </button>
               </div>
             ) : products.length === 0 ? (
-              <div className="text-center py-24 bg-gray-50 rounded-3xl border border-dashed border-gray-200">
-                <p className="text-2xl text-gray-500 font-playfair mb-2">{t('products.noResults')}</p>
-                <p className="text-gray-600">{t('products.tryAdjusting')}</p>
+              <div className="text-center py-24 bg-dark-900 rounded-none border border-dashed border-dark-700">
+                <p className="text-2xl text-gray-400 font-display uppercase tracking-wider mb-2">{t('products.noResults')}</p>
+                <p className="text-gray-500 font-sans">{t('products.tryAdjusting')}</p>
                 <button
                   onClick={() => {
                     setSearchTerm('')
                     handleCategoryChange(null)
                   }}
-                  className="mt-6 px-6 py-2 text-primary-500 border border-primary-600/30 rounded-xl hover:bg-primary-600/10 transition-colors"
+                  className="mt-6 px-6 py-2 text-primary-500 border border-primary-600/30 rounded-none hover:bg-primary-600/10 hover:border-primary-500 hover:shadow-neon transition-colors font-display tracking-widest uppercase text-sm"
                 >
                   {t('products.clearFilters')}
                 </button>
@@ -436,7 +436,7 @@ export default function ProductsPage() {
 
                 <div ref={loadMoreRef} className="h-20 mt-8 flex items-center justify-center">
                   {!hasMore && products.length > 0 && (
-                    <span className="text-gray-500 font-medium text-sm border-b border-gray-200 pb-1">
+                    <span className="text-gray-500 font-display uppercase tracking-widest text-sm border-b border-dark-700 pb-1">
                       {t('products.allProductsLoaded')}
                     </span>
                   )}
@@ -447,7 +447,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Recommendations */}
-        <section className="mt-24 pt-12 border-t border-gray-200">
+        <section className="mt-24 pt-12 border-t border-dark-700">
           <ProductRecommendations type="trending" limit={4} />
         </section>
 

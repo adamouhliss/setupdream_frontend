@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
             <div className="max-w-xl">
-              <h3 className="text-2xl font-bold text-white font-playfair mb-2">
+              <h3 className="text-2xl font-bold text-white font-display uppercase tracking-wider mb-2">
                 {t('footer.joinInnerCircle')}
               </h3>
               <p className="text-sm text-gray-500 leading-relaxed">
@@ -89,12 +89,12 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder={t('footer.enterEmailAddress')}
-                  className="flex-1 bg-gray-900/50 border border-gray-800 text-white px-4 py-3 rounded-none focus:outline-none focus:border-gold-500 transition-colors placeholder:text-gray-600"
+                  className="flex-1 bg-dark-900 border border-dark-700 text-white px-4 py-3 rounded-none focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-colors placeholder:text-gray-600"
                   aria-label={t('auth.email')}
                 />
                 <button
                   type="submit"
-                  className="bg-white text-gray-950 px-8 py-3 font-bold uppercase tracking-wider text-xs hover:bg-gold-400 transition-colors flex items-center justify-center gap-2"
+                  className="bg-primary-600 text-white px-8 py-3 font-bold uppercase tracking-wider text-xs hover:bg-primary-500 hover:shadow-neon transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   {t('footer.subscribe')}
                   <ArrowRightIcon className="w-4 h-4" />
@@ -120,7 +120,7 @@ export default function Footer() {
                     className="h-10 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity"
                   />
                 ) : (
-                  <span className="text-2xl font-black font-playfair text-white tracking-tighter uppercase">
+                  <span className="text-2xl font-bold font-display text-white tracking-widest uppercase">
                     {settings?.store_name || 'SETUPDREAM'}
                   </span>
                 )}
@@ -151,11 +151,11 @@ export default function Footer() {
             {isLoaded && (
               <div className="space-y-3 pt-4 border-t border-gray-900/50">
                 <div className="flex items-center gap-3 text-sm group">
-                  <EnvelopeIcon className="w-4 h-4 text-gray-600 group-hover:text-gold-500 transition-colors" />
+                  <EnvelopeIcon className="w-4 h-4 text-gray-600 group-hover:text-primary-500 transition-colors" />
                   <a href={`mailto:${settings.store_email}`} className="hover:text-white transition-colors">{settings.store_email}</a>
                 </div>
                 <div className="flex items-center gap-3 text-sm group">
-                  <MapPinIcon className="w-4 h-4 text-gray-600 group-hover:text-gold-500 transition-colors" />
+                  <MapPinIcon className="w-4 h-4 text-gray-600 group-hover:text-primary-500 transition-colors" />
                   <span className="hover:text-white transition-colors">{settings.store_address}</span>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export default function Footer() {
               <ul className="space-y-4 text-sm">
                 {quickLinks.map((link) => (
                   <li key={link.name}>
-                    <Link to={link.href} className="hover:text-gold-400 transition-colors block py-0.5">
+                        <Link to={link.href} className="hover:text-primary-500 hover:translate-x-1 inline-block transition-all duration-300 py-0.5">
                       {link.name}
                     </Link>
                   </li>
@@ -188,7 +188,7 @@ export default function Footer() {
               <ul className="space-y-4 text-sm">
                 {companyLinks.map((link) => (
                   <li key={link.name}>
-                    <Link to={link.href} className="hover:text-gold-400 transition-colors block py-0.5">
+                        <Link to={link.href} className="hover:text-primary-500 hover:translate-x-1 inline-block transition-all duration-300 py-0.5">
                       {link.name}
                     </Link>
                   </li>
@@ -202,7 +202,7 @@ export default function Footer() {
               <ul className="space-y-4 text-sm">
                 {supportLinks.map((link) => (
                   <li key={link.name}>
-                    <Link to={link.href} className="hover:text-gold-400 transition-colors block py-0.5">
+                        <Link to={link.href} className="hover:text-primary-500 hover:translate-x-1 inline-block transition-all duration-300 py-0.5">
                       {link.name}
                     </Link>
                   </li>
