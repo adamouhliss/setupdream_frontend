@@ -61,94 +61,80 @@ export default function Header() {
 
   // Header specific styles for dynamic scroll effect
   const headerClass = `
-    sticky top-0 z-40 transition-all duration-300 w-full flex flex-col
+    sticky top-0 z-40 transition-all duration-300 w-full
     ${isScrolled
-      ? 'shadow-lg border-b border-gray-800'
-      : 'border-b border-gray-800'
+      ? 'bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-800'
+      : 'bg-gray-900 border-b border-gray-800'
     }
   `
 
   return (
     <>
       <header className={headerClass}>
-        {/* Top Bar - Dark/Black */}
-        <div className="bg-dark-950 w-full">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20 gap-4">
-              
-              {/* Left: Mobile Toggle & Logo */}
-              <div className="flex items-center gap-4">
-                <button
-                  onClick={() => setIsMobileMenuOpen(true)}
-                  className="lg:hidden p-2 text-gray-300 hover:text-white rounded-lg hover:bg-dark-800 transition-colors"
-                  aria-label="Open Menu"
-                >
-                  <Bars3Icon className="w-7 h-7" />
-                </button>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-20">
 
-                <Link to="/" className="flex items-center gap-3 md:gap-4 group">
-                  {settings?.store_logo_url ? (
-                    <img
-                      src={getImageUrl(settings.store_logo_url)}
-                      alt={settings?.store_name || 'SetupDream'}
-                      className="w-12 md:w-auto h-12 object-contain transition-transform duration-300"
-                    />
-                  ) : (
-                    <div className="flex items-center justify-center transition-all duration-300">
-                      <span className="text-xl md:text-2xl font-black text-white tracking-widest italic uppercase">
-                        {settings?.store_name || 'SETUPDREAM'}
-                      </span>
-                    </div>
-                  )}
-                </Link>
-              </div>
+            {/* Left: Mobile Toggle & Logo */}
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => setIsMobileMenuOpen(true)}
+                className="lg:hidden p-2 text-gray-300 hover:text-white rounded-lg hover:bg-gray-800 transition-colors"
+                aria-label="Open Menu"
+              >
+                <Bars3Icon className="w-7 h-7" />
+              </button>
 
-              {/* Center: Integrated Search (Desktop) */}
-              <div className="hidden lg:flex flex-1 max-w-xl mx-8 relative">
-                <div className="relative w-full group cursor-text" onClick={() => setIsSearchOpen(true)}>
-                  <div className="w-full bg-white text-gray-900 rounded-sm py-2.5 pl-4 pr-10 border-2 border-transparent group-hover:border-primary-500 transition-colors flex items-center">
-                    <span className="text-gray-400">Search components or setups...</span>
+              <Link to="/" className="flex items-center gap-3 group">
+                {settings?.store_logo_url ? (
+                  <img
+                    src={getImageUrl(settings.store_logo_url)}
+                    alt={settings?.store_name || 'SetupDream'}
+                    className="w-10 h-10 object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div className="w-10 h-10 bg-gradient-to-br from-gold-400 via-gold-500 to-gold-600 rounded-xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-gold-500/20 transition-all duration-300">
+                    <span className="text-xl font-black text-white font-playfair">
+                      {settings?.store_name?.charAt(0) || 'S'}
+                    </span>
                   </div>
-                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                    <MagnifyingGlassIcon className="h-5 w-5 text-gray-500" />
-                  </div>
-                </div>
-              </div>
-
-              {/* Right: Icons & Actions */}
-              <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+                )}
                 <div className="hidden sm:block">
-                  <LanguageSwitcher />
+                  <h1 className="text-xl font-black font-playfair text-white tracking-tight group-hover:text-gold-400 transition-colors duration-300">
+                    {settings?.store_name || 'SetupDream'}
+                  </h1>
                 </div>
-
-                {/* Mobile Search Trigger */}
-                <button
-                  onClick={() => setIsSearchOpen(true)}
-                  className="lg:hidden p-2 text-gray-300 hover:text-white hover:bg-dark-800 rounded-full transition-colors"
-                  aria-label={t('common.search') || "Search"}
-                >
-                  <MagnifyingGlassIcon className="w-6 h-6" />
-                </button>
-
-                <div className="w-px h-6 bg-dark-800 hidden sm:block mx-1"></div>
-
-                <HeaderIcons
-                  cartCount={cartItemsCount}
-                  onCartClick={toggleCart}
-                  onUserClick={handleUserClick}
-                  isAuthenticated={isAuthenticated}
-                  userInitial={user?.first_name?.[0] || user?.email?.[0]?.toUpperCase()}
-                />
-              </div>
+              </Link>
             </div>
-          </div>
-        </div>
 
-        {/* Bottom Bar - Red Navigation */}
-        <div className="hidden lg:block bg-primary-600 w-full shadow-md z-10 border-t border-primary-700">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center h-12">
-              <DesktopNav navigationItems={navigationItems} />
+            {/* Center: Desktop Nav */}
+            <DesktopNav navigationItems={navigationItems} />
+
+            {/* Right: Icons & Actions */}
+            <div className="flex items-center gap-1 sm:gap-2">
+
+              {/* Language Switcher */}
+              <div className="hidden sm:block mr-2">
+                <LanguageSwitcher />
+              </div>
+
+              {/* Search Trigger (Mobile/Desktop unique) */}
+              <button
+                onClick={() => setIsSearchOpen(true)}
+                className="p-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-full transition-colors"
+                aria-label={t('common.search') || "Search"}
+              >
+                <MagnifyingGlassIcon className="w-6 h-6" />
+              </button>
+
+              <div className="w-px h-6 bg-gray-800 mx-1 hidden sm:block"></div>
+
+              <HeaderIcons
+                cartCount={cartItemsCount}
+                onCartClick={toggleCart}
+                onUserClick={handleUserClick}
+                isAuthenticated={isAuthenticated}
+                userInitial={user?.first_name?.[0] || user?.email?.[0]?.toUpperCase()}
+              />
             </div>
           </div>
         </div>

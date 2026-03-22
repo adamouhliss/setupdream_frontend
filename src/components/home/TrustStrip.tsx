@@ -34,7 +34,7 @@ const TrustStrip = () => {
     ]
 
     return (
-        <div className="w-full bg-white border-y border-gray-100">
+        <div className="w-full bg-gray-900 border-b border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {features.map((feature, index) => (
@@ -46,14 +46,14 @@ const TrustStrip = () => {
                             viewport={{ once: true }}
                             className="flex items-center gap-4 group cursor-default"
                         >
-                            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center group-hover:bg-primary-100 transition-colors duration-300">
-                                <feature.icon className="w-6 h-6 text-primary-600" />
+                            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center group-hover:bg-gold-500/20 transition-colors duration-300">
+                                <feature.icon className="w-6 h-6 text-gold-500" />
                             </div>
                             <div className="flex flex-col">
-                                <span className="font-bold text-gray-900 text-sm md:text-base group-hover:text-primary-600 transition-colors">
+                                <span className="font-bold text-gray-100 text-sm md:text-base group-hover:text-gold-400 transition-colors">
                                     {feature.title}
                                 </span>
-                                <span className="text-gray-500 text-xs md:text-sm">
+                                <span className="text-gray-400 text-xs md:text-sm">
                                     {feature.subtitle}
                                 </span>
                             </div>

@@ -70,7 +70,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-dark-950 text-gray-400 border-t border-dark-900 font-sans">
+    <footer className="bg-gray-950 text-gray-400 border-t border-gray-900 font-sans">
 
       {/* Newsletter Section */}
       <div className="border-b border-gray-900">
@@ -89,12 +89,12 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder={t('footer.enterEmailAddress')}
-                  className="flex-1 bg-dark-900/50 border border-dark-800 text-white px-4 py-3 rounded-none focus:outline-none focus:border-primary-500 transition-colors placeholder:text-gray-600"
+                  className="flex-1 bg-gray-900/50 border border-gray-800 text-white px-4 py-3 rounded-none focus:outline-none focus:border-gold-500 transition-colors placeholder:text-gray-600"
                   aria-label={t('auth.email')}
                 />
                 <button
                   type="submit"
-                  className="bg-white text-dark-950 px-8 py-3 font-bold uppercase tracking-wider text-xs hover:bg-primary-500 hover:text-white transition-colors flex items-center justify-center gap-2"
+                  className="bg-white text-gray-950 px-8 py-3 font-bold uppercase tracking-wider text-xs hover:bg-gold-400 transition-colors flex items-center justify-center gap-2"
                 >
                   {t('footer.subscribe')}
                   <ArrowRightIcon className="w-4 h-4" />
@@ -151,11 +151,11 @@ export default function Footer() {
             {isLoaded && (
               <div className="space-y-3 pt-4 border-t border-gray-900/50">
                 <div className="flex items-center gap-3 text-sm group">
-                  <EnvelopeIcon className="w-4 h-4 text-gray-600 group-hover:text-primary-500 transition-colors" />
+                  <EnvelopeIcon className="w-4 h-4 text-gray-600 group-hover:text-gold-500 transition-colors" />
                   <a href={`mailto:${settings.store_email}`} className="hover:text-white transition-colors">{settings.store_email}</a>
                 </div>
                 <div className="flex items-center gap-3 text-sm group">
-                  <MapPinIcon className="w-4 h-4 text-gray-600 group-hover:text-primary-500 transition-colors" />
+                  <MapPinIcon className="w-4 h-4 text-gray-600 group-hover:text-gold-500 transition-colors" />
                   <span className="hover:text-white transition-colors">{settings.store_address}</span>
                 </div>
               </div>
