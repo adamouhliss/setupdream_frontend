@@ -1,4 +1,4 @@
-# 🚀 Performance Optimization Guide - Carré Sport
+# 🚀 Performance Optimization Guide - Setup dream
 
 ## Problem & Solution
 
@@ -198,4 +198,4 @@ window.performanceUtils.enableEmergencyMode()
 - FCP: Green (<1.8s)  
 - CLS: Green (<0.1)
 
-Your Carré Sport website should now load **dramatically faster** with professional-grade performance optimization! 🎉⚡ 
+Your Setup dream website should now load **dramatically faster** with professional-grade performance optimization! 🎉⚡ 

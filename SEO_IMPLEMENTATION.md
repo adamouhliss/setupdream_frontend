@@ -1,7 +1,7 @@
-# SEO Implementation Guide - Carré Sport
+# SEO Implementation Guide - Setup dream
 
 ## Overview
-This document outlines the comprehensive SEO optimization implemented for Carré Sport to achieve first-page Google rankings for sports equipment searches in both French and English.
+This document outlines the comprehensive SEO optimization implemented for Setup dream to achieve first-page Google rankings for sports equipment searches in both French and English.
 
 ## 🎯 Target Keywords
 
