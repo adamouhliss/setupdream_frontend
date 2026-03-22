@@ -29,7 +29,7 @@ export default function ProductFilters({
     const [expandedCategory, setExpandedCategory] = useState<number | null>(selectedCategory)
 
     // Deskop view standard classes
-    const desktopClasses = `bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700/50 h-fit ${className}`
+    const desktopClasses = `bg-gray-50 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/50 h-fit ${className}`
 
     // Update expanded category when selection changes externally
     useEffect(() => {
@@ -51,12 +51,12 @@ export default function ProductFilters({
         <div className="space-y-8">
             {/* Header */}
             <div className="flex items-center justify-between">
-                <h3 className="text-lg font-bold font-playfair text-white flex items-center gap-2">
-                    <FunnelIcon className="w-5 h-5 text-gold-500" />
+                <h3 className="text-lg font-bold font-playfair text-gray-900 flex items-center gap-2">
+                    <FunnelIcon className="w-5 h-5 text-primary-600" />
                     {t('products.filters', 'Filters')}
                 </h3>
                 {onMobileClose && (
-                    <button onClick={onMobileClose} className="p-2 -mr-2 text-gray-400 hover:text-white lg:hidden">
+                    <button onClick={onMobileClose} className="p-2 -mr-2 text-gray-600 hover:text-gray-900 lg:hidden">
                         <XMarkIcon className="w-6 h-6" />
                     </button>
                 )}
@@ -64,7 +64,7 @@ export default function ProductFilters({
 
             {/* Categories Accordion */}
             <div className="space-y-4">
-                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider font-montserrat">
+                <h4 className="text-sm font-bold text-gray-600 uppercase tracking-wider font-montserrat">
                     {t('products.categories', 'Categories')}
                 </h4>
 
@@ -73,8 +73,8 @@ export default function ProductFilters({
                     <button
                         onClick={() => handleCategoryClick(null)}
                         className={`w-full text-left py-2 px-3 rounded-xl transition-all duration-200 font-medium ${selectedCategory === null
-                            ? 'bg-gold-500/10 text-gold-400 border border-gold-500/20'
-                            : 'text-gray-300 hover:bg-gray-700/50 hover:text-white'
+                            ? 'bg-primary-600/10 text-primary-500 border border-primary-600/20'
+                            : 'text-gray-300 hover:bg-gray-700/50 hover:text-gray-900'
                             }`}
                     >
                         {t('products.allCategories', 'All Categories')}
@@ -83,14 +83,14 @@ export default function ProductFilters({
                     {categories.map((category) => (
                         <div key={category.id} className="space-y-1">
                             <div className={`w-full flex items-center justify-between rounded-xl transition-all duration-200 ${selectedCategory === category.id
-                                ? 'bg-gold-500/5'
+                                ? 'bg-primary-600/5'
                                 : 'hover:bg-gray-700/50'
                                 }`}>
                                 <button
                                     onClick={() => onCategoryChange(category.id)}
                                     className={`flex-1 text-left py-2 px-3 font-medium ${selectedCategory === category.id
-                                        ? 'text-gold-400'
-                                        : 'text-gray-300 hover:text-white'
+                                        ? 'text-primary-500'
+                                        : 'text-gray-300 hover:text-gray-900'
                                         }`}
                                 >
                                     {i18n.language === 'fr' && category.name_fr ? category.name_fr : category.name}
@@ -101,10 +101,10 @@ export default function ProductFilters({
                                             e.stopPropagation()
                                             setExpandedCategory(expandedCategory === category.id ? null : category.id)
                                         }}
-                                        className="p-2 mr-1 text-gray-500 hover:text-gold-400 transition-colors"
+                                        className="p-2 mr-1 text-gray-500 hover:text-primary-500 transition-colors"
                                     >
                                         <ChevronDownIcon
-                                            className={`w-4 h-4 transition-transform duration-300 ${expandedCategory === category.id ? 'rotate-180 text-gold-400' : ''
+                                            className={`w-4 h-4 transition-transform duration-300 ${expandedCategory === category.id ? 'rotate-180 text-primary-500' : ''
                                                 }`}
                                         />
                                     </button>
@@ -121,12 +121,12 @@ export default function ProductFilters({
                                         transition={{ duration: 0.3, ease: 'easeInOut' }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="pl-4 py-2 space-y-1 border-l-2 border-gray-700 ml-3">
+                                        <div className="pl-4 py-2 space-y-1 border-l-2 border-gray-200 ml-3">
                                             <button
                                                 onClick={() => onSubcategoryChange(null)}
                                                 className={`w-full text-left py-1.5 px-3 rounded-lg text-sm transition-colors ${selectedSubcategory === null
-                                                    ? 'text-gold-400 font-medium'
-                                                    : 'text-gray-400 hover:text-white'
+                                                    ? 'text-primary-500 font-medium'
+                                                    : 'text-gray-600 hover:text-gray-900'
                                                     }`}
                                             >
                                                 {t('common.all', 'All')}
@@ -136,8 +136,8 @@ export default function ProductFilters({
                                                     key={sub.id}
                                                     onClick={() => onSubcategoryChange(sub.id)}
                                                     className={`w-full text-left py-1.5 px-3 rounded-lg text-sm transition-colors ${selectedSubcategory === sub.id
-                                                        ? 'text-gold-400 font-medium bg-gold-500/5'
-                                                        : 'text-gray-400 hover:text-white'
+                                                        ? 'text-primary-500 font-medium bg-primary-600/5'
+                                                        : 'text-gray-600 hover:text-gray-900'
                                                         }`}
                                                 >
                                                     {i18n.language === 'fr' && sub.name_fr ? sub.name_fr : sub.name}
@@ -174,7 +174,7 @@ export default function ProductFilters({
                     animate={{ x: 0 }}
                     exit={{ x: '100%' }}
                     transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                    className="absolute right-0 top-0 bottom-0 w-full max-w-xs bg-gray-900 border-l border-gray-700 p-6 overflow-y-auto"
+                    className="absolute right-0 top-0 bottom-0 w-full max-w-xs bg-white border-l border-gray-200 p-6 overflow-y-auto"
                 >
                     {filterContent}
                 </motion.div>

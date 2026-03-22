@@ -21,9 +21,9 @@ export function fixImageUrl(url: string | any | null | undefined): string | null
 
   // Handle absolute URLs (http/https)
   if (url.startsWith('http')) {
-    // If it points to carresports.ma, replace with Railway URL
-    if (url.includes('carresports.ma')) {
-      return url.replace(/https?:\/\/(www\.)?carresports\.ma/, 'https://projects-backend.mlqyyh.easypanel.host');
+    // If it points to setupdream.ma, replace with Railway URL
+    if (url.includes('setupdream.ma')) {
+      return url.replace(/https?:\/\/(www\.)?setupdream\.ma/, 'https://projects-backend.mlqyyh.easypanel.host');
     }
     return url;
   }

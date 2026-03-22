@@ -53,7 +53,7 @@ export default function WhatsAppFloating() {
       className={`fixed right-6 z-50 pointer-events-auto transition-[bottom] duration-300 ease-in-out ${isNavVisible ? 'bottom-20 md:bottom-6' : 'bottom-6'}`}
     >
       <motion.a
-        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(t('whatsapp.message', 'Salut! Je suis intéressé par vos équipements sportifs.'))}`}
+        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(t('whatsapp.message', 'Salut! Je suis intéressé par vos setups PC / composants.'))}`}
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}

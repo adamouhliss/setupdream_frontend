@@ -29,7 +29,7 @@ root.render(
         }}>
           <div style={{ textAlign: 'center' }}>
             <div className="loading-critical" style={{ margin: '0 auto 1rem' }}></div>
-            <div>Loading Carré Sports...</div>
+            <div>Loading SetupDream...</div>
             <div style={{ color: '#9ca3af', fontSize: '0.875rem', marginTop: '0.5rem' }}>
               ⚡ Ultra performance mode active
             </div>

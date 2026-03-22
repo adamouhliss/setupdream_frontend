@@ -23,7 +23,7 @@ const PartnershipPage = () => {
     useSEO({
         title: t('partnerships.hero.title'),
         description: t('partnerships.hero.subtitle'),
-        keywords: 'partnership, affiliate program, sponsorship, media kit, carr\u00e9 sport',
+        keywords: 'partnership, affiliate program, sponsorship, media kit, setupdream',
         type: 'website'
     })
 
@@ -128,7 +128,7 @@ const PartnershipPage = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-400 mb-2">Represent a registered association?</p>
-                                    <a href="mailto:sponsorships@carresports.ma" className="text-white font-bold underline decoration-gold-500 decoration-2 underline-offset-4 hover:text-gold-500 transition-colors">
+                                    <a href="mailto:partnerships@setupdream.ma" className="text-white font-bold underline decoration-gold-500 decoration-2 underline-offset-4 hover:text-gold-500 transition-colors">
                                         {t('partnerships.sponsorship.cta')}
                                     </a>
                                 </div>

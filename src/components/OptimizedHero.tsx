@@ -36,9 +36,9 @@ const OptimizedHero = memo(() => {
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
           <OptimizedImage
-            src={heroBg}
-            alt="Sports Excellence"
-            className="w-full h-full object-cover"
+            src={"https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=2070&auto=format&fit=crop"}
+            alt="Gaming Excellence"
+            className="w-full h-full object-cover opacity-60 mix-blend-overlay"
             priority={true}
             fetchPriority="high"
             loading="eager"
@@ -127,11 +127,11 @@ const OptimizedHero = memo(() => {
             >
               <div className="text-center min-w-[80px]">
                 <p className="text-2xl sm:text-3xl font-bold text-white font-playfair">50k+</p>
-                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-montserrat mt-1">{t('hero.stats.athletes') || "Athletes"}</p>
+                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-montserrat mt-1">{t('hero.stats.athletes') || "Gamers"}</p>
               </div>
               <div className="hidden sm:block w-px h-8 bg-white/10" />
               <div className="text-center min-w-[80px]">
-                <p className="text-2xl sm:text-3xl font-bold text-white font-playfair">200+</p>
+                <p className="text-2xl sm:text-3xl font-bold text-white font-playfair">1000+</p>
                 <p className="text-[10px] text-gray-500 uppercase tracking-widest font-montserrat mt-1">{t('hero.stats.products') || "Products"}</p>
               </div>
               <div className="hidden sm:block w-px h-8 bg-white/10" />

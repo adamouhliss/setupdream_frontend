@@ -8,11 +8,11 @@ export const generateCanonicalUrl = (url?: string): string => {
     const currentUrl = url || window.location.href
     const urlObj = new URL(currentUrl)
     
-    // Normalize to preferred domain (www.carresports.ma)
-    let canonical = `https://www.carresports.ma${urlObj.pathname}`
+    // Normalize to preferred domain (setupdream.ma)
+    let canonical = `https://setupdream.ma${urlObj.pathname}`
     
     // Remove trailing slash except for root
-    if (canonical.endsWith('/') && canonical !== 'https://www.carresports.ma/') {
+    if (canonical.endsWith('/') && canonical !== 'https://setupdream.ma/') {
       canonical = canonical.slice(0, -1)
     }
     
@@ -43,7 +43,7 @@ export const generateCanonicalUrl = (url?: string): string => {
     console.error('Error generating canonical URL:', error)
     // Fallback to clean current URL
     const fallback = (url || window.location.href).split('?')[0].split('#')[0]
-    return fallback.endsWith('/') && fallback !== 'https://www.carresports.ma/' 
+    return fallback.endsWith('/') && fallback !== 'https://setupdream.ma/'
       ? fallback.slice(0, -1) 
       : fallback
   }

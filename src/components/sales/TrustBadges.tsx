@@ -41,7 +41,7 @@ export default function TrustBadges({
     {
       icon: CheckBadgeIcon,
       title: 'Quality Guaranteed',
-      subtitle: 'Authentic sports equipment',
+      subtitle: 'Premium gaming components',
       color: 'gold'
     },
     {

@@ -68,12 +68,12 @@ export default function CasablancaSportsPage() {
         pageType="city" 
         cityName="Casablanca"
         customTitle={i18n.language === 'fr' 
-          ? "Magasin Sport Casablanca | Carré Sport - Équipements Fitness Casablanca"
-          : "Sports Store Casablanca | Carré Sport - Fitness Equipment Casablanca"
+          ? "Boutique PC Gamer Casablanca | SetupDream - Matériel Gaming Casablanca"
+          : "Gaming PC Store Casablanca | SetupDream - Gaming Hardware Casablanca"
         }
         customDescription={i18n.language === 'fr'
-          ? "🏪 Magasin sport Casablanca chez Carré Sport ! Showroom 500m², parking gratuit. Essayage, conseil personnalisé. Ouvert 7j/7. Livraison le jour même possible."
-          : "🏪 Sports store Casablanca at Carré Sport! 500m² showroom, free parking. Try before buying, personal advice. Open 7 days. Same-day delivery available."
+          ? "🏪 Boutique gaming Casablanca chez SetupDream ! Showroom 500m², parking gratuit. Testez votre futur setup, conseil personnalisé. Ouvert 7j/7. Livraison le jour même."
+          : "🏪 Gaming store Casablanca at SetupDream! 500m² showroom, free parking. Test your future setup, personal advice. Open 7 days. Same-day delivery available."
         }
       />
 
@@ -92,9 +92,7 @@ export default function CasablancaSportsPage() {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
-                {i18n.language === 'fr' ? 'Carré Sport' : 'Carré Sport'}
-              </span>
+                {i18n.language === 'fr' ? 'SetupDream' : 'SetupDream'}
               <br />
               <span className="text-white">
                 {i18n.language === 'fr' ? 'Casablanca' : 'Casablanca'}
@@ -103,8 +101,8 @@ export default function CasablancaSportsPage() {
             
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               {i18n.language === 'fr'
-                ? "Votre spécialiste équipements sportifs à Casablanca. Matériel fitness, musculation et running de qualité professionnelle. Livraison gratuite dans tout le Grand Casablanca."
-                : "Your sports equipment specialist in Casablanca. Professional fitness, gym and running equipment. Free delivery throughout Greater Casablanca."
+                ? "Votre spécialiste PC Gamer à Casablanca. PC sur mesure, composants de qualité et périphériques gaming. Livraison gratuite dans tout le Grand Casablanca."
+                : "Your gaming PC specialist in Casablanca. Custom setups, premium components and gaming peripherals. Free delivery throughout Greater Casablanca."
               }
             </p>
 
@@ -139,8 +137,8 @@ export default function CasablancaSportsPage() {
           >
             <h2 className="text-3xl font-bold text-white mb-4">
               {i18n.language === 'fr' 
-                ? 'Pourquoi choisir Carré Sport Casablanca ?'
-                : 'Why choose Carré Sport Casablanca?'
+                ? 'Pourquoi choisir SetupDream Casablanca ?'
+                : 'Why choose SetupDream Casablanca?'
               }
             </h2>
           </motion.div>

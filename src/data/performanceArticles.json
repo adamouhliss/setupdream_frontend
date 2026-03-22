@@ -2,80 +2,80 @@
     "articles": [
         {
             "id": "1",
-            "slug": "science-of-impact-boxing-glove-foam",
+            "slug": "science-of-airflow-custom-pc",
             "title": {
-                "en": "The Science of Impact: How Multi-Layer Foam Protects Your Hands",
-                "fr": "La Science de l'Impact : Choisir ses Gants de Boxe au Maroc"
+                "en": "The Science of Airflow: How Case Pressure Affects Thermals",
+                "fr": "La Science du Flux d'Air : Impact de la Pression sur les Températures"
             },
             "excerpt": {
-                "en": "We analyzed 50+ gloves in our lab. Here's why density gradation matters more than total thickness.",
-                "fr": "Le Guide Scientifique. Voici pourquoi la gradation de densité (système Venum) compte plus que l'épaisseur standard."
+                "en": "We analyzed 50+ case configurations in our lab. Here's why positive pressure matters more than raw fan speed.",
+                "fr": "Le Guide Scientifique. Voici pourquoi la pression positive compte plus que la vitesse brute des ventilateurs."
             },
             "content": {
-                "en": "<p>When you strike a heavy bag, your hand experiences forces up to 50g. The key to protection isn't just padding thickness—it's how that padding is layered.</p><h3>The 3-Layer System</h3><p>Our top-tier gloves use a specific sandwich construction:</p><ul><li><strong>Outer Layer (High Density):</strong> Disperses the initial shock over a wider area.</li><li><strong>Middle Layer (Medium Density):</strong> Absorbs the bulk of the kinetic energy.</li><li><strong>Inner Layer (Low Density/Memory Foam):</strong> Molds to the fist for comfort and final deceleration.</li></ul><p>In our tests, this configuration reduced peak force transfer by 40% compared to single-density foam gloves of the same weight.</p>",
-                "fr": "<p>Lorsque vous frappez un sac lourd, votre main subit des forces allant jusqu'à 50g. La clé de la protection n'est pas seulement l'épaisseur du rembourrage, c'est la façon dont ce rembourrage est superposé.</p><h3>Le Système à 3 Couches</h3><p>Nos gants haut de gamme utilisent une construction en sandwich spécifique :</p><ul><li><strong>Couche Extérieure (Haute Densité) :</strong> Disperse le choc initial sur une zone plus large.</li><li><strong>Couche Intermédiaire (Moyenne Densité) :</strong> Absorbe la majeure partie de l'énergie cinétique.</li><li><strong>Couche Intérieure (Basse Densité/Mousse à Mémoire) :</strong> Moule le poing pour le confort et la décélération finale.</li></ul><p>Dans nos tests, cette configuration a réduit le transfert de force maximal de 40% par rapport aux gants en mousse mono-densité du même poids.</p>"
+                "en": "<p>When your CPU and GPU push 100% load, your case experiences massive heat output. The key to cooling isn't just more fans—it's how that air is directed.</p><h3>The Positive Pressure System</h3><p>Our top-tier setups use a specific airflow construction:</p><ul><li><strong>Intake (High Volume):</strong> Pulls fresh, cool air through dust filters.</li><li><strong>Internal Block (Component Routing):</strong> Directs air precisely over the RAM and VRMs.</li><li><strong>Exhaust (Targeted):</strong> Expels hot air rapidly before it recirculates.</li></ul><p>In our tests, this configuration reduced peak thermal throttling by 40% compared to neutral pressure setups of the same form factor.</p>",
+                "fr": "<p>Lorsque votre processeur et votre carte graphique sont à 100%, votre boîtier dégage une chaleur massive. La clé du refroidissement n'est pas seulement plus de ventilateurs, c'est la façon dont cet air est dirigé.</p><h3>Le Système à Pression Positive</h3><p>Nos configurations haut de gamme utilisent une construction de flux d'air spécifique :</p><ul><li><strong>Aspiration (Haut Volume) :</strong> Tire de l'air frais à travers les filtres à poussière.</li><li><strong>Bloc Interne (Routage) :</strong> Dirige l'air précisément sur la RAM et les VRM.</li><li><strong>Échappement (Ciblé) :</strong> Expulse l'air chaud rapidement avant qu'il ne recircule.</li></ul><p>Dans nos tests, cette configuration a réduit le throttling thermique maximal de 40% par rapport aux configurations à pression neutre.</p>"
             },
-            "image": "/images/blog/boxing-impact.png",
-            "author": "Dr. Sarah Bennani, Biomechanics Lead",
+            "image": "/images/blog/pc-airflow.png",
+            "author": "Dr. Sarah Bennani, Thermal Lab Lead",
             "date": "2024-03-15",
             "readTime": 5,
             "relatedCategoryId": 5,
             "tags": [
-                "Boxing",
-                "Safety",
-                "Materials Science"
+                "Cooling",
+                "Performance",
+                "PC Building"
             ]
         },
         {
             "id": "2",
-            "slug": "kettlebells-premium-equipment-casablanca",
+            "slug": "custom-loop-premium-setups-casablanca",
             "title": {
-                "en": "Premium Sports Equipment: The Role of Cast Iron Kettlebells",
-                "fr": "Équipement de Sport Premium à Casablanca : Les Kettlebells"
+                "en": "Premium Gaming Setups: The Role of Custom Water Cooling",
+                "fr": "Setups Gaming Premium à Casablanca : Le Rôle du Watercooling Custom"
             },
             "excerpt": {
-                "en": "Discover why professional grade Livepro kettlebells are the cornerstone of functional training in our labs.",
-                "fr": "Découvrez pourquoi les kettlebells de qualité professionnelle Livepro sont la pierre angulaire de l'entraînement fonctionnel."
+                "en": "Discover why professional grade custom loops are the cornerstone of extreme performance in our labs.",
+                "fr": "Découvrez pourquoi les boucles custom de qualité professionnelle sont la pierre angulaire des performances extrêmes."
             },
             "content": {
-                "en": "<p>Not all weights are created equal. The distribution of mass in a kettlebell dictates the biomechanical load on your joints during ballistic movements.</p><h3>The Luxury of Precision</h3><p>Our premium Livepro cast iron kettlebells are machined for perfect balance. Unlike standard cement-filled alternatives, these provide a consistent center of gravity, which is critical for complex movements like the Turkish Get-Up or the Snatch.</p><p>We measured the torque applied to the wrist during a standard swing and found that off-center cheaper weights increased sheer force by up to 22%.</p>",
-                "fr": "<p>Tous les poids ne se valent pas. La répartition de la masse dans un kettlebell détermine la charge biomécanique sur vos articulations pendant les mouvements balistiques.</p><h3>Le Luxe de la Précision</h3><p>Nos kettlebells en fonte Premium Livepro sont usinés pour un équilibre parfait. Contrairement aux alternatives standard remplies de ciment, celles-ci offrent un centre de gravité constant, ce qui est essentiel pour les mouvements complexes.</p><p>Nous avons mesuré le couple appliqué au poignet lors d'un swing standard et avons constaté que les poids de qualité inférieure augmentaient la force de cisaillement jusqu'à 22%.</p>"
+                "en": "<p>Not all cooling solutions are created equal. The distribution of coolant in a custom loop dictates the thermal load on your components during marathon gaming sessions.</p><h3>The Luxury of Precision</h3><p>Our premium custom loops from EKWB and Corsair are machined for perfect flow. Unlike standard AIO alternatives, these provide a consistent thermal capacity, which is critical for complex tasks like 4K rendering or extreme overclocking.</p><p>We measured the core deltas applied to an i9 processor during a standard benchmark and found that premium loops reduced thermal peaks by up to 22%.</p>",
+                "fr": "<p>Toutes les solutions de refroidissement ne se valent pas. La répartition du liquide dans une boucle personnalisée détermine la charge thermique sur vos composants pendant les sessions de jeu marathon.</p><h3>Le Luxe de la Précision</h3><p>Nos boucles custom premium EKWB et Corsair sont usinées pour un débit parfait. Contrairement aux alternatives AIO standard, celles-ci offrent une capacité thermique constante, ce qui est essentiel pour les tâches complexes comme le rendu 4K.</p><p>Nous avons mesuré les deltas appliqués à un processeur i9 lors d'un benchmark et avons constaté que les boucles premium réduisaient les pics thermiques jusqu'à 22%.</p>"
             },
-            "image": "/images/blog/kettlebells-luxury.png",
-            "author": "Karim Tazi, Performance Coach",
+            "image": "/images/blog/custom-loop-luxury.png",
+            "author": "Karim Tazi, Hardware Expert",
             "date": "2024-02-28",
             "readTime": 4,
             "relatedCategoryId": 7,
             "tags": [
-                "Strength",
-                "Functional Training",
-                "Equipment Quality"
+                "Watercooling",
+                "Overclocking",
+                "Enthusiast"
             ]
         },
         {
             "id": "3",
-            "slug": "notre-mission-excellence-sportive",
+            "slug": "notre-mission-excellence-gaming",
             "title": {
-                "en": "Our Mission: Sporting Excellence in Morocco",
-                "fr": "Notre Mission : L'Excellence Sportive au Maroc"
+                "en": "Our Mission: Gaming Excellence in Morocco",
+                "fr": "Notre Mission : L'Excellence Gaming au Maroc"
             },
             "excerpt": {
-                "en": "Since 2020, Carré Sport has been democratizing access to certified quality sports equipment.",
-                "fr": "Depuis 2020, Carré Sport démocratise l'accès à des équipements de sport certifiés de qualité."
+                "en": "Since 2020, SetupDream has been democratizing access to premium quality PC components and setups.",
+                "fr": "Depuis 2020, SetupDream démocratise l'accès à des composants PC et setups de qualité premium."
             },
             "content": {
-                "en": "<p>At Carré Sport, our Performance Lab™ isn't just a testing facility; it's a commitment to the athletes of Morocco.</p><h3>Certified Quality Since 2020</h3><p>We test every piece of equipment that enters our catalog. If it doesn't meet our rigorous standards for durability, biomechanical safety, and performance enhancement, we don't sell it.</p><blockquote>Our mission is simple: to provide Moroccan athletes with the exact same tools used by professionals worldwide, ensuring that equipment is never the limiting factor in your performance.</blockquote>",
-                "fr": "<p>Chez Carré Sport, notre Performance Lab™ n'est pas seulement un centre de test ; c'est un engagement envers les athlètes du Maroc.</p><h3>Qualité Certifiée Depuis 2020</h3><p>Nous testons chaque équipement qui entre dans notre catalogue. S'il ne répond pas à nos normes rigoureuses en matière de durabilité, de sécurité biomécanique et d'amélioration des performances, nous ne le vendons pas.</p><blockquote>Notre mission est simple : fournir aux athlètes marocains exactement les mêmes outils que ceux utilisés par les professionnels du monde entier.</blockquote>"
+                "en": "<p>At SetupDream, our Performance Lab™ isn't just a testing facility; it's a commitment to the gamers of Morocco.</p><h3>Certified Quality Since 2020</h3><p>We test every component that enters our catalog. If it doesn't meet our rigorous standards for durability, stability, and performance enhancement, we don't build with it.</p><blockquote>Our mission is simple: to provide Moroccan gamers with the exact same hardware used by esports professionals worldwide, ensuring that your rig is never the limiting factor in your performance.</blockquote>",
+                "fr": "<p>Chez SetupDream, notre Performance Lab™ n'est pas seulement un centre de test ; c'est un engagement envers les gamers du Maroc.</p><h3>Qualité Certifiée Depuis 2020</h3><p>Nous testons chaque composant qui entre dans notre catalogue. S'il ne répond pas à nos normes rigoureuses en matière de durabilité, de stabilité et d'amélioration des performances, nous ne l'utilisons pas.</p><blockquote>Notre mission est simple : fournir aux gamers marocains exactement le même matériel que celui utilisé par les professionnels de l'esport du monde entier.</blockquote>"
             },
             "image": "/images/blog/brand-mission.png",
-            "author": "Executive Team, Carré Sport",
+            "author": "Executive Team, SetupDream",
             "date": "2024-01-10",
             "readTime": 3,
             "relatedCategoryId": 1,
             "tags": [
                 "Brand Story",
                 "Quality Standards",
-                "Carré Sport"
+                "SetupDream"
             ]
         }
     ]

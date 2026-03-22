@@ -22,14 +22,14 @@ export default function ProductSchema({
     "image": product.images?.map((img: any) => img.url) || [],
     "brand": {
       "@type": "Brand",
-      "name": "Carré Sport"
+      "name": "SetupDream"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "Carré Sport",
-      "url": "https://carresports.ma"
+      "name": "SetupDream",
+      "url": "https://setupdream.ma"
     },
-    "category": product.category_id ? `Category ${product.category_id}` : 'Sports Equipment',
+    "category": product.category_id ? `Category ${product.category_id}` : 'Gaming Equipment',
     "sku": product.sku,
     "offers": {
       "@type": "Offer",
@@ -39,8 +39,8 @@ export default function ProductSchema({
       "priceValidUntil": new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 30 days
       "seller": {
         "@type": "Organization",
-        "name": "Carré Sport",
-        "url": "https://carresports.ma"
+        "name": "SetupDream",
+        "url": "https://setupdream.ma"
       },
       "url": getProductUrl(product),
       "itemCondition": "https://schema.org/NewCondition"

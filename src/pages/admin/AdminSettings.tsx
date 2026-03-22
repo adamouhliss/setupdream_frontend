@@ -95,11 +95,11 @@ export default function AdminSettings() {
 
   // Settings state with defaults
   const [storeSettings, setStoreSettings] = useState<StoreSettings>({
-    store_name: 'Carré Sports',
+    store_name: 'SetupDream',
     store_description: 'Premium sports equipment and apparel store in Morocco',
     store_address: 'Casablanca, Morocco',
     store_phone: '+212 5XX-XXXXXX',
-    store_email: 'info@carresports.ma',
+    store_email: 'info@setupdream.ma',
     currency: 'MAD',
     timezone: 'Africa/Casablanca',
     language: 'fr',
@@ -134,8 +134,8 @@ export default function AdminSettings() {
     smtp_username: '',
     smtp_password: '',
     smtp_use_tls: true,
-    from_email: 'noreply@carresports.ma',
-    from_name: 'Carré Sports',
+    from_email: 'noreply@setupdream.ma',
+    from_name: 'SetupDream',
     enable_order_notifications: true,
     enable_low_stock_alerts: true,
     enable_welcome_emails: true,

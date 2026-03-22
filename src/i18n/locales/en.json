@@ -61,8 +61,8 @@
     "wishlist": "Wishlist"
   },
   "hero": {
-    "title": "Premium Sports Equipment",
-    "subtitle": "Elevate your game with professional-grade sports gear. From beginners to champions, we have everything you need to excel.",
+    "title": "Premium PC & Gaming Setups",
+    "subtitle": "Elevate your gaming with professional-grade hardware. From PC builds to Consoles, we have everything you need to excel.",
     "cta": "Shop Now",
     "exploreCollection": "Explore Collection",
     "learnMore": "Learn More",
@@ -74,7 +74,7 @@
     }
   },
   "features": {
-    "title": "Why Choose Carré Sports?",
+    "title": "Why Choose SetupDream?",
     "subtitle": "We're committed to providing athletes with the finest equipment and exceptional service.",
     "quality": {
       "title": "Premium Quality",
@@ -94,17 +94,17 @@
     "exploreTitle": "Explore Our Categories",
     "exploreSubtitle": "Equipment for all sports and all levels",
     "viewAll": "View All Categories",
-    "football": "Football",
-    "basketball": "Basketball",
-    "tennis": "Tennis",
-    "running": "Running",
-    "fitness": "Fitness",
-    "accessories": "Accessories",
-    "clothing": "Clothing",
-    "shoes": "Shoes",
-    "footwear": "Shoes",
+    "football": "PC Gamer",
+    "basketball": "Laptops",
+    "tennis": "Consoles",
+    "running": "Monitors",
+    "fitness": "Components",
+    "accessories": "Peripherals",
+    "clothing": "Gaming Chairs",
+    "shoes": "Gaming Desks",
+    "footwear": "Sim Racing",
     "equipment": "Equipment",
-    "training": "Training"
+    "training": "Games"
   },
   "collections": {
     "title": "Collections",
@@ -136,7 +136,7 @@
   "products": {
     "title": "Products",
     "ourProducts": "Our",
-    "pageDescription": "Discover premium sports equipment and gear designed for champions",
+    "pageDescription": "Discover premium gaming setups and gear designed for champions",
     "loading": "Loading products...",
     "loadError": "Failed to load products. Please try again.",
     "errorTitle": "Error Loading Products",
@@ -157,7 +157,7 @@
     "save": "Save",
     "added": "Added!",
     "youMightLike": "🔥 You might also like",
-    "featuredSubtitle": "Discover our most popular and highest-rated sports equipment",
+    "featuredSubtitle": "Discover our most popular and highest-rated gaming setups",
     "noFeatured": "No featured products available at the moment",
     "viewAll": "View All Products",
     "bestSellers": "Best Sellers",
@@ -178,7 +178,7 @@
     "sku": "SKU",
     "brand": "Brand",
     "category": "Category",
-    "description": "High-quality sports equipment designed for performance and durability.",
+    "description": "High-quality gaming setups designed for performance and durability.",
     "specifications": "Specifications",
     "relatedProducts": "Related Products",
     "sortBy": "Sort by",
@@ -204,9 +204,9 @@
     "shippingReturns": "Shipping & Returns",
     "shippingReturnsDesc": "Free standard shipping on orders over 500 MAD. We offer a 30-day return policy for all unused items in original packaging. Express delivery available at checkout.",
     "authenticity": "Authenticity Guarantee",
-    "authenticityDesc": "All products sold on Carré Sport are 100% authentic and sourced directly from verified manufacturers and distributors.",
+    "authenticityDesc": "All products sold on SetupDream are 100% authentic and sourced directly from verified manufacturers and distributors.",
     "question": "Have a Question?",
-    "questionDesc": "Contact our support team 24/7 via WhatsApp or email (support@carresports.ma). We typically reply within 15 minutes.",
+    "questionDesc": "Contact our support team 24/7 via WhatsApp or email (support@setupdream.ma). We typically reply within 15 minutes.",
     "peopleViewing": "people are viewing this right now",
     "noImages": "No images available"
   },
@@ -220,12 +220,12 @@
     "subtitle": "Pick up where you left off"
   },
   "cta": {
-    "title": "Ready to start your sports journey?",
-    "titlePrefix": "Ready to start your",
-    "titleHighlight": "sports journey",
+    "title": "Ready to build your dream setup?",
+    "titlePrefix": "Ready to build your",
+    "titleHighlight": "dream setup",
     "titleSuffix": "?",
-    "subtitle": "Join thousands of athletes who trust us",
-    "subtitlePremium": "Join thousands of athletes who trust us for their premium equipment.",
+    "subtitle": "Join thousands of gamers who trust us",
+    "subtitlePremium": "Join thousands of gamers who trust us for their premium equipment.",
     "shop": "Start Shopping",
     "shopEmoji": "🛍️ Start Shopping",
     "contact": "Contact Us",
@@ -234,7 +234,7 @@
   "cart": {
     "title": "Shopping Cart",
     "empty": "Your cart is empty",
-    "emptyDescription": "Looks like you haven't added any items to your cart yet. Start exploring our premium sports equipment!",
+    "emptyDescription": "Looks like you haven't added any items to your cart yet. Start exploring our premium gaming setups!",
     "addProducts": "Add some products to get started!",
     "shopNow": "Shop Now",
     "startShopping": "Start Shopping",
@@ -453,7 +453,7 @@
     "signingIn": "Signing in...",
     "welcome": "Welcome",
     "welcomeBack": "Welcome Back",
-    "signInToAccount": "Sign in to your Carré Sports account",
+    "signInToAccount": "Sign in to your SetupDream account",
     "user": "User",
     "enterEmail": "Enter your email",
     "enterPassword": "Enter your password",
@@ -468,7 +468,7 @@
     "demoAccount": "Demo Account"
   },
   "footer": {
-    "premiumAthletics": "Premium Athletics",
+    "premiumAthletics": "SetupGaming Premium",
     "followFacebook": "Follow us on Facebook",
     "followInstagram": "Follow us on Instagram",
     "followTwitter": "Follow us on X (Twitter)",
@@ -485,7 +485,7 @@
     "phone": "Phone",
     "address": "Address",
     "stayUpdated": "Stay Updated with",
-    "newsletterDesc": "Get the latest updates on new products, exclusive offers, and sports insights delivered to your inbox.",
+    "newsletterDesc": "Get the latest updates on new products, exclusive offers, and tech insights delivered to your inbox.",
     "enterEmailAddress": "Enter your email",
     "subscribe": "Subscribe",
     "copyright": "© {{year}} {{storeName}}. All rights reserved.",
@@ -502,7 +502,7 @@
     "returns": "Returns",
     "joinInnerCircle": "Join the Inner Circle",
     "subscribePromise": "Subscribe to receive exclusive offers, early access to new collections, and performance insights.",
-    "brandDescription": "Engineered for the elite. Carré Sports provides professional-grade equipment designed to push the boundaries of human performance.",
+    "brandDescription": "Engineered for the elite. SetupDream provides professional-grade equipment designed to push the boundaries of human performance.",
     "shop": "Shop",
     "company": "Company",
     "support": "Support",
@@ -553,32 +553,32 @@
   },
   "seo": {
     "home": {
-      "title": "Carré Sport - Premium Sports Equipment in Morocco | Fitness Gear Casablanca, Rabat, Marrakech",
-      "description": "🏆 #1 Sports Equipment Store in Morocco! Fitness, gym, running gear. Stores in Casablanca, Rabat, Marrakech. Free shipping from 500 MAD. ⚡ Satisfaction guaranteed.",
-      "keywords": "sports equipment morocco, fitness equipment morocco, gym equipment morocco, sports gear morocco, athletic equipment morocco, workout equipment morocco, sports shop morocco, fitness store morocco, gym gear morocco, athletic wear morocco, sports accessories morocco, exercise equipment morocco, yoga mats morocco, dumbbells morocco, elliptical bike morocco, treadmill morocco, weight bench morocco"
+      "title": "SetupDream - Premium PC Gamer & Setups in Morocco | Casablanca, Rabat, Marrakech",
+      "description": "🏆 #1 Gaming Equipment Store in Morocco! Custom PCs, Consoles, Monitors. Stores in Casablanca, Rabat, Marrakech. Free shipping from 500 MAD.",
+      "keywords": "pc gamer morocco, gaming setups morocco, ps5 morocco, gaming equipment morocco, gaming pc casablanca, rtx 4060 pc, gaming shop morocco"
     },
     "products": {
-      "title": "Sports Equipment & Fitness Gear in Morocco | Carré Sport - Casablanca, Rabat",
-      "description": "🔥 1000+ Products! Fitness, gym, cardio, team sports equipment. Best prices in Morocco. 24h shipping Casablanca-Rabat. Cash on delivery available.",
-      "keywords": "cheap sports equipment morocco, used gym equipment morocco, fitness equipment sale casablanca, sports store rabat, gym equipment marrakech, where to buy sports equipment morocco, best sports store casablanca, fitness equipment shop rabat, gym equipment store marrakech, sports gear delivery morocco, online sports shop morocco"
+      "title": "PC Components & Gaming Gear in Morocco | SetupDream - Casablanca, Rabat",
+      "description": "🔥 1000+ Products! PC builds, components, consoles, peripherals. Best prices in Morocco. 24h shipping. Cash on delivery available.",
+      "keywords": "cheap gaming pc morocco, buy pc casablanca, graphics card morocco, setup gamer rabat, ps5 sale morocco, gaming mouse casablanca"
     },
     "product": {
-      "titleTemplate": "%s | Sports Equipment Morocco - Carré Sport Casablanca",
-      "descriptionTemplate": "✅ %s in stock in Morocco! Fast delivery Casablanca, Rabat, Marrakech. Competitive price, 2-year warranty. Secure payment. Free expert advice.",
-      "keywordsTemplate": "%s morocco, %s casablanca, %s rabat, buy %s morocco, %s price morocco, free shipping morocco"
+      "titleTemplate": "%s | Gaming Equipment Morocco - SetupDream Casablanca",
+      "descriptionTemplate": "✅ %s in stock in Morocco! Fast delivery Casablanca, Rabat, Marrakech. Competitive price. Secure payment. Free expert advice.",
+      "keywordsTemplate": "%s morocco, %s casablanca, %s rabat, buy %s morocco, %s price morocco"
     },
     "newArrivals": {
-      "title": "New Sports Equipment 2024 Morocco | Latest Fitness Gear - Carré Sport",
-      "description": "🆕 Discover new sports equipment 2024! Latest fitness gear, new running collections. Exclusive to Morocco. Pre-orders now open.",
-      "keywords": "new sports equipment 2024 morocco, latest fitness equipment morocco, new sports gear collections morocco, trending sports equipment 2024, fitness innovation morocco"
+      "title": "New Gaming Equipment 2024 Morocco | Latest Hardware - SetupDream",
+      "description": "🆕 Discover new gaming equipment 2024! Latest RTX graphics, new monitors. Exclusive to Morocco. Pre-orders now open.",
+      "keywords": "new pc gamer 2024 morocco, latest hardware morocco, new rtx gpu morocco"
     },
     "sale": {
-      "title": "Sports Equipment SALE Morocco | Fitness Gear -50% | Carré Sport Casablanca",
-      "description": "🔥 EXCEPTIONAL SALE! Up to -70% on sports equipment. Fitness, running, team sports. Limited stock. Free shipping from 300 MAD during sale.",
-      "keywords": "sports equipment sale morocco, fitness gear discounts morocco, cheap sports equipment casablanca, sports equipment deals morocco, gym equipment clearance morocco, black friday sports morocco"
+      "title": "Gaming Equipment SALE Morocco | PC Gear -30% | SetupDream Casablanca",
+      "description": "🔥 EXCEPTIONAL SALE! Up to -30% on setups and peripherals. Limited stock. Free shipping from 500 MAD during sale.",
+      "keywords": "gaming equipment sale morocco, pc gamer discounts morocco, cheap setups casablanca, black friday gaming morocco"
     },
     "organization": {
-      "description": "Carré Sport is Morocco's leading sports equipment retailer since 2020. Stores in Casablanca, Rabat, Marrakech. Over 10,000 satisfied customers. Official partner of Moroccan sports clubs."
+      "description": "SetupDream is Morocco's leading gaming equipment retailer since 2020. Stores in Casablanca, Rabat, Marrakech. Over 10,000 satisfied customers."
     }
   },
   "urgency": {
@@ -777,7 +777,7 @@
     "testimonials": {
       "badge": "Over 10,000 satisfied customers",
       "title": "They Trust Us",
-      "subtitle": "Discover why professional and amateur athletes choose Carré Sport for their equipment."
+      "subtitle": "Discover why professional and amateur athletes choose SetupDream for their equipment."
     }
   },
   "performanceLab": {
@@ -798,15 +798,15 @@
     "faqSubtitle": "Common questions from our engineering team to yours.",
     "isoCertified": "ISO 9001:2015 Certified Manufacturing",
     "seo": {
-      "title": "Performance Lab | Technical Data Hub - Carré Sport",
-      "description": "Technical performance metrics for Carré Sport equipment. Grip coefficients, tensile strength, and impact absorption data for professional athletes."
+      "title": "Performance Lab | Technical Data Hub - SetupDream",
+      "description": "Technical performance metrics for SetupDream equipment. Grip coefficients, tensile strength, and impact absorption data for professional athletes."
     },
     "latestResearch": "Latest Research",
     "readArticle": "Read Article"
   },
   "partnerships": {
     "hero": {
-      "title": "Partner with Carré Sport",
+      "title": "Partner with SetupDream",
       "subtitle": "Join the elite network of coaches, athletes, and organizations shaping the future of sports in Morocco.",
       "badge": "Official Partnerships"
     },
@@ -852,12 +852,12 @@
   },
   "mediaKit": {
     "seo": {
-      "title": "Media Kit & Brand Resources | Carré Sports",
-      "description": "Download official Carré Sports logos, brand guidelines, and access technical citations for press usage."
+      "title": "Media Kit & Brand Resources | SetupDream",
+      "description": "Download official SetupDream logos, brand guidelines, and access technical citations for press usage."
     },
     "hero": {
       "title": "Brand Resources",
-      "subtitle": "Everything you need to tell the Carré Sports story correctly.",
+      "subtitle": "Everything you need to tell the SetupDream story correctly.",
       "badge": "Press Room"
     },
     "assets": {
@@ -870,7 +870,7 @@
     },
     "story": {
       "title": "Our Mission",
-      "p1": "Carré Sports was founded in 2020 with a singular mission: to democratize access to professional-grade sports equipment in Morocco. We bridge the gap between elite manufacturing certification and local availability.",
+      "p1": "SetupDream was founded in 2020 with a singular mission: to democratize access to professional-grade gaming setups in Morocco. We bridge the gap between elite manufacturing certification and local availability.",
       "p2": "By testing every product in our local Performance Lab against global standards (ISO 9001:2015), we guarantee that Moroccan athletes train with gear that respects their ambition."
     },
     "citation": {
@@ -881,7 +881,7 @@
       "noteTitle": "Note",
       "noteText": "Please do not modify the links within the citation snippet to ensure data integrity.",
       "snippet": {
-        "text": "Carré Sports' Performance Lab verification process represents a new standard in localized equipment testing, ensuring ISO 9001:2015 compliance for all domestic manufacturing.",
+        "text": "SetupDream' Performance Lab verification process represents a new standard in localized equipment testing, ensuring ISO 9001:2015 compliance for all domestic manufacturing.",
         "source": "Performance Lab™ Data"
       }
     }

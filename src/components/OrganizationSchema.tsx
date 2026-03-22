@@ -48,8 +48,8 @@ export default function OrganizationSchema() {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": `${baseUrl}/#organization`,
-      "name": settings.store_name || "Carré Sports",
-      "alternateName": "Carré Sports Morocco",
+      "name": settings.store_name || "SetupDream",
+      "alternateName": "SetupDream Morocco",
       "url": baseUrl,
       "logo": {
         "@type": "ImageObject",
@@ -59,7 +59,7 @@ export default function OrganizationSchema() {
         "contentUrl": logoUrl
       },
       "image": logoUrl, // Google often uses this field for logos
-      "description": settings.store_description || "Équipements sportifs - Paiement à la livraison",
+      "description": settings.store_description || "PC Gamer et Setups sur Mesure - Paiement à la livraison",
       "foundingDate": "2020",
       "address": {
         "@type": "PostalAddress",
@@ -78,7 +78,7 @@ export default function OrganizationSchema() {
         },
         {
           "@type": "ContactPoint",
-          "email": settings.store_email || "info@carresports.ma",
+          "email": settings.store_email || "info@setupdream.ma",
           "contactType": "Customer Support"
         }
       ],
@@ -91,19 +91,19 @@ export default function OrganizationSchema() {
       ].filter(Boolean), // Remove undefined/null URLs
       "founder": {
         "@type": "Person",
-        "name": "Carré Sports Team"
+        "name": "SetupDream Team"
       },
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
         "value": "10-50"
       },
       "knowsAbout": [
-        "Sports Equipment",
-        "Fitness Gear", 
-        "Athletic Wear",
-        "Gym Equipment",
-        "Sports Accessories",
-        "Morocco Sports Retail"
+        "PC Gamer",
+        "Hardware PC", 
+        "Composants Informatiques",
+        "Périphériques Gaming",
+        "Setups Sur Mesure",
+        "Morocco Tech Retail"
       ],
       "areaServed": {
         "@type": "Country",
@@ -111,28 +111,28 @@ export default function OrganizationSchema() {
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Sports Equipment Catalog",
+        "name": "Gaming Equipment Catalog",
         "itemListElement": [
           {
             "@type": "OfferCatalog",
-            "name": "Fitness Equipment"
+            "name": "PC Gamer"
           },
           {
             "@type": "OfferCatalog", 
-            "name": "Sports Clothing"
+            "name": "Composants PC"
           },
           {
             "@type": "OfferCatalog",
-            "name": "Sports Accessories" 
+            "name": "Périphériques Gaming" 
           }
         ]
       },
       "brand": {
         "@type": "Brand",
-        "name": settings.store_name || "Carré Sports",
+        "name": settings.store_name || "SetupDream",
         "logo": logoUrl
       },
-      "slogan": "Équipements sportifs - Paiement à la livraison"
+      "slogan": "Setups PC sur Mesure - Paiement à la livraison"
     }
 
     // Create and add the script tag

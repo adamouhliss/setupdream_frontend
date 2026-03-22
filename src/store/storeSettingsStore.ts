@@ -38,11 +38,11 @@ interface StoreSettingsState {
 }
 
 const defaultSettings: StoreSettings = {
-  store_name: 'Carré Sports',
-  store_description: 'Carrément sport',
+  store_name: 'SetupDream',
+  store_description: 'Votre Setup de Rêve',
   store_address: 'Casablanca, Morocco',
   store_phone: '+212 522-123456',
-  store_email: 'info@carresports.ma',
+  store_email: 'info@setupdream.ma',
   currency: 'MAD',
   timezone: 'Africa/Casablanca',
   language: 'fr',

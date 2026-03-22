@@ -158,7 +158,7 @@ export default function SEOManager() {
     try {
       setLoading(true)
       // Generate sitemap with actual domain instead of localhost
-      const actualBaseUrl = 'https://carresports.ma'
+      const actualBaseUrl = 'https://setupdream.ma'
       const currentDate = new Date().toISOString().split('T')[0]
 
       const urls: SitemapUrl[] = [
@@ -693,19 +693,19 @@ export default function SEOManager() {
               <h4 className="text-lg font-semibold text-gray-100 mb-4">Target Keywords Performance</h4>
               <div className="space-y-3">
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
-                  <span className="text-gray-300">"équipements sportifs"</span>
+                  <span className="text-gray-300">"pc gamer maroc"</span>
                   <span className="text-green-400 font-semibold">Ranking Well</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
-                  <span className="text-gray-300">"sports equipment Morocco"</span>
+                  <span className="text-gray-300">"gaming pc morocco"</span>
                   <span className="text-gold-400 font-semibold">Improving</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
-                  <span className="text-gray-300">"matériel de sport"</span>
+                  <span className="text-gray-300">"setup gamer casablanca"</span>
                   <span className="text-green-400 font-semibold">Ranking Well</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-300">"fitness equipment"</span>
+                  <span className="text-gray-300">"composants pc pas cher"</span>
                   <span className="text-gold-400 font-semibold">Needs Work</span>
                 </div>
               </div>

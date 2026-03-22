@@ -24,7 +24,7 @@ export interface ProductForXML {
 export class XMLFeedGenerator {
   private baseUrl: string
 
-  constructor(baseUrl: string = 'https://www.carresports.ma') {
+  constructor(baseUrl: string = 'https://setupdream.ma') {
     this.baseUrl = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl
   }
 
@@ -32,8 +32,8 @@ export class XMLFeedGenerator {
     const header = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Carré Sport - Équipements Sportifs Premium</title>
-    <description>Découvrez notre collection premium d'équipements sportifs au Maroc</description>
+    <title>SetupDream - PC Gamer & Setups Premium</title>
+    <description>Découvrez notre catalogue de PC Gamer et composants premium au Maroc</description>
     <link>${this.baseUrl}</link>`
 
     const items = products
@@ -102,7 +102,7 @@ export class XMLFeedGenerator {
 
   private cleanDescription(description: string): string {
     if (!description) {
-      return 'Équipement sportif de qualité premium chez Carré Sport'
+      return 'PC Gamer et composants de qualité premium chez SetupDream'
     }
 
     // Remove HTML tags

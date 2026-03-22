@@ -18,7 +18,7 @@ export const generateMoroccoSitemap = async (
   products: DatabaseProduct[],
   categories: DatabaseCategory[]
 ): Promise<string> => {
-  const baseUrl = 'https://www.carresports.ma'
+  const baseUrl = 'https://setupdream.ma'
   const currentDate = new Date().toISOString().split('T')[0]
 
   const urls: SitemapUrl[] = []
@@ -107,23 +107,23 @@ export const generateMoroccoSitemap = async (
   // 5. Popular search term pages for Morocco
   const moroccoSearchTerms = [
     // French terms
-    'equipement-sport-maroc',
-    'materiel-sport-maroc',
-    'fitness-casablanca',
-    'musculation-rabat',
-    'gym-marrakech',
-    'chaussures-sport-maroc',
-    'vetements-fitness-maroc',
-    'tapis-yoga-maroc',
-    'halteres-maroc',
-    'velo-elliptique-maroc',
+    'pc-gamer-maroc',
+    'composants-pc-maroc',
+    'boutique-gaming-casablanca',
+    'setup-gamer-rabat',
+    'materiel-informatique-marrakech',
+    'ecran-gamer-maroc',
+    'clavier-mecanique-maroc',
+    'souris-gamer-maroc',
+    'carte-graphique-maroc',
+    'processeur-amd-maroc',
 
     // English terms
-    'sports-equipment-morocco',
-    'fitness-equipment-morocco',
-    'gym-equipment-morocco',
-    'sports-gear-morocco',
-    'workout-equipment-morocco'
+    'gaming-pc-morocco',
+    'pc-components-morocco',
+    'gaming-setup-morocco',
+    'gaming-gear-morocco',
+    'computer-hardware-morocco'
   ]
 
   moroccoSearchTerms.forEach(term => {
@@ -138,12 +138,12 @@ export const generateMoroccoSitemap = async (
 
   // 6. Special category pages with Morocco focus
   const specialCategories = [
-    { slug: 'fitness-maroc', priority: 0.8 },
-    { slug: 'musculation-maroc', priority: 0.8 },
-    { slug: 'cardio-maroc', priority: 0.7 },
-    { slug: 'yoga-maroc', priority: 0.7 },
-    { slug: 'running-maroc', priority: 0.7 },
-    { slug: 'crossfit-maroc', priority: 0.6 }
+    { slug: 'pc-gamer-maroc', priority: 0.8 },
+    { slug: 'composants-maroc', priority: 0.8 },
+    { slug: 'peripheriques-maroc', priority: 0.7 },
+    { slug: 'ecrans-gamer-maroc', priority: 0.7 },
+    { slug: 'chaises-gamer-maroc', priority: 0.7 },
+    { slug: 'cartes-graphiques-maroc', priority: 0.6 }
   ]
 
   specialCategories.forEach(cat => {
@@ -191,7 +191,7 @@ export const generateMoroccoSitemap = async (
 
 // Generate robots.txt with Morocco-specific sitemaps
 export const generateMoroccoRobotsTxt = (): string => {
-  const baseUrl = 'https://www.carresports.ma'
+  const baseUrl = 'https://setupdream.ma'
 
   return `User-agent: *
 Allow: /
@@ -235,7 +235,7 @@ Host: ${baseUrl}
 
 // Generate specific sitemaps for better organization
 export const generateProductsSitemap = async (products: DatabaseProduct[]): Promise<string> => {
-  const baseUrl = 'https://www.carresports.ma'
+  const baseUrl = 'https://setupdream.ma'
   const currentDate = new Date().toISOString().split('T')[0]
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -260,7 +260,7 @@ export const generateProductsSitemap = async (products: DatabaseProduct[]): Prom
     <image:image>
       <image:loc>${baseUrl}${product.image_url}</image:loc>
       <image:title>${product.name}</image:title>
-      <image:caption>Équipement sportif ${product.name} - Carré Sport Maroc</image:caption>
+      <image:caption>Matériel Gaming ${product.name} - SetupDream</image:caption>
     </image:image>`
     }
 
@@ -275,13 +275,13 @@ export const generateProductsSitemap = async (products: DatabaseProduct[]): Prom
 
 // Generate cities sitemap for local SEO
 export const generateCitiesSitemap = (): string => {
-  const baseUrl = 'https://www.carresports.ma'
+  const baseUrl = 'https://setupdream.ma'
   const currentDate = new Date().toISOString().split('T')[0]
 
   const cities = [
-    { name: 'casablanca', title: 'Magasin Sport Casablanca', priority: 0.9 },
-    { name: 'rabat', title: 'Équipements Sportifs Rabat', priority: 0.9 },
-    { name: 'marrakech', title: 'Sport Marrakech', priority: 0.9 }
+    { name: 'casablanca', title: 'Boutique PC Gamer Casablanca', priority: 0.9 },
+    { name: 'rabat', title: 'Matériel Gaming Rabat', priority: 0.9 },
+    { name: 'marrakech', title: 'PC Gamer Marrakech', priority: 0.9 }
   ]
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -311,4 +311,4 @@ export default {
   generateMoroccoRobotsTxt,
   generateProductsSitemap,
   generateCitiesSitemap
-} 
+}

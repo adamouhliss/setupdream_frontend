@@ -22,10 +22,10 @@ export default function SEOCanonical({
       let canonical = canonicalUrl
       if (!canonical) {
         const path = window.location.pathname
-        canonical = `https://www.carresports.ma${path === '/' ? '' : path}`
+        canonical = `https://setupdream.ma${path === '/' ? '' : path}`
         
         // Remove trailing slash except for root
-        if (canonical.endsWith('/') && canonical !== 'https://www.carresports.ma/') {
+        if (canonical.endsWith('/') && canonical !== 'https://setupdream.ma/') {
           canonical = canonical.slice(0, -1)
         }
       }

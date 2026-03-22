@@ -26,7 +26,7 @@ export default function NewArrivalsPage() {
 
   // SEO Optimization
   useSEO({
-    title: t('seo.newArrivals.title') || 'Nouveaux Arrivages & Collections 2024 | Carré Sport',
+    title: t('seo.newArrivals.title') || 'Nouveaux Arrivages & Collections 2024 | SetupDream',
     description: t('seo.newArrivals.description') || 'Découvrez les dernières nouveautés en équipement sportif. Machines de musculation, cardio et accessoires fraîchement arrivés.',
     keywords: t('seo.newArrivals.keywords') || 'nouveauté sport, équipement musculation 2024, matériel fitness récent, arrivage sport maroc',
     type: 'website',

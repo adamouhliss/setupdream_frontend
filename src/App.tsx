@@ -15,8 +15,8 @@ import MobileBottomNav from './components/layout/header/MobileBottomNav'
 
 // Banner components
 import FirstTimeDiscountBanner from './components/banners/FirstTimeDiscountBanner'
-import FirstTimeDiscountNotification from './components/banners/FirstTimeDiscountNotification'
-import RamadanBanner from './components/banners/RamadanBanner'
+// import FirstTimeDiscountNotification from './components/banners/FirstTimeDiscountNotification'
+// import RamadanBanner from './components/banners/RamadanBanner'
 
 // Cookie components
 import CookieConsentBanner from './components/cookies/CookieConsentBanner'
@@ -32,7 +32,7 @@ import WhatsAppFloating from './components/WhatsAppFloating'
 import DynamicFavicon from './components/DynamicFavicon'
 
 // Performance monitoring
-import PerformanceMonitor from './components/PerformanceMonitor'
+// import PerformanceMonitor from './components/PerformanceMonitor'
 import PerformanceOptimizer from './components/PerformanceOptimizer'
 import PerformanceTracker from './components/PerformanceTracker'
 
@@ -101,7 +101,7 @@ const PageLoader = () => (
 function CustomerLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      <RamadanBanner />
+      {/* <RamadanBanner /> */}
       <Header />
       <FirstTimeDiscountBanner />
 
@@ -114,7 +114,7 @@ function CustomerLayout({ children }: { children: React.ReactNode }) {
       <Footer />
 
       {/* Discount System */}
-      <FirstTimeDiscountNotification />
+      {/* <FirstTimeDiscountNotification /> */}
 
       {/* Cookie Consent System */}
       <CookieInitializer />
@@ -204,7 +204,7 @@ function App() {
       <CartDropdown />
 
       {/* Performance Monitoring */}
-      <PerformanceMonitor />
+      {/* <PerformanceMonitor /> */}
 
       {/* Performance Optimization */}
       <PerformanceOptimizer />

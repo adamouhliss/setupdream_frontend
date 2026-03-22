@@ -40,14 +40,14 @@ export default function MoroccoSEOOptimizer({
     // Fallback SEO data if generation fails
     moroccoSEO = {
       title: language === 'fr' 
-        ? "Carré Sport - Équipements Sportifs Premium au Maroc"
-        : "Carré Sport - Premium Sports Equipment in Morocco",
+        ? "SetupDream - PC Gamer et Setups Premium au Maroc"
+        : "SetupDream - Premium Gaming PCs in Morocco",
       description: language === 'fr'
-        ? "🏆 N°1 des équipements sportifs au Maroc ! Livraison gratuite dès 500 MAD."
-        : "🏆 #1 Sports Equipment Store in Morocco! Free shipping from 500 MAD.",
+        ? "🏆 N°1 du PC Gamer au Maroc ! Livraison gratuite dès 500 MAD."
+        : "🏆 #1 Gaming PC Store in Morocco! Free shipping from 500 MAD.",
       keywords: language === 'fr'
-        ? "équipement sport maroc, matériel sport maroc, équipement sportif maroc"
-        : "sports equipment morocco, fitness equipment morocco, gym equipment morocco"
+        ? "pc gamer maroc, composants pc maroc, setup gamer maroc"
+        : "gaming pc morocco, pc components morocco, gaming setup morocco"
     }
   }
 
@@ -104,7 +104,7 @@ const addMoroccoMetaTags = (language: 'fr' | 'en') => {
     { name: 'business:contact_data:phone_number', content: '+212632253960' },
     
     // E-commerce specifics
-    { name: 'product-type', content: 'sports equipment' },
+    { name: 'product-type', content: 'gaming equipment' },
     { name: 'price-currency', content: 'MAD' },
     { name: 'delivery-area', content: 'Morocco, Casablanca, Rabat, Marrakech' }
   ]

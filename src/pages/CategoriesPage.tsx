@@ -22,7 +22,7 @@ interface Category {
 }
 
 const CATEGORY_COLORS: { [key: string]: string } = {
-  'Equipment': 'border-l-gold-500',
+  'Equipment': 'border-l-primary-600',
   'Footwear': 'border-l-green-500',
   'Clothing': 'border-l-blue-500',
   'Accessories': 'border-l-purple-500'
@@ -69,16 +69,16 @@ export default function CategoriesPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-        <div className="w-16 h-16 border-t-2 border-gold-500 rounded-full animate-spin"></div>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="w-16 h-16 border-t-2 border-primary-600 rounded-full animate-spin"></div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white font-montserrat">
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-montserrat">
       {/* Minimalist Typographic Hero */}
-      <div className="py-24 px-4 sm:px-6 lg:px-8 border-b border-gray-900 bg-gray-950 relative overflow-hidden">
+      <div className="py-24 px-4 sm:px-6 lg:px-8 border-b border-gray-900 bg-gray-50 relative overflow-hidden">
         {/* Subtle pattern background */}
         <div className="absolute inset-0 opacity-5"
           style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #fff 1px, transparent 0)', backgroundSize: '40px 40px' }}>
@@ -90,10 +90,10 @@ export default function CategoriesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold font-playfair text-white mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold font-playfair text-gray-900 mb-6 tracking-tight">
               {t('collections.title')}
             </h1>
-            <p className="text-xl text-gray-400 max-w-2xl font-light">
+            <p className="text-xl text-gray-600 max-w-2xl font-light">
               {t('collections.subtitle')}
             </p>
           </motion.div>
@@ -111,9 +111,9 @@ export default function CategoriesPage() {
                 placeholder={t('collections.searchPlaceholder')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-800 text-white px-6 py-4 rounded-xl focus:ring-1 focus:ring-gold-500/50 focus:border-gold-500/50 transition-all outline-none pl-12 placeholder-gray-600"
+                className="w-full bg-white border border-gray-200 text-gray-900 px-6 py-4 rounded-xl focus:ring-1 focus:ring-primary-600/50 focus:border-primary-600/50 transition-all outline-none pl-12 placeholder-gray-600"
               />
-              <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-600 group-focus-within:text-gold-500 transition-colors" />
+              <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-600 group-focus-within:text-primary-600 transition-colors" />
             </div>
           </motion.div>
         </div>
@@ -136,18 +136,18 @@ export default function CategoriesPage() {
                 className="group relative"
               >
                 <Link to={`/products?category=${category.id}`} className="block h-full">
-                  <div className={`h-full bg-gray-900/50 hover:bg-gray-900 border border-gray-800 hover:border-gray-700 p-8 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-l-4 ${accentClass}`}>
+                  <div className={`h-full bg-white hover:bg-white border border-gray-200 hover:border-gray-200 p-8 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-l-4 ${accentClass}`}>
 
                     {/* Header */}
                     <div className="flex justify-between items-start mb-6">
-                      <h2 className="text-3xl font-playfair font-bold text-gray-100 group-hover:text-gold-400 transition-colors">
+                      <h2 className="text-3xl font-playfair font-bold text-gray-100 group-hover:text-primary-500 transition-colors">
                         {displayName}
                       </h2>
-                      <ArrowLongRightIcon className="w-6 h-6 text-gray-600 group-hover:text-gold-500 transform group-hover:translate-x-2 transition-all" />
+                      <ArrowLongRightIcon className="w-6 h-6 text-gray-600 group-hover:text-primary-600 transform group-hover:translate-x-2 transition-all" />
                     </div>
 
                     {/* Description */}
-                    <p className="text-gray-400 text-sm leading-relaxed mb-8 line-clamp-2">
+                    <p className="text-gray-600 text-sm leading-relaxed mb-8 line-clamp-2">
                       {i18n.language === 'fr' && category.description_fr ? category.description_fr : category.description || t('collections.defaultDescription', { category: displayName })}
                     </p>
 
@@ -156,7 +156,7 @@ export default function CategoriesPage() {
                       {category.subcategories.slice(0, 5).map(sub => (
                         <span
                           key={sub.id}
-                          className="px-3 py-1 bg-gray-800 border border-gray-700 text-gray-400 text-xs rounded-lg group-hover:border-gray-600 group-hover:text-gray-300 transition-colors"
+                          className="px-3 py-1 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg group-hover:border-gray-600 group-hover:text-gray-300 transition-colors"
                         >
                           {i18n.language === 'fr' && sub.name_fr ? sub.name_fr : sub.name}
                         </span>

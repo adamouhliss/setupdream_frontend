@@ -60,8 +60,8 @@
     "wishlist": "Liste de Souhaits"
   },
   "hero": {
-    "title": "Équipement Sportif Premium",
-    "subtitle": "Élevez votre jeu avec des équipements sportifs de niveau professionnel. Des débutants aux champions, nous avons tout ce dont vous avez besoin pour exceller.",
+    "title": "Setups & Pc Gamer Premium",
+    "subtitle": "Élevez votre niveau de jeu avec des équipements de niveau professionnel. Des PC aux Consoles, nous avons tout ce dont vous avez besoin pour exceller.",
     "cta": "Acheter Maintenant",
     "exploreCollection": "Explorer la Collection",
     "learnMore": "En Savoir Plus",
@@ -73,7 +73,7 @@
     }
   },
   "features": {
-    "title": "Pourquoi choisir Carré Sports?",
+    "title": "Pourquoi choisir SetupDream?",
     "subtitle": "Nous nous engageons à fournir aux athlètes les meilleurs équipements et un service exceptionnel.",
     "quality": {
       "title": "Qualité Premium",
@@ -91,19 +91,19 @@
   "categories": {
     "title": "Acheter par Catégorie",
     "exploreTitle": "Explorez nos catégories",
-    "exploreSubtitle": "Des équipements pour tous les sports et tous les niveaux",
+    "exploreSubtitle": "Des équipements pour tous les types de jeux et tous les niveaux",
     "viewAll": "Voir toutes les catégories",
-    "football": "Football",
-    "basketball": "Basketball",
-    "tennis": "Tennis",
-    "running": "Course",
-    "fitness": "Fitness",
-    "accessories": "Accessoires",
-    "clothing": "Vêtements",
-    "shoes": "Chaussures",
-    "footwear": "Chaussures",
+    "football": "PC Gamer",
+    "basketball": "PC Portable",
+    "tennis": "Consoles",
+    "running": "Écrans",
+    "fitness": "Composants",
+    "accessories": "Périphériques",
+    "clothing": "Chaises Gamer",
+    "shoes": "Bureaux RGB",
+    "footwear": "Sim Racing",
     "equipment": "Équipement",
-    "training": "Formation"
+    "training": "Jeux"
   },
   "collections": {
     "title": "Collections",
@@ -135,7 +135,7 @@
   "products": {
     "title": "Produits",
     "ourProducts": "Nos",
-    "pageDescription": "Découvrez des équipements sportifs premium et des équipements conçus pour les champions",
+    "pageDescription": "Découvrez des setups PC premium et des équipements conçus pour les champions",
     "loading": "Chargement des produits...",
     "loadError": "Impossible de charger les produits. Veuillez réessayer.",
     "errorTitle": "Erreur lors du chargement des produits",
@@ -157,7 +157,7 @@
     "save": "Économiser",
     "added": "Ajouté!",
     "youMightLike": "🔥 Vous pourriez aussi aimer",
-    "featuredSubtitle": "Découvrez nos équipements sportifs les plus populaires et les mieux notés",
+    "featuredSubtitle": "Découvrez nos setups PC les plus populaires et les mieux notés",
     "noFeatured": "Aucun produit vedette disponible pour le moment",
     "viewAll": "Voir Tous les Produits",
     "bestSellers": "Nos Best-Sellers",
@@ -178,7 +178,7 @@
     "sku": "SKU",
     "brand": "Marque",
     "category": "Catégorie",
-    "description": "Équipement sportif de haute qualité conçu pour la performance et la durabilité.",
+    "description": "setup PC de haute qualité conçu pour la performance et la durabilité.",
     "specifications": "Spécifications",
     "relatedProducts": "Produits Connexes",
     "relatedProductsTitle": "Produits Similaires",
@@ -206,9 +206,9 @@
     "shippingReturns": "Livraison & Retours",
     "shippingReturnsDesc": "Livraison standard gratuite sur les commandes de plus de 500 MAD. Nous offrons une politique de retour de 30 jours pour tous les articles inutilisés dans leur emballage d'origine. Livraison express disponible au moment du paiement.",
     "authenticity": "Garantie d'Authenticité",
-    "authenticityDesc": "Tous les produits vendus sur Carré Sport sont 100% authentiques et proviennent directement de fabricants et distributeurs vérifiés.",
+    "authenticityDesc": "Tous les produits vendus sur SetupDream sont 100% authentiques et proviennent directement de fabricants et distributeurs vérifiés.",
     "question": "Une Question ?",
-    "questionDesc": "Contactez notre équipe de support 24/7 via WhatsApp ou email (support@carresports.ma). Nous répondons généralement en 15 minutes.",
+    "questionDesc": "Contactez notre équipe de support 24/7 via WhatsApp ou email (support@setupdream.ma). Nous répondons généralement en 15 minutes.",
     "peopleViewing": "personnes consultent ce produit en ce moment",
     "noImages": "Aucune image disponible"
   },
@@ -222,12 +222,12 @@
     "subtitle": "Reprenez là où vous vous êtes arrêté"
   },
   "cta": {
-    "title": "Prêt à commencer votre parcours sportif?",
-    "titlePrefix": "Prêt à commencer votre",
-    "titleHighlight": "parcours sportif",
+    "title": "Prêt à construire votre Setup de rêve?",
+    "titlePrefix": "Prêt à construire votre",
+    "titleHighlight": "Setup Idéal",
     "titleSuffix": "?",
-    "subtitle": "Rejoignez des milliers de sportifs qui nous font confiance",
-    "subtitlePremium": "Rejoignez des milliers de sportifs qui nous font confiance pour leur équipement premium.",
+    "subtitle": "Rejoignez des milliers de gamers qui nous font confiance",
+    "subtitlePremium": "Rejoignez des milliers de gamers qui nous font confiance pour leur équipement premium.",
     "shop": "Commencer mes achats",
     "shopEmoji": "🛍️ Commencer mes achats",
     "contact": "Nous contacter",
@@ -236,7 +236,7 @@
   "cart": {
     "title": "Panier d'Achat",
     "empty": "Votre panier est vide",
-    "emptyDescription": "Il semble que vous n'ayez pas encore ajouté d'articles à votre panier. Commencez à explorer nos équipements sportifs premium!",
+    "emptyDescription": "Il semble que vous n'ayez pas encore ajouté d'articles à votre panier. Commencez à explorer nos setups PC premium!",
     "addProducts": "Ajoutez des produits pour commencer!",
     "shopNow": "Acheter Maintenant",
     "startShopping": "Commencer les achats",
@@ -458,7 +458,7 @@
     "signingIn": "Connexion en cours...",
     "welcome": "Bienvenue",
     "welcomeBack": "Bon Retour!",
-    "signInToAccount": "Connectez-vous à votre compte Carré Sports",
+    "signInToAccount": "Connectez-vous à votre compte SetupDream",
     "user": "Utilisateur",
     "enterEmail": "Entrez votre email",
     "enterPassword": "Entrez votre mot de passe",
@@ -473,7 +473,7 @@
     "demoAccount": "Compte de Démonstration"
   },
   "footer": {
-    "premiumAthletics": "Athlétisme Premium",
+    "premiumAthletics": "SetupGaming Premium",
     "followFacebook": "Suivez-nous sur Facebook",
     "followInstagram": "Suivez-nous sur Instagram",
     "followTwitter": "Suivez-nous sur X (Twitter)",
@@ -507,7 +507,7 @@
     "returns": "Retours",
     "joinInnerCircle": "Rejoignez le Cercle Privé",
     "subscribePromise": "Abonnez-vous pour recevoir des offres exclusives, un accès anticipé aux nouvelles collections et des informations sur la performance.",
-    "brandDescription": "Conçu pour l'élite. Carré Sports fournit des équipements de qualité professionnelle conçus pour repousser les limites de la performance humaine.",
+    "brandDescription": "Conçu pour l'élite. SetupDream fournit des équipements de qualité professionnelle conçus pour repousser les limites de la performance humaine.",
     "shop": "Boutique",
     "company": "Entreprise",
     "support": "Support",
@@ -558,32 +558,32 @@
   },
   "seo": {
     "home": {
-      "title": "Carré Sport - Équipements Sportifs Premium au Maroc | Matériel Sport Casablanca, Rabat, Marrakech",
-      "description": "🏆 N°1 des équipements sportifs au Maroc ! Matériel fitness, musculation, running. Magasins à Casablanca, Rabat, Marrakech. Livraison gratuite dès 500 MAD. ⚡ Satisfait ou remboursé.",
-      "keywords": "équipement sport maroc, matériel sport maroc, équipement sportif maroc, magasin sport casablanca, matériel fitness rabat, équipement gym marrakech, vente matériel sport maroc, accessoires sport maroc, chaussures sport maroc, vêtements fitness maroc, matériel musculation casablanca, équipement crossfit maroc, tapis yoga maroc, haltères maroc, vélo elliptique maroc, tapis roulant maroc, banc musculation maroc"
+      "title": "SetupDream - PC Gamer & Setups Premium au Maroc | Casablanca, Rabat, Marrakech",
+      "description": "🏆 N°1 du PC Gamer au Maroc ! PC sur mesure, Consoles, Écrans, Chaises Gamer. Magasins à Casablanca, Rabat, Marrakech. Livraison gratuite dès 500 MAD. ⚡ Spécialiste Gaming.",
+      "keywords": "pc gamer maroc, setup gamer complet, rtx 4060, ps5 maroc, chaise gamer casablanca, écran 144hz rabat, clavier mécanique marrakech, vente composant pc maroc, asus rog, msi, corsair"
     },
     "products": {
-      "title": "Équipements Sportifs & Matériel de Sport au Maroc | Carré Sport - Casablanca, Rabat",
-      "description": "🔥 Plus de 1000 produits ! Équipements fitness, musculation, cardio, sports collectifs. Prix imbattables au Maroc. Expédition 24h Casablanca-Rabat. Paiement à la livraison disponible.",
-      "keywords": "équipement sport maroc pas cher, matériel gym occasion maroc, vente équipement fitness casablanca, magasin sport rabat, matériel musculation marrakech, accessoires fitness maroc, équipement cardio maroc, matériel sport professionnel maroc, équipement crossfit casablanca, matériel yoga maroc"
+      "title": "Composants PC & Matériel Gaming au Maroc | SetupDream",
+      "description": "🔥 Plus de 1000 produits Gaming ! PC, Consoles, Périphériques. Prix imbattables au Maroc. Expédition 24h Casablanca-Rabat. Paiement à la livraison disponible.",
+      "keywords": "composant pc maroc, carte graphique pas cher, accessoires gaming casablanca, console ps5 rabat, pc portable gamer marrakech"
     },
     "product": {
-      "titleTemplate": "%s | Équipement Sport Maroc - Carré Sport Casablanca",
-      "descriptionTemplate": "✅ %s en stock au Maroc ! Livraison rapide Casablanca, Rabat, Marrakech. Prix compétitif, garantie 2 ans. Paiement sécurisé. Conseils d'experts gratuits.",
-      "keywordsTemplate": "%s maroc, %s casablanca, %s rabat, équipement %s maroc, matériel %s prix maroc, achat %s maroc, vente %s casablanca"
+      "titleTemplate": "%s | Matériel Gaming Maroc - SetupDream",
+      "descriptionTemplate": "✅ %s en stock au Maroc ! Livraison rapide. Prix compétitif, garantie. Paiement sécurisé. Spécialiste Setup Gamer.",
+      "keywordsTemplate": "%s maroc, %s casablanca, %s rabat, composant %s maroc, achat %s maroc"
     },
     "newArrivals": {
-      "title": "Nouveautés Sport 2024 Maroc | Derniers Équipements Fitness - Carré Sport",
-      "description": "🆕 Découvrez les nouveautés sport 2024 ! Derniers équipements fitness, nouvelles collections running. Exclusivités au Maroc. Pré-commandes ouvertes.",
-      "keywords": "nouveauté sport 2024 maroc, nouveau matériel fitness maroc, dernières collections sport maroc, équipement sport tendance 2024, innovation fitness maroc"
+      "title": "Nouveautés Gaming 2024 Maroc | SetupDream",
+      "description": "🆕 Découvrez les nouveautés Gaming 2024 ! Dernières RTX, nouveaux écrans 240Hz. Exclusivités au Maroc. Pré-commandes ouvertes.",
+      "keywords": "nouveauté pc gamer 2024 maroc, nouvelle rtx maroc, setup dream nouveautés"
     },
     "sale": {
-      "title": "SOLDES Sport Maroc | Équipements Fitness -50% | Carré Sport Casablanca",
-      "description": "🔥 SOLDES EXCEPTIONNELLES ! Jusqu'à -70% sur les équipements sportifs. Fitness, running, sports collectifs. Stock limité. Livraison gratuite dès 300 MAD pendant les soldes.",
-      "keywords": "soldes sport maroc, promotion équipement fitness maroc, réduction matériel sport casablanca, équipement sport pas cher maroc, déstockage matériel gym maroc, black friday sport maroc"
+      "title": "Vente Flash Gaming Maroc | SetupDream Casablanca",
+      "description": "🔥 VENTES FLASH ! Jusqu'à -30% sur les PC et accessoires. Stock limité. Livraison gratuite dès 500 MAD pendant les soldes.",
+      "keywords": "soldes pc gamer maroc, promotion setup gamer maroc, réduction matériel informatique casablanca"
     },
     "organization": {
-      "description": "Carré Sport est le leader des équipements sportifs au Maroc depuis 2020. Magasins à Casablanca, Rabat, Marrakech. Plus de 10,000 clients satisfaits. Partenaire officiel des clubs sportifs marocains."
+      "description": "SetupDream est l'expert des PC Gamers et setups au Maroc depuis 2020. Magasins à Casablanca, Rabat, Marrakech."
     }
   },
   "urgency": {
@@ -782,7 +782,7 @@
     "testimonials": {
       "badge": "Plus de 10,000 clients satisfaits",
       "title": "Ils nous font confiance",
-      "subtitle": "Découvrez pourquoi les sportifs professionnels et amateurs choisissent Carré Sport pour leur équipement."
+      "subtitle": "Découvrez pourquoi les gamers professionnels et passionnés choisissent SetupDream pour leur équipement."
     }
   },
   "performanceLab": {
@@ -803,16 +803,16 @@
     "faqSubtitle": "Questions fréquentes de notre équipe d'ingénierie à la vôtre.",
     "isoCertified": "Fabrication Certifiée ISO 9001:2015",
     "seo": {
-      "title": "Performance Lab | Hub de Données Techniques - Carré Sport",
-      "description": "Métriques de performance technique pour l'équipement Carré Sport. Coefficients d'adhérence, résistance à la traction et données d'absorption d'impact pour les athlètes professionnels."
+      "title": "Performance Lab | Hub de Données Techniques - SetupDream",
+      "description": "Métriques de performance technique pour l'équipement SetupDream. Coefficients d'adhérence, résistance à la traction et données d'absorption d'impact pour les athlètes professionnels."
     },
     "latestResearch": "Dernières Recherches",
     "readArticle": "Lire l'Article"
   },
   "partnerships": {
     "hero": {
-      "title": "Partenariat avec Carré Sport",
-      "subtitle": "Rejoignez le réseau d'élite des coachs, athlètes et organisations qui façonnent l'avenir du sport au Maroc.",
+      "title": "Partenariat avec SetupDream",
+      "subtitle": "Rejoignez le réseau d'élite des coachs, athlètes et organisations qui façonnent l'avenir du gaming au Maroc.",
       "badge": "Partenariats Officiels"
     },
     "press": {
@@ -857,12 +857,12 @@
   },
   "mediaKit": {
     "seo": {
-      "title": "Kit Média & Ressources de Marque | Carré Sports",
-      "description": "Téléchargez les logos officiels Carré Sports, la charte graphique et accédez aux citations techniques pour la presse."
+      "title": "Kit Média & Ressources de Marque | SetupDream",
+      "description": "Téléchargez les logos officiels SetupDream, la charte graphique et accédez aux citations techniques pour la presse."
     },
     "hero": {
       "title": "Ressources de Marque",
-      "subtitle": "Tout ce dont vous avez besoin pour raconter correctement l'histoire de Carré Sports.",
+      "subtitle": "Tout ce dont vous avez besoin pour raconter correctement l'histoire de SetupDream.",
       "badge": "Salle de Presse"
     },
     "assets": {
@@ -875,7 +875,7 @@
     },
     "story": {
       "title": "Notre Mission",
-      "p1": "Carré Sports a été fondé en 2020 avec une mission singulière : démocratiser l'accès aux équipements sportifs de qualité professionnelle au Maroc. Nous comblons le fossé entre la certification de fabrication d'élite et la disponibilité locale.",
+      "p1": "SetupDream a été fondé en 2020 avec une mission singulière : démocratiser l'accès aux setups PC de qualité professionnelle au Maroc. Nous comblons le fossé entre la certification de fabrication d'élite et la disponibilité locale.",
       "p2": "En testant chaque produit dans notre Performance Lab local selon les normes mondiales (ISO 9001:2015), nous garantissons aux athlètes marocains de s'entraîner avec un équipement qui respecte leur ambition."
     },
     "citation": {
@@ -886,7 +886,7 @@
       "noteTitle": "Note",
       "noteText": "Veuillez ne pas modifier les liens dans l'extrait de citation pour garantir l'intégrité des données.",
       "snippet": {
-        "text": "Le processus de vérification du Performance Lab de Carré Sports représente une nouvelle norme dans les tests d'équipement localisés, garantissant la conformité ISO 9001:2015 pour toute la fabrication nationale.",
+        "text": "Le processus de vérification du Performance Lab de SetupDream représente une nouvelle norme dans les tests d'équipement localisés, garantissant la conformité ISO 9001:2015 pour toute la fabrication nationale.",
         "source": "Données Performance Lab™"
       }
     }

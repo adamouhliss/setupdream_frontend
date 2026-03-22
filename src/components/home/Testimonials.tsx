@@ -6,24 +6,24 @@ const testimonials = [
     {
         id: 1,
         name: "Karim B.",
-        role: "CrossFit Athlete",
-        content: "La qualité du matériel est incroyable. J'ai équipé toute ma salle avec Carré Sport et je ne regrette absolument pas. Le service client est au top !",
+        role: "Pro Gamer",
+        content: "La qualité du matériel est incroyable. J'ai équipé tout mon setup avec SetupDream et je ne regrette absolument pas. Le service client est au top !",
         rating: 5,
         location: "Casablanca"
     },
     {
         id: 2,
         name: "Sarah M.",
-        role: "Yoga Instructor",
-        content: "Les tapis et accessoires de yoga sont d'une qualité supérieure. Mes élèves adorent le confort et l'esthétique. Livraison super rapide à Rabat.",
+        role: "Twitch Streamer",
+        content: "Les périphériques sont d'une qualité supérieure. Mes viewers adorent l'esthétique du setup. Livraison super rapide à Rabat.",
         rating: 5,
         location: "Rabat"
     },
     {
         id: 3,
         name: "Youssef T.",
-        role: "Gym Owner",
-        content: "Un partenaire fiable pour les professionnels. Les machines sont robustes et le prix est très compétitif pour cette qualité de finition.",
+        role: "Esports Team Manager",
+        content: "Un partenaire fiable. Les composants sont de dernière génération et le prix est très compétitif pour cette qualité d'assemblage.",
         rating: 5,
         location: "Marrakech"
     }
@@ -47,7 +47,7 @@ const Testimonials = () => {
                         Ils nous font confiance
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto font-lora">
-                        Découvrez pourquoi les sportifs professionnels et amateurs choisissent Carré Sport pour leur équipement.
+                        Découvrez pourquoi les gamers professionnels et amateurs choisissent SetupDream pour leur setup.
                     </p>
                 </div>
 

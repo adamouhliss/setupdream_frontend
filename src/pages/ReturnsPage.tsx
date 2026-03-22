@@ -248,7 +248,7 @@ export default function ReturnsPage() {
                 <p className="font-semibold font-montserrat text-gold-300">
                   {t('returns.contact.email')}
                 </p>
-                <p className="text-gold-200 font-lora">returns@carresports.ma</p>
+                <p className="text-gold-200 font-lora">returns@setupdream.ma</p>
               </div>
             </div>
           </div>

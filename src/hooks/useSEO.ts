@@ -58,8 +58,8 @@ export const useSEO = (seoData: SEOData) => {
 
     // French-first meta content
     const defaultTitle = currentLanguage === 'fr'
-      ? 'Carré Sport - Équipements Sportifs au Maroc | Matériel Sport Casablanca'
-      : 'Carré Sport - Sports Equipment in Morocco | Fitness Gear Casablanca'
+      ? 'SetupDream - Setups PC au Maroc | Casablanca'
+      : 'SetupDream - Gaming PCs in Morocco | Casablanca'
 
     const defaultDescription = currentLanguage === 'fr'
       ? 'Découvrez notre collection d\'équipements sportifs au Maroc. Matériel de sport professionnel, paiement à la livraison. Livraison gratuite dès 500 MAD. ⭐ N°1 des équipements sportifs au Maroc.'
@@ -87,7 +87,7 @@ export const useSEO = (seoData: SEOData) => {
       { name: 'keywords', content: keywords || defaultKeywords },
       { name: 'robots', content: noindex ? 'noindex, nofollow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
       { name: 'language', content: currentLanguage },
-      { name: 'author', content: 'Carré Sport' },
+      { name: 'author', content: 'SetupDream' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
 
       // Geographic SEO
@@ -99,7 +99,7 @@ export const useSEO = (seoData: SEOData) => {
       { property: 'og:description', content: description || defaultDescription },
       { property: 'og:type', content: type },
       { property: 'og:url', content: currentUrl },
-      { property: 'og:site_name', content: 'Carré Sport' },
+      { property: 'og:site_name', content: 'SetupDream' },
       { property: 'og:locale', content: currentLanguage === 'fr' ? 'fr_MA' : 'en_US' },
 
       // Pinterest / Rich Pin Specific Tags
@@ -132,7 +132,7 @@ export const useSEO = (seoData: SEOData) => {
       const fullImageUrl = image.startsWith('http') ? image : `${baseUrl}${image}`
       metaTags.push(
         { property: 'og:image', content: fullImageUrl },
-        { property: 'og:image:alt', content: title || 'Carré Sport - Équipements Sportifs Premium' },
+        { property: 'og:image:alt', content: title || 'SetupDream - Premium Gaming' },
         { name: 'twitter:image', content: fullImageUrl }
       )
     }

@@ -1,34 +1,34 @@
 {
     "last_updated": "2024-05-20",
     "version": "1.1.0",
-    "source": "Carré Sport Technical Lab",
+    "source": "SetupDream Technical Lab",
     "categories": [
         {
-            "id": "boxing-gloves",
+            "id": "pcs-gamer",
             "name": {
-                "en": "Boxing Gloves",
-                "fr": "Gants de Boxe"
+                "en": "Pre-built Gaming PCs",
+                "fr": "PC Gamer Pré-montés"
             },
             "metrics": [
                 {
                     "name": {
-                        "en": "Impact Absorption",
-                        "fr": "Absorption d'Impact"
+                        "en": "Thermal Efficiency",
+                        "fr": "Efficacité Thermique"
                     },
-                    "value": "98%",
+                    "value": "95%",
                     "unit": {
-                        "en": "Force Reduction",
-                        "fr": "Réduction de Force"
+                        "en": "Delta T",
+                        "fr": "Delta T"
                     },
                     "description": {
-                        "en": "Percentage of kinetic energy dissipated by the foam core upon impact.",
-                        "fr": "Pourcentage de l'énergie cinétique dissipée par le noyau en mousse lors de l'impact."
+                        "en": "Percentage of optimal thermal dissipation under full synthetic load.",
+                        "fr": "Pourcentage de dissipation thermique optimale sous charge synthétique maximale."
                     }
                 },
                 {
                     "name": {
-                        "en": "Wrist Stability",
-                        "fr": "Stabilité du Poignet"
+                        "en": "Cable Management",
+                        "fr": "Câble Management"
                     },
                     "value": "9.5/10",
                     "unit": {
@@ -36,74 +36,74 @@
                         "fr": "Note"
                     },
                     "description": {
-                        "en": "Rated stability index based on localized reinforcement testing.",
-                        "fr": "Indice de stabilité évalué basé sur des tests de renforcement localisés."
+                        "en": "Rated cleanliness index based on airflow obstruction and aesthetics.",
+                        "fr": "Indice de propreté évalué basé sur l'obstruction du flux d'air et l'esthétique."
                     }
                 },
                 {
                     "name": {
-                        "en": "Surface Abrasion Resistance",
-                        "fr": "Résistance à l'Abrasion"
+                        "en": "Acoustic Footprint",
+                        "fr": "Empreinte Acoustique"
                     },
-                    "value": ">50,000",
+                    "value": "<35",
                     "unit": {
-                        "en": "Rub Cycles",
-                        "fr": "Cycles de Frottement"
+                        "en": "dB(A)",
+                        "fr": "dB(A)"
                     },
                     "description": {
-                        "en": "Martindale abrasion test results for outer synthetic leather.",
-                        "fr": "Résultats du test d'abrasion Martindale pour le cuir synthétique extérieur."
+                        "en": "Maximum noise level generated during standard gaming loads at 1 meter distance.",
+                        "fr": "Niveau de bruit maximum généré lors d'une charge de jeu standard à 1 mètre."
                     }
                 },
                 {
                     "name": {
-                        "en": "Thumb Locking Security",
-                        "fr": "Sécurité du Pouce"
+                        "en": "Stress Test Stability",
+                        "fr": "Stabilité au Stress Test"
                     },
                     "value": "Certified",
-                    "unit": "ISO 9001",
+                    "unit": "24h Pass",
                     "description": {
-                        "en": "Compliance with international safety standards for thumb attachment.",
-                        "fr": "Conformité aux normes internationales de sécurité pour l'attache du pouce."
+                        "en": "Compliance with our rigorous 24-hour continuous burn-in test.",
+                        "fr": "Conformité à notre test de stress continu rigoureux de 24 heures."
                     }
                 }
             ]
         },
         {
-            "id": "resistance-bands",
+            "id": "graphics-cards",
             "name": {
-                "en": "Resistance Bands",
-                "fr": "Bandes de Résistance"
+                "en": "Graphics Cards",
+                "fr": "Cartes Graphiques"
             },
             "metrics": [
                 {
                     "name": {
-                        "en": "Tensile Strength",
-                        "fr": "Résistance à la Traction"
+                        "en": "Boost Clock",
+                        "fr": "Fréquence Boost"
                     },
-                    "value": "450",
-                    "unit": "PSI",
+                    "value": ">2.5",
+                    "unit": "GHz",
                     "description": {
-                        "en": "Maximum stress the material can withstand while being stretched before breaking.",
-                        "fr": "Contrainte maximale que le matériau peut supporter lorsqu'il est étiré avant de se rompre."
+                        "en": "Maximum sustained switching frequency under gaming scenarios.",
+                        "fr": "Fréquence de commutation soutenue maximale sous des scénarios de jeu."
                     }
                 },
                 {
                     "name": {
-                        "en": "Elasticity Modulus",
-                        "fr": "Module d'Élasticité"
+                        "en": "Memory Bandwidth",
+                        "fr": "Bande Passante Mémoire"
                     },
-                    "value": "1.2",
-                    "unit": "MPa",
+                    "value": ">500",
+                    "unit": "GB/s",
                     "description": {
-                        "en": "Measure of the material's resistance to being deformed elastically.",
-                        "fr": "Mesure de la résistance du matériau à être déformé élastiquement."
+                        "en": "Measure of the VRAM's total data transfer capacity.",
+                        "fr": "Mesure de la capacité totale de transfert de données de la VRAM."
                     }
                 },
                 {
                     "name": {
-                        "en": "Snap Resistance",
-                        "fr": "Résistance à la Rupture"
+                        "en": "Ray Tracing Performance",
+                        "fr": "Performance Ray Tracing"
                     },
                     "value": {
                         "en": "High",
@@ -114,200 +114,200 @@
                         "fr": "Classement"
                     },
                     "description": {
-                        "en": "Multi-layer latex construction prevents sudden improved safety.",
-                        "fr": "La construction en latex multicouche améliore la sécurité contre les ruptures soudaines."
+                        "en": "Hardware acceleration capability for real-time ray tracing operations.",
+                        "fr": "Capacité d'accélération matérielle pour les opérations de lancer de rayons en temps réel."
                     }
                 },
                 {
                     "name": {
-                        "en": "Elongation Limit",
-                        "fr": "Limite d'Allongement"
+                        "en": "TGP Limit",
+                        "fr": "Limite TGP"
                     },
-                    "value": "300%",
+                    "value": "115%",
                     "unit": {
-                        "en": "Length",
-                        "fr": "Longueur"
+                        "en": "Power",
+                        "fr": "Puissance"
                     },
                     "description": {
-                        "en": "Safe stretching limit relative to original resting length.",
-                        "fr": "Limite d'étirement sécurisée par rapport à la longueur au repos initiale."
+                        "en": "Maximum allowed Total Graphics Power relative to baseline spec.",
+                        "fr": "Puissance graphique totale (TGP) maximale autorisée par rapport aux spécifications de base."
                     }
                 }
             ]
         },
         {
-            "id": "footwear",
+            "id": "processors",
             "name": {
-                "en": "Training Footwear",
-                "fr": "Chaussures d'Entraînement"
+                "en": "Processors",
+                "fr": "Processeurs"
             },
             "metrics": [
                 {
                     "name": {
-                        "en": "Grip Coefficient (Dry)",
-                        "fr": "Coefficient d'Adhérence (Sec)"
+                        "en": "IPC Performance",
+                        "fr": "Performance IPC"
                     },
-                    "value": "0.85",
-                    "unit": "µ",
+                    "value": "+15%",
+                    "unit": "Gen/Gen",
                     "description": {
-                        "en": "Friction coefficient on standard gym flooring (rubber/wood).",
-                        "fr": "Coefficient de frottement sur sol de gym standard (caoutchouc/bois)."
+                        "en": "Instructions Per Clock improvement over previous architectural generation.",
+                        "fr": "Amélioration des instructions par cycle (IPC) par rapport à la génération architecturale précédente."
                     }
                 },
                 {
                     "name": {
-                        "en": "Energy Return",
-                        "fr": "Retour d'Énergie"
+                        "en": "Multi-Thread Scaling",
+                        "fr": "Scaling Multi-Thread"
                     },
-                    "value": "72%",
+                    "value": "92%",
                     "unit": {
                         "en": "Efficiency",
                         "fr": "Efficacité"
                     },
                     "description": {
-                        "en": "Percentage of energy returned to the athlete per stride via midsole foam.",
-                        "fr": "Pourcentage d'énergie renvoyée à l'athlète par foulée via la mousse de la semelle intermédiaire."
+                        "en": "Percentage of linear performance scaling across all physical cores.",
+                        "fr": "Pourcentage de mise à l'échelle des performances linéaires sur tous les cœurs physiques."
                     }
                 },
                 {
                     "name": {
-                        "en": "Breathability Index",
-                        "fr": "Indice de Respirabilité"
+                        "en": "L3 Cache Latency",
+                        "fr": "Latence Cache L3"
                     },
-                    "value": "8.4/10",
-                    "unit": "RET",
+                    "value": "11",
+                    "unit": "ns",
                     "description": {
-                        "en": "Resistance to Evaporative Heat Transfer (lower is better, translated to score).",
-                        "fr": "Résistance au transfert de chaleur par évaporation (plus c'est bas, mieux c'est, traduit en note)."
+                        "en": "Response time for Last Level Cache access (lower is better).",
+                        "fr": "Temps de réponse pour l'accès au cache de dernier niveau (le plus bas est le mieux)."
                     }
                 },
                 {
                     "name": {
-                        "en": "Sole Durability",
-                        "fr": "Durabilité de la Semelle"
+                        "en": "Silicon Binning",
+                        "fr": "Tri du Silicium (Binning)"
                     },
                     "value": {
-                        "en": "High",
-                        "fr": "Élevée"
+                        "en": "Tier 1",
+                        "fr": "Top 10%"
                     },
-                    "unit": "DIN",
+                    "unit": "SP",
                     "description": {
-                        "en": "Abrasion resistance of the outsole rubber compound.",
-                        "fr": "Résistance à l'abrasion du composé caoutchouc de la semelle extérieure."
+                        "en": "Silicon Prediction rating for voltage/frequency scaling capability.",
+                        "fr": "Indice de prédiction du silicium pour la capacité de mise à l'échelle tension/fréquence."
                     }
                 }
             ]
         },
         {
-            "id": "apparel",
+            "id": "monitors",
             "name": {
-                "en": "Compression Apparel",
-                "fr": "Vêtements de Compression"
+                "en": "Gaming Monitors",
+                "fr": "Écrans Gamer"
             },
             "metrics": [
                 {
                     "name": {
-                        "en": "Moisture Wicking Rate",
-                        "fr": "Taux d'Évacuation de l'Humidité"
+                        "en": "Refresh Rate",
+                        "fr": "Taux de Rafraîchissement"
                     },
-                    "value": "0.5",
-                    "unit": "ml/s",
+                    "value": "240",
+                    "unit": "Hz",
                     "description": {
-                        "en": "Speed at which fabric moves sweat from skin to outer surface.",
-                        "fr": "Vitesse à laquelle le tissu évacue la transpiration de la peau vers la surface extérieure."
+                        "en": "Number of times the display updates with new images per second.",
+                        "fr": "Nombre de fois que l'écran se met à jour avec de nouvelles images par seconde."
                     }
                 },
                 {
                     "name": {
-                        "en": "Compression Gradient",
-                        "fr": "Gradient de Compression"
+                        "en": "GTG Response Time",
+                        "fr": "Temps de Réponse GTG"
                     },
-                    "value": "15-20",
-                    "unit": "mmHg",
+                    "value": "1",
+                    "unit": "ms",
                     "description": {
-                        "en": "Active compression level to support muscle recovery and circulation.",
-                        "fr": "Niveau de compression active pour soutenir la récupération musculaire et la circulation."
+                        "en": "Time taken for a pixel to transition from one shade of gray to another.",
+                        "fr": "Temps nécessaire à un pixel pour passer d'une nuance de gris à une autre."
                     }
                 },
                 {
                     "name": {
-                        "en": "Antibacterial Treatment",
-                        "fr": "Traitement Antibactérien"
+                        "en": "Color Accuracy",
+                        "fr": "Précision des Couleurs"
                     },
                     "value": {
-                        "en": "Yes",
-                        "fr": "Oui"
+                        "en": "Delta E <2",
+                        "fr": "Delta E <2"
                     },
                     "unit": {
-                        "en": "Silver Ion",
-                        "fr": "Ion Argent"
+                        "en": "dE",
+                        "fr": "dE"
                     },
                     "description": {
-                        "en": "Presence of antimicrobial agents to prevent odor buildup.",
-                        "fr": "Présence d'agents antimicrobiens pour prévenir l'accumulation d'odeurs."
+                        "en": "Measurement of the visual difference between standard color and displayed color.",
+                        "fr": "Mesure de la différence visuelle entre la couleur standard et la couleur affichée."
                     }
                 },
                 {
                     "name": {
-                        "en": "UV Protection",
-                        "fr": "Protection UV"
+                        "en": "Variable Refresh Support",
+                        "fr": "Support Fréquence Variable"
                     },
-                    "value": "UPF 50+",
+                    "value": "Premium",
                     "unit": {
-                        "en": "Rating",
-                        "fr": "Indice"
+                        "en": "Tier",
+                        "fr": "Niveau"
                     },
                     "description": {
-                        "en": "Ultraviolet Protection Factor rating.",
-                        "fr": "Indice de protection contre les ultraviolets."
+                        "en": "Certification level for G-Sync Ultimate or FreeSync Premium Pro.",
+                        "fr": "Niveau de certification pour G-Sync Ultimate ou FreeSync Premium Pro."
                     }
                 }
             ]
         },
         {
-            "id": "yoga-mats",
+            "id": "peripherals",
             "name": {
-                "en": "Yoga & Floor Mats",
-                "fr": "Tapis de Yoga & Sol"
+                "en": "Peripherals",
+                "fr": "Périphériques"
             },
             "metrics": [
                 {
                     "name": {
-                        "en": "Density",
-                        "fr": "Densité"
+                        "en": "Polling Rate",
+                        "fr": "Polling Rate"
                     },
-                    "value": "400",
-                    "unit": "kg/m³",
+                    "value": "8000",
+                    "unit": "Hz",
                     "description": {
-                        "en": "Material density providing joint cushioning and stability.",
-                        "fr": "Densité du matériau offrant amorti articulaire et stabilité."
+                        "en": "Frequency at which the device reports its position/state to the computer.",
+                        "fr": "Fréquence à laquelle l'appareil signale sa position/état à l'ordinateur."
                     }
                 },
                 {
                     "name": {
-                        "en": "Slip Resistance (Wet)",
-                        "fr": "Résistance au Glissement (Humide)"
+                        "en": "Switch Durability",
+                        "fr": "Durabilité des Switchs"
                     },
-                    "value": "0.78",
-                    "unit": "µ",
+                    "value": "100",
+                    "unit": "Million C.",
                     "description": {
-                        "en": "Grip level when surface is covered in sweat.",
-                        "fr": "Niveau d'adhérence lorsque la surface est couverte de transpiration."
+                        "en": "Guaranteed minimum number of actuations before mechanical failure.",
+                        "fr": "Nombre minimum garanti d'actionnements avant défaillance mécanique."
                     }
                 },
                 {
                     "name": {
-                        "en": "Recovery Time",
-                        "fr": "Temps de Récupération"
+                        "en": "Sensor Consistency",
+                        "fr": "Consistance du Capteur"
                     },
                     "value": "<0.5",
                     "unit": {
-                        "en": "Seconds",
-                        "fr": "Secondes"
+                        "en": "% Error",
+                        "fr": "% Erreur"
                     },
                     "description": {
-                        "en": "Time for foam to return to original shape after compression.",
-                        "fr": "Temps pour que la mousse retrouve sa forme originale après compression."
+                        "en": "Deviation percentage at high velocity tracking (IPS) for mice.",
+                        "fr": "Pourcentage de déviation lors du suivi à grande vitesse (IPS) pour les souris."
                     }
                 }
             ]
@@ -316,42 +316,42 @@
     "faq": [
         {
             "question": {
-                "en": "How is the impact absorption of boxing gloves measured?",
-                "fr": "Comment l'absorption d'impact des gants de boxe est-elle mesurée ?"
+                "en": "How do you calculate thermal efficiency in your PCs?",
+                "fr": "Comment calculez-vous l'efficacité thermique dans vos PC ?"
             },
             "answer": {
-                "en": "We utilize a drop-test methodology consistent with EN 13277 standards. A standard weight is dropped onto the glove foam from a fixed height, and the transmitted force is measured by a load cell underneath. The '98% Force Reduction' means only 2% of the impact force reaches the hand compared to a direct strike.",
-                "fr": "Nous utilisons une méthodologie de test de chute conforme aux normes EN 13277. Un poids standard est lâché sur la mousse du gant depuis une hauteur fixe, et la force transmise est mesurée par une cellule de charge en dessous. La 'Réduction de Force de 98%' signifie que seulement 2% de la force d'impact atteint la main par rapport à un coup direct."
+                "en": "We use a 32-point thermal camera array and internal sensors logging at 100ms intervals. The '95% Efficiency' means the cooling system keeps components within 5% of our calculated theoretical minimum temperatures given ambient room conditions and 100% sustained synthetic load.",
+                "fr": "Nous utilisons un réseau de caméras thermiques à 32 points et des capteurs internes. Le '95% d'efficacité' signifie que le système de refroidissement garde les composants à moins de 5% de nos températures minimales théoriques pour des conditions ambiantes données et une charge synthétique soutenue."
             }
         },
         {
             "question": {
-                "en": "What is the difference between Venum foam and generic EVA?",
-                "fr": "Quelle est la différence entre la mousse Venum et l'EVA générique ?"
+                "en": "What is the true advantage of a <1ms GTG response time?",
+                "fr": "Quel est le véritable avantage d'un temps de réponse GTG <1ms ?"
             },
             "answer": {
-                "en": "Venum utilizes a proprietary triple-density foam aimed at progressive absorption. Layer 1 absorbs the initial shock wave, Layer 2 disperses the energy, and Layer 3 provides the soft fit against the hand. Generic EVA often uses a single density which can bottom out under heavy impact, reducing protection.",
-                "fr": "Venum utilise une mousse exclusive à triple densité visant une absorption progressive. La couche 1 absorbe l'onde de choc initiale, la couche 2 disperse l'énergie, et la couche 3 offre un ajustement doux contre la main. L'EVA générique utilise souvent une densité unique qui peut s'écraser sous un impact lourd, réduisant la protection."
+                "en": "A 1ms GTG (Gray-to-Gray) time drastically reduces ghosting and motion blur in fast-paced games. Specifically, when paired with a 240Hz refresh rate, a pixel must be able to change state in under 4.16ms. Our certified monitors achieve 1ms, ensuring zero smearing.",
+                "fr": "Un temps GTG inférieur à 1ms réduit considérablement l'effet fantôme et le flou de mouvement dans les jeux rapides. Sachant qu'à 240Hz, un pixel doit changer d'état en moins de 4.16ms, nos écrans certifiés atteignent 1ms, garantissant aucune traînée."
             }
         },
         {
             "question": {
-                "en": "Does the tensile strength of resistance bands degrade over time?",
-                "fr": "La résistance à la traction des bandes de résistance diminue-t-elle avec le temps ?"
+                "en": "Why does an 8000Hz polling rate matter for peripherals?",
+                "fr": "Pourquoi un polling rate de 8000Hz est-il important pour les périphériques ?"
             },
             "answer": {
-                "en": "Yes, all latex products degrade with UV exposure and oxidation. However, our multi-layered latex bands are treated with UV inhibitors. Under normal gym use (indoor, stored away from direct sun), they retain >90% of their tensile strength for up to 2 years.",
-                "fr": "Oui, tous les produits en latex se dégradent avec l'exposition aux UV et l'oxydation. Cependant, nos bandes en latex multicouches sont traitées avec des inhibiteurs UV. En utilisation normale en salle (intérieur, rangé à l'abri du soleil direct), elles conservent >90% de leur résistance à la traction jusqu'à 2 ans."
+                "en": "Standard 1000Hz polling means data is sent every 1ms. At 8000Hz, data is sent every 0.125ms. For professional esports players using incredibly fast flicks, this eliminates micro-stutters in crosshair tracking and reduces total click latency to absolute minimums.",
+                "fr": "Un polling standard de 1000Hz envoie des données toutes les 1ms. À 8000Hz, c'est toutes les 0,125ms. Pour les joueurs esports professionnels, cela élimine les micro-saccades et réduit la latence du clic au minimum absolu."
             }
         },
         {
             "question": {
-                "en": "How do you calculate the grip coefficient?",
-                "fr": "Comment calculez-vous le coefficient d'adhérence ?"
+                "en": "Are your custom stress tests harder than standard burn-ins?",
+                "fr": "Vos stress tests personnalisés sont-ils plus durs que les tests normaux ?"
             },
             "answer": {
-                "en": "The Coefficient of Friction (COF) is tested using a tribometer on standardized athletic surfaces (rubber gym mats and varnished wood). A weighted sled with the shoe's outsole material is dragged across the surface, and the force required to maintain motion is measured.",
-                "fr": "Le Coefficient de Frottement (COF) est testé à l'aide d'un tribomètre sur des surfaces athlétiques standardisées (tapis de gym en caoutchouc et bois verni). Un traîneau lesté avec le matériau de la semelle extérieure de la chaussure est traîné sur la surface, et la force nécessaire pour maintenir le mouvement est mesurée."
+                "en": "Yes. While standard tests might run FurMark or Prime95 independently, our proprietary 24h Pass test runs simultaneous maximum power draw on CPU, GPU, AND memory controller, testing the absolute worst-case scenario for the power supply and thermals.",
+                "fr": "Oui. Alors que les tests standards peuvent exécuter FurMark ou Prime95 indépendamment, notre test exclusif 24h Pass sollicite simultanément le CPU, le GPU ET le contrôleur mémoire à leur tirage maximal, testant le pire scénario absolu."
             }
         }
     ]

@@ -14,71 +14,71 @@ export interface MoroccoSEOConfig {
 // High-traffic French keywords for Morocco
 export const MOROCCO_FRENCH_KEYWORDS = {
   primary: [
-    "équipement sport maroc",
-    "matériel sport maroc", 
-    "équipement sportif maroc",
-    "magasin sport casablanca",
-    "matériel fitness rabat",
-    "équipement gym marrakech"
+    "pc gamer maroc",
+    "setup pc maroc", 
+    "ordinateur gamer maroc",
+    "boutique gaming casablanca",
+    "pc portable gamer rabat",
+    "composants pc marrakech"
   ],
   secondary: [
-    "vente matériel sport maroc",
-    "accessoires sport maroc", 
-    "chaussures sport maroc",
-    "vêtements fitness maroc",
-    "matériel musculation casablanca",
-    "équipement crossfit maroc"
+    "vente pc gamer maroc",
+    "accessoires gaming maroc", 
+    "écrans pc gamer maroc",
+    "souris gamer maroc",
+    "carte graphique casablanca",
+    "setup streaming maroc"
   ],
   longTail: [
-    "où acheter équipement sport maroc",
-    "meilleur magasin sport casablanca",
-    "équipement fitness pas cher maroc",
-    "matériel sport livraison maroc",
-    "magasin sport en ligne maroc",
-    "équipement gym professionnel maroc"
+    "où acheter pc gamer maroc",
+    "meilleure boutique gaming casablanca",
+    "achat pc gamer pas cher maroc",
+    "composants pc livraison maroc",
+    "magasin gaming en ligne maroc",
+    "pc gamer professionnel maroc"
   ],
   cities: {
-    casablanca: ["sport casablanca", "fitness casablanca", "gym casablanca", "musculation casablanca"],
-    rabat: ["sport rabat", "fitness rabat", "équipement sport rabat", "magasin sport rabat"],
-    marrakech: ["sport marrakech", "fitness marrakech", "gym marrakech", "équipement sport marrakech"],
-    fes: ["sport fes", "fitness fes", "équipement sport fes"],
-    agadir: ["sport agadir", "fitness agadir", "surf equipment agadir"],
-    tanger: ["sport tanger", "fitness tanger", "équipement sport tanger"]
+    casablanca: ["gaming casablanca", "pc gamer casablanca", "setup casablanca", "composants pc casablanca"],
+    rabat: ["gaming rabat", "pc gamer rabat", "setup rabat", "boutique gaming rabat"],
+    marrakech: ["gaming marrakech", "pc gamer marrakech", "setup marrakech", "matériel gaming marrakech"],
+    fes: ["gaming fes", "pc gamer fes", "setup fes"],
+    agadir: ["gaming agadir", "pc gamer agadir", "setup agadir"],
+    tanger: ["gaming tanger", "pc gamer tanger", "setup tanger"]
   }
 }
 
 // High-traffic English keywords for Morocco
 export const MOROCCO_ENGLISH_KEYWORDS = {
   primary: [
-    "sports equipment morocco",
-    "fitness equipment morocco",
-    "gym equipment morocco", 
-    "sports gear morocco",
-    "athletic equipment morocco",
-    "workout equipment morocco"
+    "gaming pc morocco",
+    "pc setup morocco",
+    "gaming computer morocco", 
+    "gaming gear morocco",
+    "pc components morocco",
+    "gaming laptop morocco"
   ],
   secondary: [
-    "sports shop morocco",
-    "fitness store morocco",
-    "gym gear morocco",
-    "athletic wear morocco",
-    "sports accessories morocco",
-    "exercise equipment morocco"
+    "gaming shop morocco",
+    "pc store morocco",
+    "gaming accessories morocco",
+    "gaming monitors morocco",
+    "gpus morocco",
+    "streaming setup morocco"
   ],
   longTail: [
-    "where to buy sports equipment morocco",
-    "best sports store casablanca",
-    "fitness equipment shop rabat",
-    "gym equipment store marrakech",
-    "sports gear delivery morocco",
-    "online sports shop morocco"
+    "where to buy gaming pc morocco",
+    "best gaming store casablanca",
+    "pc components shop rabat",
+    "gaming gear store marrakech",
+    "gaming pc delivery morocco",
+    "online gaming shop morocco"
   ],
   cities: {
-    casablanca: ["sports casablanca", "fitness casablanca", "gym casablanca", "athletic gear casablanca"],
-    rabat: ["sports rabat", "fitness rabat", "gym equipment rabat", "sports store rabat"],
-    marrakech: ["sports marrakech", "fitness marrakech", "gym marrakech", "athletic equipment marrakech"],
-    agadir: ["sports agadir", "surf equipment agadir", "water sports agadir"],
-    tanger: ["sports tangier", "fitness tangier", "gym equipment tangier"]
+    casablanca: ["gaming casablanca", "pc gamer casablanca", "gaming setup casablanca", "gaming gear casablanca"],
+    rabat: ["gaming rabat", "pc gamer rabat", "gaming hardware rabat", "gaming store rabat"],
+    marrakech: ["gaming marrakech", "pc setup marrakech", "gaming components marrakech", "gaming equipment marrakech"],
+    agadir: ["gaming agadir", "pc gamer agadir", "gaming hardware agadir"],
+    tanger: ["gaming tangier", "pc gamer tangier", "gaming equipment tangier"]
   }
 }
 
@@ -98,36 +98,36 @@ export const generateMoroccoSEO = (
     switch (pageType) {
       case 'home':
         return {
-          title: "Carré Sport - Équipements Sportifs Premium au Maroc | Matériel Sport Casablanca, Rabat, Marrakech",
-          description: "🏆 N°1 des équipements sportifs au Maroc ! Matériel fitness, musculation, running. Magasins à Casablanca, Rabat, Marrakech. Livraison gratuite dès 500 MAD. ⚡ Satisfait ou remboursé.",
+          title: "SetupDream - Boutique PC Gamer et Setups au Maroc | Casablanca, Rabat, Marrakech",
+          description: "🏆 N°1 du PC Gamer au Maroc ! Setups sur mesure, composants, périphériques. Magasins à Casablanca, Rabat, Marrakech. Livraison gratuite dès 500 MAD.",
           keywords: [
             ...MOROCCO_FRENCH_KEYWORDS.primary,
             ...MOROCCO_FRENCH_KEYWORDS.secondary,
-            "tapis yoga maroc", "haltères maroc", "vélo elliptique maroc", "tapis roulant maroc", "banc musculation maroc"
+            "rtx 4090 maroc", "clavier mécanique maroc", "chaise gamer maroc", "casque gamer maroc", "processeur amd maroc"
           ].join(", "),
           structuredData: generateLocalBusinessSchema('fr')
         }
         
       case 'products':
         return {
-          title: "Équipements Sportifs & Matériel de Sport au Maroc | Carré Sport - Casablanca, Rabat",
-          description: "🔥 Plus de 1000 produits ! Équipements fitness, musculation, cardio, sports collectifs. Prix imbattables au Maroc. Expédition 24h Casablanca-Rabat. Paiement à la livraison disponible.",
+          title: "PC Gamer & Composants au Maroc | SetupDream - Casablanca, Rabat",
+          description: "🔥 Plus de 1000 références ! Cartes graphiques, processeurs, écrans gamer. Prix imbattables au Maroc. Expédition 24h Casablanca-Rabat. Paiement à la livraison disponible.",
           keywords: [
-            "équipement sport maroc pas cher",
-            "matériel gym occasion maroc", 
-            "vente équipement fitness casablanca",
-            "magasin sport rabat",
-            "matériel musculation marrakech",
+            "pc gamer maroc pas cher",
+            "composants pc occasion maroc", 
+            "vente matériel gaming casablanca",
+            "boutique pc rabat",
+            "ordinateur gamer marrakech",
             ...MOROCCO_FRENCH_KEYWORDS.longTail
           ].join(", ")
         }
         
       case 'product':
-        const productName = params?.productName || 'Équipement'
+        const productName = params?.productName || 'Équipement Gaming'
         const price = params?.price ? ` - ${params.price} MAD` : ''
         return {
-          title: `${productName} | Équipement Sport Maroc - Carré Sport Casablanca${price}`,
-          description: `✅ ${productName} en stock au Maroc ! Livraison rapide Casablanca, Rabat, Marrakech. Prix compétitif, garantie 2 ans. Paiement sécurisé. Conseils d'experts gratuits.`,
+          title: `${productName} | PC Gamer Maroc - SetupDream Casablanca${price}`,
+          description: `✅ ${productName} en stock au Maroc ! Livraison rapide Casablanca, Rabat, Marrakech. Prix compétitif, garantie. Paiement sécurisé. Conseils d'experts gratuits.`,
           keywords: [
             `${productName.toLowerCase()} maroc`,
             `${productName.toLowerCase()} casablanca`,
@@ -142,12 +142,12 @@ export const generateMoroccoSEO = (
         const cityName = params?.cityName || 'Morocco'
         const cityKeywords = MOROCCO_FRENCH_KEYWORDS.cities[cityName.toLowerCase() as keyof typeof MOROCCO_FRENCH_KEYWORDS.cities] || []
         return {
-          title: `Magasin Sport ${cityName} | Carré Sport - Équipements Fitness ${cityName}`,
-          description: `🏪 Magasin sport ${cityName} chez Carré Sport ! Showroom, parking gratuit. Essayage, conseil personnalisé. Ouvert 7j/7. Livraison le jour même possible.`,
+          title: `Boutique PC Gamer ${cityName} | SetupDream - Matériel Gaming ${cityName}`,
+          description: `🏪 Boutique gaming ${cityName} chez SetupDream ! Showroom, conseil personnalisé. Ouvert 7j/7. Livraison le jour même possible.`,
           keywords: [
-            `magasin sport ${cityName.toLowerCase()}`,
-            `équipement fitness ${cityName.toLowerCase()}`,
-            `matériel gym ${cityName.toLowerCase()}`,
+            `boutique gaming ${cityName.toLowerCase()}`,
+            `pc gamer ${cityName.toLowerCase()}`,
+            `matériel informatique ${cityName.toLowerCase()}`,
             ...cityKeywords
           ].join(", ")
         }
@@ -160,36 +160,36 @@ export const generateMoroccoSEO = (
     switch (pageType) {
       case 'home':
         return {
-          title: "Carré Sport - Premium Sports Equipment in Morocco | Fitness Gear Casablanca, Rabat, Marrakech",
-          description: "🏆 #1 Sports Equipment Store in Morocco! Fitness, gym, running gear. Stores in Casablanca, Rabat, Marrakech. Free shipping from 500 MAD. ⚡ Satisfaction guaranteed.",
+          title: "SetupDream - Premium Gaming PCs in Morocco | Casablanca, Rabat, Marrakech",
+          description: "🏆 #1 Gaming PC Store in Morocco! Custom setups, components, peripherals. Stores in Casablanca, Rabat, Marrakech. Free shipping from 500 MAD.",
           keywords: [
             ...MOROCCO_ENGLISH_KEYWORDS.primary,
             ...MOROCCO_ENGLISH_KEYWORDS.secondary,
-            "yoga mats morocco", "dumbbells morocco", "elliptical bike morocco", "treadmill morocco", "weight bench morocco"
+            "rtx 4090 morocco", "mechanical keyboard morocco", "gaming chair morocco", "gaming headset morocco", "amd processor morocco"
           ].join(", "),
           structuredData: generateLocalBusinessSchema('en')
         }
         
       case 'products':
         return {
-          title: "Sports Equipment & Fitness Gear in Morocco | Carré Sport - Casablanca, Rabat",
-          description: "🔥 1000+ Products! Fitness, gym, cardio, team sports equipment. Best prices in Morocco. 24h shipping Casablanca-Rabat. Cash on delivery available.",
+          title: "Gaming PCs & Components in Morocco | SetupDream - Casablanca, Rabat",
+          description: "🔥 1000+ Products! Graphic cards, processors, gaming monitors. Best prices in Morocco. 24h shipping Casablanca-Rabat. Cash on delivery available.",
           keywords: [
-            "cheap sports equipment morocco",
-            "used gym equipment morocco",
-            "fitness equipment sale casablanca", 
-            "sports store rabat",
-            "gym equipment marrakech",
+            "cheap gaming pc morocco",
+            "used pc components morocco",
+            "gaming gear sale casablanca", 
+            "gaming store rabat",
+            "pc components marrakech",
             ...MOROCCO_ENGLISH_KEYWORDS.longTail
           ].join(", ")
         }
         
       case 'product':
-        const productName = params?.productName || 'Equipment'
+        const productName = params?.productName || 'Gaming Gear'
         const price = params?.price ? ` - ${params.price} MAD` : ''
         return {
-          title: `${productName} | Sports Equipment Morocco - Carré Sport Casablanca${price}`,
-          description: `✅ ${productName} in stock in Morocco! Fast delivery Casablanca, Rabat, Marrakech. Competitive price, 2-year warranty. Secure payment. Free expert advice.`,
+          title: `${productName} | Gaming PC Morocco - SetupDream Casablanca${price}`,
+          description: `✅ ${productName} in stock in Morocco! Fast delivery Casablanca, Rabat, Marrakech. Competitive price, warranty included. Secure payment. Free expert advice.`,
           keywords: [
             `${productName.toLowerCase()} morocco`,
             `${productName.toLowerCase()} casablanca`,
@@ -204,12 +204,12 @@ export const generateMoroccoSEO = (
         const cityName = params?.cityName || 'Morocco'
         const cityKeywords = MOROCCO_ENGLISH_KEYWORDS.cities[cityName.toLowerCase() as keyof typeof MOROCCO_ENGLISH_KEYWORDS.cities] || []
         return {
-          title: `Sports Store ${cityName} | Carré Sport - Fitness Equipment ${cityName}`,
-          description: `🏪 Sports store ${cityName} at Carré Sport! Showroom, free parking. Try before buying, personal advice. Open 7 days. Same-day delivery available.`,
+          title: `Gaming Store ${cityName} | SetupDream - PC Components ${cityName}`,
+          description: `🏪 Gaming store ${cityName} at SetupDream! Showroom, personal advice. Open 7 days. Same-day delivery available.`,
           keywords: [
-            `sports store ${cityName.toLowerCase()}`,
-            `fitness equipment ${cityName.toLowerCase()}`,
-            `gym equipment ${cityName.toLowerCase()}`,
+            `gaming store ${cityName.toLowerCase()}`,
+            `pc components ${cityName.toLowerCase()}`,
+            `gaming hardware ${cityName.toLowerCase()}`,
             ...cityKeywords
           ].join(", ")
         }
@@ -222,7 +222,7 @@ export const generateMoroccoSEO = (
 
 // Generate Local Business Structured Data
 const generateLocalBusinessSchema = (language: 'fr' | 'en') => {
-  let baseUrl = 'https://www.carresports.ma'
+  let baseUrl = 'https://setupdream.ma'
   try {
     if (typeof window !== 'undefined' && window.location) {
       baseUrl = window.location.origin
@@ -234,13 +234,13 @@ const generateLocalBusinessSchema = (language: 'fr' | 'en') => {
   
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Store",
     "@id": `${baseUrl}/#localbusiness`,
-    "name": "Carré Sport",
-    "image": `${baseUrl}/images/logo-carresport.png`,
+    "name": "SetupDream",
+    "image": `${baseUrl}/images/logo.png`,
     "description": language === 'fr' 
-      ? "Leader des équipements sportifs au Maroc. Magasins à Casablanca, Rabat, Marrakech. Plus de 10,000 clients satisfaits."
-      : "Leading sports equipment retailer in Morocco. Stores in Casablanca, Rabat, Marrakech. Over 10,000 satisfied customers.",
+      ? "Leader du PC Gamer et composants au Maroc. Magasins à Casablanca, Rabat, Marrakech. Plus de 10,000 clients satisfaits."
+      : "Leading gaming PC retailer in Morocco. Stores in Casablanca, Rabat, Marrakech. Over 10,000 satisfied customers.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "MA",
@@ -254,8 +254,8 @@ const generateLocalBusinessSchema = (language: 'fr' | 'en') => {
     },
     "url": baseUrl,
     "telephone": "+212632253960",
-    "email": "contact@carresports.ma",
-    "priceRange": "$$",
+    "email": "contact@setupdream.ma",
+    "priceRange": "$$$",
     "currenciesAccepted": "MAD",
     "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
     "openingHours": "Mo-Su 09:00-20:00",
@@ -263,8 +263,8 @@ const generateLocalBusinessSchema = (language: 'fr' | 'en') => {
     "acceptsReservations": false,
     "aggregateRating": {
       "@type": "AggregateRating", 
-      "ratingValue": 4.8,
-      "reviewCount": 247
+      "ratingValue": 4.9,
+      "reviewCount": 356
     },
     "areaServed": [
       {
@@ -286,17 +286,17 @@ const generateLocalBusinessSchema = (language: 'fr' | 'en') => {
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": language === 'fr' ? "Équipements Sportifs" : "Sports Equipment",
+      "name": language === 'fr' ? "PC Gamer & Setups" : "Gaming PCs & Hardware",
       "itemListElement": [
         {
           "@type": "OfferCatalog",
-          "name": language === 'fr' ? "Fitness & Musculation" : "Fitness & Gym",
+          "name": language === 'fr' ? "Composants PC" : "PC Components",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Product",
-                "name": language === 'fr' ? "Haltères" : "Dumbbells"
+                "name": language === 'fr' ? "Cartes Graphiques" : "Graphic Cards"
               }
             }
           ]
@@ -304,9 +304,9 @@ const generateLocalBusinessSchema = (language: 'fr' | 'en') => {
       ]
     },
     "sameAs": [
-      "https://www.facebook.com/CarreSportMaroc",
-      "https://www.instagram.com/carresport_maroc",
-      "https://twitter.com/CarreSportMA"
+      "https://www.facebook.com/SetupDreamMaroc",
+      "https://www.instagram.com/setupdream_maroc",
+      "https://twitter.com/SetupDreamMA"
     ]
   }
 }
@@ -314,11 +314,11 @@ const generateLocalBusinessSchema = (language: 'fr' | 'en') => {
 const generateDefaultSEO = (language: 'fr' | 'en'): MoroccoSEOConfig => {
   return {
     title: language === 'fr' 
-      ? "Carré Sport - Équipements Sportifs au Maroc"
-      : "Carré Sport - Sports Equipment in Morocco",
+      ? "SetupDream - PC Gamer et Composants au Maroc"
+      : "SetupDream - Gaming PCs & Components in Morocco",
     description: language === 'fr'
-      ? "Découvrez notre collection d'équipements sportifs au Maroc. Livraison gratuite dès 500 MAD."
-      : "Discover our sports equipment collection in Morocco. Free shipping from 500 MAD.",
+      ? "Découvrez notre catalogue de PC Gamer et composants premium au Maroc. Livraison gratuite dès 500 MAD."
+      : "Discover our premium gaming PCs and components in Morocco. Free shipping from 500 MAD.",
     keywords: language === 'fr'
       ? MOROCCO_FRENCH_KEYWORDS.primary.join(", ")
       : MOROCCO_ENGLISH_KEYWORDS.primary.join(", ")
@@ -330,4 +330,4 @@ export default {
   generateMoroccoSEO,
   MOROCCO_FRENCH_KEYWORDS,
   MOROCCO_ENGLISH_KEYWORDS
-} 
+}

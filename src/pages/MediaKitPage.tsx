@@ -59,7 +59,7 @@ const MediaKitPage = () => {
     useSEO({
         title: t('mediaKit.seo.title'),
         description: t('mediaKit.seo.description'),
-        keywords: 'carr\u00e9 sport media kit, brand assets, logos, press release, performance lab data',
+        keywords: 'setupdream media kit, brand assets, logos, press release, performance lab data',
         type: 'website'
     })
 
@@ -68,7 +68,7 @@ const MediaKitPage = () => {
         "${t('mediaKit.citation.snippet.text')}"
     </p>
     <p style="font-size: 0.9em; color: #666;">
-        — <a href="https://carresports.ma/performance-lab" style="color: #D4AF37; text-decoration: none; font-weight: bold;">${t('mediaKit.citation.snippet.source')}</a>, Carré Sports
+        — <a href="https://setupdream.ma/performance-lab" style="color: #D4AF37; text-decoration: none; font-weight: bold;">${t('mediaKit.citation.snippet.source')}</a>, SetupDream
     </p>
 </div>`
 
@@ -102,7 +102,7 @@ const MediaKitPage = () => {
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                     href="/brand-assets/logo-pack.zip"
-                                    download="carre-sports-logos.zip"
+                                    download="setupdream-logos.zip"
                                     className="bg-gray-900 border border-gray-800 p-6 rounded-xl group hover:border-gold-500/50 transition-all"
                                 >
                                     <div className="flex justify-between items-start mb-4">
@@ -119,7 +119,7 @@ const MediaKitPage = () => {
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                     href="/brand-assets/charte-graphique.pdf"
-                                    download="carre-sports-charte-graphique.pdf"
+                                    download="setupdream-charte-graphique.pdf"
                                     className="bg-gray-900 border border-gray-800 p-6 rounded-xl group hover:border-gold-500/50 transition-all"
                                 >
                                     <div className="flex justify-between items-start mb-4">
@@ -146,20 +146,20 @@ const MediaKitPage = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {[
                                     {
-                                        title: "Le Guide Scientifique : Choisir ses Gants de Boxe au Maroc 🥊",
-                                        desc: "Ne devinez plus la qualité de votre matériel. Découvrez les résultats du Performance Lab™ de Carré Sport sur la durabilité et l'absorption des chocs des gants Venum. Excellence et Performance au service des athlètes marocains.",
+                                        title: "Le Guide Scientifique : Choisir ses Composants au Maroc 🚀",
+                                        desc: "Ne devinez plus la qualité de votre matériel. Découvrez les résultats du Performance Lab™ de SetupDream sur la performance thermique des derniers processeurs. Excellence et Performance au service des gamers marocains.",
                                         path: "/images/blog/boxing-impact.png",
                                         label: "Technical Comparison"
                                     },
                                     {
-                                        title: "Équipement de Sport Premium à Casablanca | Carré Sport",
-                                        desc: "Accédez enfin au matériel utilisé par l'élite. De la musculation au CrossFit, Carré Sport démocratise l'équipement professionnel au Maroc depuis 2020.",
+                                        title: "PC Gamer Premium à Casablanca | SetupDream",
+                                        desc: "Accédez enfin au matériel utilisé par l'élite. De l'esport au streaming, SetupDream démocratise l'équipement professionnel au Maroc depuis 2020.",
                                         path: "/images/blog/kettlebells-luxury.png",
                                         label: "Luxury Minimalist"
                                     },
                                     {
-                                        title: "Notre Mission : L'Excellence Sportive au Maroc",
-                                        desc: "Pourquoi nous avons créé le Performance Lab™. Découvrez comment Carré Sport comble le fossé entre la fabrication d'élite et la disponibilité locale pour chaque sportif marocain.",
+                                        title: "Notre Mission : L'Excellence Gaming au Maroc",
+                                        desc: "Pourquoi nous avons créé le Performance Lab™. Découvrez comment SetupDream comble le fossé entre la fabrication d'élite et la disponibilité locale pour chaque gamer marocain.",
                                         path: "/images/blog/brand-mission.png",
                                         label: "Brand Story"
                                     }

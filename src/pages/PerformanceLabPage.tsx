@@ -44,13 +44,13 @@ const PerformanceLabPage = () => {
     const schemaData = {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "Carré Sport Technical Performance Index",
+        "name": "SetupDream Technical Performance Index",
         "description": "Technical specifications and performance metrics for professional sports equipment including boxing gloves, resistance bands, and footwear.",
         "url": window.location.href,
         "license": "https://creativecommons.org/licenses/by-nc/4.0/",
         "creator": {
             "@type": "Organization",
-            "name": "Carré Sport Performance Lab"
+            "name": "SetupDream Performance Lab"
         },
         "variableMeasured": performanceData.categories.flatMap(cat =>
             // @ts-ignore
@@ -196,8 +196,8 @@ const PerformanceLabPage = () => {
                                         <div className="ml-4">
                                             <PinterestSaveButton
                                                 url={window.location.href}
-                                                media="https://carresports.ma/assets/media-kit/abstract_performance.png" // Fallback or specific visual
-                                                description={`Performance Analysis: ${getLoc(activeCategoryData?.name)} | Carré Sports Performance Lab`}
+                                                media="https://setupdream.ma/assets/media-kit/abstract_performance.png" // Fallback or specific visual
+                                                description={`Performance Analysis: ${getLoc(activeCategoryData?.name)} | SetupDream Performance Lab`}
                                                 size="sm"
                                             />
                                         </div>

@@ -175,7 +175,7 @@ export const generateProductSchema = (product: DatabaseProduct): object => {
     "itemCondition": "https://schema.org/NewCondition",
     "seller": {
       "@type": "Organization",
-      "name": "Carré Sport",
+      "name": "SetupDream",
       "url": baseUrl
     }
   }
@@ -213,7 +213,7 @@ export const generateProductSchema = (product: DatabaseProduct): object => {
     "sku": product.sku,
     "brand": {
       "@type": "Brand",
-      "name": product.brand || "Carré Sport"
+      "name": product.brand || "SetupDream"
     },
     "category": product.category?.name,
     "offers": offers
@@ -228,7 +228,7 @@ export const generateOrganizationSchema = (): object => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${baseUrl}/#organization`,
-    "name": "Carré Sport",
+    "name": "SetupDream",
     "url": baseUrl,
     "logo": {
       "@type": "ImageObject",
@@ -236,7 +236,7 @@ export const generateOrganizationSchema = (): object => {
       "width": 300,
       "height": 100
     },
-    "description": "Leading sports equipment retailer in Morocco offering premium sports gear, fitness equipment, and athletic wear.",
+    "description": "Leading gaming & PC setup retailer in Morocco offering premium gaming gear, PC components, and accessories.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "MA",
@@ -250,9 +250,9 @@ export const generateOrganizationSchema = (): object => {
       "availableLanguage": ["French", "English", "Arabic"]
     },
     "sameAs": [
-      "https://www.facebook.com/CarreSportMaroc",
-      "https://www.instagram.com/carresport_maroc",
-      "https://twitter.com/CarreSportMA"
+      "https://www.facebook.com/SetupDreamMaroc",
+      "https://www.instagram.com/setupdream_maroc",
+      "https://twitter.com/SetupDreamMA"
     ]
   }
 }
@@ -265,9 +265,9 @@ export const generateWebSiteSchema = (): object => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${baseUrl}/#website`,
-    "name": "Carré Sport",
+    "name": "SetupDream",
     "url": baseUrl,
-    "description": "Premium sports equipment and gear in Morocco",
+    "description": "Premium gaming setups and PC components in Morocco",
     "publisher": {
       "@id": `${baseUrl}/#organization`
     },
@@ -288,13 +288,13 @@ export const generateLocalBusinessSchema = (): object => {
 
   return {
     "@context": "https://schema.org",
-    "@type": "SportsGoodsStore",
+    "@type": "Store",
     "@id": `${baseUrl}/#localbusiness`,
-    "name": "Carré Sport",
+    "name": "SetupDream",
     "image": `${baseUrl}/images/store-front.jpg`,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123 Sport Street",
+      "streetAddress": "123 Gaming Street",
       "addressLocality": "Casablanca",
       "addressRegion": "Grand Casablanca",
       "postalCode": "20000",
@@ -349,8 +349,8 @@ export const generateSlug = (text: string): string => {
   return text
     .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, '') // Remove special characters
-    .replace(/[\s_-]+/g, '-') // Replace spaces and underscores with hyphens
+    .replace(/[^\\w\\s-]/g, '') // Remove special characters
+    .replace(/[\\s_-]+/g, '-') // Replace spaces and underscores with hyphens
     .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
 }
 
@@ -397,4 +397,4 @@ export const downloadRobotsTxt = (robotsContent: string): void => {
   link.click()
   document.body.removeChild(link)
   URL.revokeObjectURL(url)
-} 
+}

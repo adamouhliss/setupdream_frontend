@@ -33,10 +33,10 @@ export default function MarrakechSportsPage() {
   const marrakechFeatures = [
     {
       icon: SunIcon,
-      title: i18n.language === 'fr' ? 'Spécialiste climat chaud' : 'Hot climate specialist',
+      title: i18n.language === 'fr' ? 'Refroidissement optimal' : 'Optimal cooling',
       description: i18n.language === 'fr' 
-        ? 'Équipements adaptés au climat de Marrakech. Conseils personnalisés.'
-        : 'Equipment adapted to Marrakech climate. Personalized advice.',
+        ? 'PC montés avec un refroidissement adapté au climat chaud de Marrakech.'
+        : 'PCs built with advanced cooling adapted to Marrakech\'s warm climate.',
     },
     {
       icon: TruckIcon,
@@ -47,17 +47,17 @@ export default function MarrakechSportsPage() {
     },
     {
       icon: ClockIcon,
-      title: i18n.language === 'fr' ? 'Formation incluse' : 'Training included',
+      title: i18n.language === 'fr' ? 'Service d\'assemblage' : 'Assembly service',
       description: i18n.language === 'fr'
-        ? 'Formation sur l\'utilisation de vos équipements sportifs.'
-        : 'Training on using your sports equipment.',
+        ? 'Formation sur l\'optimisation de vos composants informatiques.'
+        : 'Training on optimizing your computer components.',
     },
     {
       icon: StarIcon,
-      title: i18n.language === 'fr' ? 'Conseils nutrition' : 'Nutrition advice',
+      title: i18n.language === 'fr' ? 'Conseils d\'experts' : 'Expert advice',
       description: i18n.language === 'fr'
-        ? 'Conseils nutrition adaptés au sport en climat chaud.'
-        : 'Nutrition advice adapted to sports in hot climate.',
+        ? 'Conseils pour l\'assemblage parfait d\'un setup puissant et durable.'
+        : 'Advice for the perfect build of a powerful and durable setup.',
     }
   ]
 
@@ -68,12 +68,12 @@ export default function MarrakechSportsPage() {
         pageType="city" 
         cityName="Marrakech"
         customTitle={i18n.language === 'fr' 
-          ? "Sport Marrakech | Équipements Fitness Marrakech - Carré Sport"
-          : "Sports Marrakech | Fitness Equipment Marrakech - Carré Sport"
+          ? "PC Gamer Marrakech | Matériel Gaming Marrakech - SetupDream"
+          : "Gaming PCs Marrakech | Gaming Hardware Marrakech - SetupDream"
         }
         customDescription={i18n.language === 'fr'
-          ? "🌴 Carré Sport Marrakech - Votre partenaire sport ! Équipements adaptés au climat, conseils nutrition. Formation utilisation matériel incluse."
-          : "🌴 Carré Sport Marrakech - Your sports partner! Climate-adapted equipment, nutrition advice. Equipment usage training included."
+          ? "🌴 SetupDream Marrakech - Votre boutique gaming ! Setups sur mesure, refroidissement optimal, conseil d'experts et montage pro."
+          : "🌴 SetupDream Marrakech - Your gaming store! Custom setups, optimal cooling, expert advice and pro assembly."
         }
       />
 
@@ -92,9 +92,7 @@ export default function MarrakechSportsPage() {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent">
-                {i18n.language === 'fr' ? 'Carré Sport' : 'Carré Sport'}
-              </span>
+                {i18n.language === 'fr' ? 'SetupDream' : 'SetupDream'}
               <br />
               <span className="text-white">
                 {i18n.language === 'fr' ? 'Marrakech' : 'Marrakech'}
@@ -103,8 +101,8 @@ export default function MarrakechSportsPage() {
             
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               {i18n.language === 'fr'
-                ? "Votre spécialiste sport à Marrakech ! Équipements adaptés au climat marocain, conseils d'experts et formation personnalisée. Restez en forme sous le soleil de Marrakech."
-                : "Your sports specialist in Marrakech! Equipment adapted to Moroccan climate, expert advice and personalized training. Stay fit under the Marrakech sun."
+                ? "Votre spécialiste PC Gamer à Marrakech ! PC sur mesure avec refroidissement performant, conseils d'experts et montage personnalisé. Votre setup de rêve sous le soleil de Marrakech."
+                : "Your gaming PC specialist in Marrakech! Custom PCs with optimal cooling, expert advice and personalized assembly. Your dream setup under the Marrakech sun."
               }
             </p>
 
@@ -139,8 +137,8 @@ export default function MarrakechSportsPage() {
           >
             <h2 className="text-3xl font-bold text-white mb-4">
               {i18n.language === 'fr' 
-                ? 'L\'expertise Carré Sport à Marrakech'
-                : 'Carré Sport expertise in Marrakech'
+                ? 'L\'expertise SetupDream à Marrakech'
+                : 'SetupDream expertise in Marrakech'
               }
             </h2>
           </motion.div>

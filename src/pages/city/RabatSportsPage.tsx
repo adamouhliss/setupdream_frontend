@@ -49,8 +49,8 @@ export default function RabatSportsPage() {
       icon: ClockIcon,
       title: i18n.language === 'fr' ? 'Service après-vente' : 'After-sales service',
       description: i18n.language === 'fr'
-        ? 'Réparation et maintenance de vos équipements sportifs.'
-        : 'Repair and maintenance of your sports equipment.',
+        ? 'Assemblage personnalisé et maintenance de vos PC Gamer.'
+        : 'Custom assembly and maintenance of your gaming setups.',
     },
     {
       icon: StarIcon,
@@ -68,12 +68,12 @@ export default function RabatSportsPage() {
         pageType="city" 
         cityName="Rabat"
         customTitle={i18n.language === 'fr' 
-          ? "Équipements Sportifs Rabat | Magasin Sport Rabat - Carré Sport"
-          : "Sports Equipment Rabat | Sports Store Rabat - Carré Sport"
+          ? "PC Gamer & Setups Rabat | Boutique Gaming Rabat - SetupDream"
+          : "Gaming PCs & Setups Rabat | Gaming Store Rabat - SetupDream"
         }
         customDescription={i18n.language === 'fr'
-          ? "🏛️ Carré Sport Rabat - Spécialiste équipements sportifs. Proche centre-ville, accès facile. Service après-vente, réparation matériel. Devis gratuit entreprises."
-          : "🏛️ Carré Sport Rabat - Sports equipment specialist. Near downtown, easy access. After-sales service, equipment repair. Free business quotes."
+          ? "🏛️ SetupDream Rabat - Spécialiste PC Gamer. Proche centre-ville, accès facile. Service après-vente, assemblage de PC, réparation. Devis gratuit entreprises."
+          : "🏛️ SetupDream Rabat - Gaming PC specialist. Near downtown, easy access. After-sales service, PC assembly, repair. Free business quotes."
         }
       />
 
@@ -92,9 +92,7 @@ export default function RabatSportsPage() {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                {i18n.language === 'fr' ? 'Carré Sport' : 'Carré Sport'}
-              </span>
+                {i18n.language === 'fr' ? 'SetupDream' : 'SetupDream'}
               <br />
               <span className="text-white">
                 {i18n.language === 'fr' ? 'Rabat' : 'Rabat'}
@@ -103,8 +101,8 @@ export default function RabatSportsPage() {
             
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               {i18n.language === 'fr'
-                ? "Votre partenaire sport dans la capitale ! Équipements fitness, musculation et accessoires. Service privilégié pour administrations et entreprises de Rabat."
-                : "Your sports partner in the capital! Fitness equipment, gym gear and accessories. Premium service for Rabat administrations and businesses."
+                ? "Votre spécialiste setup gaming dans la capitale ! PC sur mesure, composants et accessoires. Service privilégié pour administrations et entreprises de Rabat."
+                : "Your gaming setup partner in the capital! Custom PCs, components and accessories. Premium service for Rabat administrations and businesses."
               }
             </p>
 
@@ -139,8 +137,8 @@ export default function RabatSportsPage() {
           >
             <h2 className="text-3xl font-bold text-white mb-4">
               {i18n.language === 'fr' 
-                ? 'Carré Sport Rabat, votre spécialiste'
-                : 'Carré Sport Rabat, your specialist'
+                ? 'SetupDream Rabat, votre spécialiste'
+                : 'SetupDream Rabat, your specialist'
               }
             </h2>
           </motion.div>

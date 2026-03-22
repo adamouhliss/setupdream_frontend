@@ -36,12 +36,12 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://carre-sport-production.up.railway.app',
+        target: 'https://projects-backend.mlqyyh.easypanel.host',
         changeOrigin: true,
         secure: true,
       },
       '/sitemap.xml': {
-        target: 'https://carre-sport-production.up.railway.app',
+        target: 'https://projects-backend.mlqyyh.easypanel.host',
         changeOrigin: true,
         secure: true,
         rewrite: (path) => path.replace(/^\/sitemap\.xml$/, '/api/v1/seo/sitemap.xml')

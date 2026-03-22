@@ -158,7 +158,7 @@ export default function AdminLayout() {
               )}
               <div>
                 <h1 className="text-lg font-bold font-playfair tracking-wide text-white group-hover:text-gold-400 transition-colors">
-                  {settings?.store_name || 'CARRÉ'}
+                  {settings?.store_name || 'SETUPDREAM'}
                 </h1>
                 <p className="text-[10px] uppercase tracking-widest text-gray-500 font-medium">Administration</p>
               </div>

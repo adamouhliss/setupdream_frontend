@@ -33,7 +33,7 @@ export default function HeaderIcons({
                 aria-label={isAuthenticated ? "Account" : "Login"}
             >
                 {isAuthenticated && userInitial ? (
-                    <div className="w-8 h-8 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md group-hover:shadow-gold-500/20">
+                    <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md group-hover:shadow-primary-500/20">
                         {userInitial}
                     </div>
                 ) : (
@@ -44,7 +44,7 @@ export default function HeaderIcons({
             {/* Cart */}
             <button
                 onClick={onCartClick}
-                className="relative p-2 text-gray-300 hover:text-gold-400 hover:bg-gray-800 rounded-full transition-all duration-300 group"
+                className="relative p-2 text-gray-300 hover:text-white hover:bg-primary-600 rounded-full transition-all duration-300 group"
                 aria-label={`Cart (${cartCount} items)`}
             >
                 <ShoppingCartIcon className="w-6 h-6 group-hover:scale-110 transition-transform duration-200" />

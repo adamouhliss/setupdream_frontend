@@ -1005,7 +1005,7 @@ export default function CheckoutPage() {
                     >
                       <p className="text-lg font-playfair text-gray-300 mb-2">
                         {t('checkout.thankYouChoosing')}
-                        <span className="font-bold text-gold-400"> Carré Sports!</span>
+                        <span className="font-bold text-gold-400"> SetupDream!</span>
                       </p>
                       <p className="text-sm font-lora text-gray-400">
                         {t('checkout.excitedToHelp')}

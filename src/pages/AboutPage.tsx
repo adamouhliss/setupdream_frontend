@@ -11,10 +11,10 @@ export default function AboutPage() {
           className="text-center"
         >
           <h1 className="text-4xl md:text-5xl font-black font-playfair bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100 bg-clip-text text-transparent mb-4">
-            About Carré Sports
+            About SetupDream
           </h1>
           <p className="text-xl text-gray-300 font-lora max-w-2xl mx-auto">
-            Your premier destination for high-quality sports equipment and gear in Morocco.
+            Your premier destination for premium gaming PCs, custom builds, and high-performance components in Morocco.
           </p>
         </motion.div>
       </div>

@@ -100,7 +100,7 @@ export default function RegisterPage() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-3xl font-bold font-playfair text-gray-100 mb-2"
             >
-              Join Carré Sports
+              Join SetupDream
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 10 }}

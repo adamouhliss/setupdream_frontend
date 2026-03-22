@@ -27,7 +27,7 @@ export default function SaleItemsPage() {
 
   // SEO Optimization
   useSEO({
-    title: t('seo.sale.title') || 'Ventes Flash & Promotions Exclusives | Carré Sport',
+    title: t('seo.sale.title') || 'Ventes Flash & Promotions Exclusives | SetupDream',
     description: t('seo.sale.description') || 'Profitez de remises exceptionnelles sur une sélection d\'équipements sportifs premium. Offres limitées dans le temps.',
     keywords: t('seo.sale.keywords') || 'soldes sport, promotion musculation, vente flash fitness, équipement sport pas cher',
     type: 'website',

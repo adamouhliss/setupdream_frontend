@@ -55,14 +55,14 @@ const PerformanceArticlePage = () => {
         "author": [{
             "@type": "Person",
             "name": article.author,
-            "url": "https://www.carresports.ma/performance-lab"
+            "url": "https://setupdream.ma/performance-lab"
         }],
         "publisher": {
             "@type": "Organization",
-            "name": "Carré Sport",
+            "name": "SetupDream",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.carresports.ma/logo.png"
+                "url": "https://setupdream.ma/logo.png"
             }
         },
         "description": getLoc(article.excerpt),

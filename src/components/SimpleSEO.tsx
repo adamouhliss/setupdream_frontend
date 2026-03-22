@@ -12,8 +12,8 @@ export default function SimpleSEO() {
   
   const seoData = {
     title: currentLanguage === 'fr' 
-      ? 'Carré Sport - Test Français'
-      : 'Carré Sport - English Test',
+      ? 'SetupDream - Test Français'
+      : 'SetupDream - English Test',
     description: currentLanguage === 'fr'
       ? 'Description française de test pour vérifier le changement de langue'
       : 'English test description to verify language switching',

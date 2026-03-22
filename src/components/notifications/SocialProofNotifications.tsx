@@ -57,7 +57,7 @@ export default function SocialProofNotifications() {
     return {
       id: `${Date.now()}-${Math.random()}`,
       customerName,
-      productName: randomProduct?.name || 'Sports Equipment',
+      productName: randomProduct?.name || 'Gaming PC',
       location,
       timeAgo: `${minutesAgo} minute${minutesAgo > 1 ? 's' : ''} ago`,
       amount: formatMAD(price)

@@ -42,9 +42,9 @@ self.addEventListener('install', (event) => {
       // Pre-cache API responses for instant loading
       caches.open(CACHE_NAME).then(cache => {
         const criticalAPIEndpoints = [
-          'https://carre-sport-production.up.railway.app/api/v1/products/?limit=8',
-          'https://carre-sport-production.up.railway.app/api/v1/categories/?limit=6',
-          'https://carre-sport-production.up.railway.app/api/v1/settings/contact'
+          'https://projects-backend.mlqyyh.easypanel.host/api/v1/products/?limit=8',
+          'https://projects-backend.mlqyyh.easypanel.host/api/v1/categories/?limit=6',
+          'https://projects-backend.mlqyyh.easypanel.host/api/v1/settings/contact'
         ]
         
         return Promise.allSettled(
@@ -303,8 +303,8 @@ async function performBackgroundSync() {
   const cache = await caches.open(CACHE_NAME)
   const criticalURLs = [
     '/',
-    'https://carre-sport-production.up.railway.app/api/v1/products/?limit=8',
-    'https://carre-sport-production.up.railway.app/api/v1/categories/?limit=6'
+    'https://projects-backend.mlqyyh.easypanel.host/api/v1/products/?limit=8',
+    'https://projects-backend.mlqyyh.easypanel.host/api/v1/categories/?limit=6'
   ]
   
   await Promise.allSettled(

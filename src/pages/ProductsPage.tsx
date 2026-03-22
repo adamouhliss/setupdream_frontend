@@ -278,10 +278,10 @@ export default function ProductsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 pb-24">
+    <div className="min-h-screen bg-white pb-24">
       {/* Dynamic Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold-500/5 rounded-full blur-[100px]" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-600/5 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px]" />
       </div>
 
@@ -291,17 +291,17 @@ export default function ProductsPage() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-gray-800 pb-8"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-gray-200 pb-8"
         >
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold font-playfair text-white mb-2">
+            <h1 className="text-4xl md:text-5xl font-bold font-playfair text-gray-900 mb-2">
               {searchTerm
                 ? `${t('common.resultsFor', 'Results for')} "${searchTerm}"`
                 : selectedCategoryObj
                   ? selectedCategoryObj.name
                   : t('products.allProducts', 'All Products')}
             </h1>
-            <p className="text-gray-400 font-lora text-lg max-w-xl">
+            <p className="text-gray-600 font-lora text-lg max-w-xl">
               {selectedCategoryObj?.description || t('products.pageDescription')}
             </p>
           </div>
@@ -315,16 +315,16 @@ export default function ProductsPage() {
                 placeholder={t('products.searchPlaceholder', 'Search...')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-gray-800/50 border border-gray-700/50 rounded-xl py-2.5 pl-10 pr-4 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all font-montserrat text-sm"
+                className="w-full bg-gray-50 border border-gray-200/50 rounded-xl py-2.5 pl-10 pr-4 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-600/50 transition-all font-montserrat text-sm"
               />
             </div>
 
             {/* Mobile Filter Button */}
             <button
               onClick={() => setIsMobileFilterOpen(true)}
-              className="lg:hidden flex items-center justify-center gap-2 bg-gray-800 border border-gray-700 text-white px-4 py-2.5 rounded-xl font-medium"
+              className="lg:hidden flex items-center justify-center gap-2 bg-gray-50 border border-gray-200 text-gray-900 px-4 py-2.5 rounded-xl font-medium"
             >
-              <AdjustmentsHorizontalIcon className="w-5 h-5 text-gold-500" />
+              <AdjustmentsHorizontalIcon className="w-5 h-5 text-primary-600" />
               {t('products.filters', 'Filters')}
             </button>
 
@@ -375,9 +375,9 @@ export default function ProductsPage() {
             {loading && products.length === 0 ? (
               <ProductGridSkeleton />
             ) : error ? (
-              <div className="text-center py-20 bg-gray-800/30 rounded-3xl border border-red-900/30">
+              <div className="text-center py-20 bg-gray-50 rounded-3xl border border-red-900/30">
                 <h3 className="text-xl font-bold text-red-400 mb-2">{t('products.errorTitle')}</h3>
-                <p className="text-gray-400 mb-6">{error}</p>
+                <p className="text-gray-600 mb-6">{error}</p>
                 <button
                   onClick={() => fetchProducts(0, true, selectedCategory, selectedSubcategory, searchTerm, currentSort)}
                   className="px-6 py-2 bg-red-900/20 text-red-400 border border-red-900/50 rounded-xl hover:bg-red-900/30 transition-colors"
@@ -386,15 +386,15 @@ export default function ProductsPage() {
                 </button>
               </div>
             ) : products.length === 0 ? (
-              <div className="text-center py-24 bg-gray-800/30 rounded-3xl border border-dashed border-gray-700">
+              <div className="text-center py-24 bg-gray-50 rounded-3xl border border-dashed border-gray-200">
                 <p className="text-2xl text-gray-500 font-playfair mb-2">{t('products.noResults')}</p>
-                <p className="text-gray-400">{t('products.tryAdjusting')}</p>
+                <p className="text-gray-600">{t('products.tryAdjusting')}</p>
                 <button
                   onClick={() => {
                     setSearchTerm('')
                     handleCategoryChange(null)
                   }}
-                  className="mt-6 px-6 py-2 text-gold-400 border border-gold-500/30 rounded-xl hover:bg-gold-500/10 transition-colors"
+                  className="mt-6 px-6 py-2 text-primary-500 border border-primary-600/30 rounded-xl hover:bg-primary-600/10 transition-colors"
                 >
                   {t('products.clearFilters')}
                 </button>
@@ -436,7 +436,7 @@ export default function ProductsPage() {
 
                 <div ref={loadMoreRef} className="h-20 mt-8 flex items-center justify-center">
                   {!hasMore && products.length > 0 && (
-                    <span className="text-gray-500 font-medium text-sm border-b border-gray-800 pb-1">
+                    <span className="text-gray-500 font-medium text-sm border-b border-gray-200 pb-1">
                       {t('products.allProductsLoaded')}
                     </span>
                   )}
@@ -447,7 +447,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Recommendations */}
-        <section className="mt-24 pt-12 border-t border-gray-800">
+        <section className="mt-24 pt-12 border-t border-gray-200">
           <ProductRecommendations type="trending" limit={4} />
         </section>
 
