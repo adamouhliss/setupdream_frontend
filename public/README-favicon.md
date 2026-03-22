@@ -1,4 +1,4 @@
-# Favicon Setup for Carré Sports
+# Favicon Setup for Setup Dream
 
 ## Current Setup
 - **favicon.svg**: Main scalable favicon with sports equipment design (dumbbell icon)
@@ -8,7 +8,7 @@
 ## Design Details
 - **Colors**: Gold (#d4af37) and dark gray (#1f2937) matching the brand
 - **Icon**: Stylized dumbbell representing sports equipment
-- **Letter**: "C" for Carré Sports at the bottom
+- **Letter**: "C" for Setup Dream at the bottom
 
 ## Browser Compatibility
 The SVG favicon works in all modern browsers. For maximum compatibility with older browsers, you can generate additional formats:

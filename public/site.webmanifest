@@ -1,6 +1,6 @@
 {
-  "name": "Carré Sports - Premium Sports Equipment",
-  "short_name": "Carré Sports",
+  "name": "Setup Dream - Premium Sports Equipment",
+  "short_name": "Setup Dream",
   "description": "Premium sports equipment and clothing store in Morocco",
   "start_url": "/",
   "display": "standalone",
@@ -25,4 +25,4 @@
       "type": "image/svg+xml"
     }
   ]
-} 
+}

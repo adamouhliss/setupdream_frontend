@@ -6,7 +6,7 @@ Disallow: /cart/
 Disallow: /account/
 
 # Sitemaps
-Sitemap: https://www.carresports.ma/sitemap.xml
+Sitemap: https://www.Setupdream.ma/sitemap.xml
 
 # Crawl-delay for politeness
 Crawl-delay: 1

@@ -30,7 +30,7 @@ const STATIC_RESOURCE_PATTERNS = [
 // 🚀 ULTRA-FAST Install - cache everything critical immediately
 self.addEventListener('install', (event) => {
   console.log('🔥 ULTRA Service Worker installing...')
-  
+
   event.waitUntil(
     Promise.all([
       // Cache critical resources
@@ -38,7 +38,7 @@ self.addEventListener('install', (event) => {
         console.log('📦 Caching ULTRA critical resources')
         return cache.addAll(ULTRA_CRITICAL_CACHE)
       }),
-      
+
       // Pre-cache API responses for instant loading
       caches.open(CACHE_NAME).then(cache => {
         const criticalAPIEndpoints = [
@@ -46,7 +46,7 @@ self.addEventListener('install', (event) => {
           'https://projects-backend.mlqyyh.easypanel.host/api/v1/categories/?limit=6',
           'https://projects-backend.mlqyyh.easypanel.host/api/v1/settings/contact'
         ]
-        
+
         return Promise.allSettled(
           criticalAPIEndpoints.map(async (url) => {
             try {
@@ -62,20 +62,20 @@ self.addEventListener('install', (event) => {
         )
       })
     ])
-    .then(() => {
-      console.log('✅ ULTRA critical resources cached')
-      return self.skipWaiting() // Activate immediately
-    })
-    .catch((error) => {
-      console.error('❌ Failed to cache ULTRA critical resources:', error)
-    })
+      .then(() => {
+        console.log('✅ ULTRA critical resources cached')
+        return self.skipWaiting() // Activate immediately
+      })
+      .catch((error) => {
+        console.error('❌ Failed to cache ULTRA critical resources:', error)
+      })
   )
 })
 
 // ⚡ ULTRA-FAST Activate - take control immediately
 self.addEventListener('activate', (event) => {
   console.log('🔄 ULTRA Service Worker activating...')
-  
+
   event.waitUntil(
     Promise.all([
       // Clean old caches
@@ -89,13 +89,13 @@ self.addEventListener('activate', (event) => {
           })
         )
       }),
-      
+
       // Take control of all clients immediately
       self.clients.claim()
     ])
-    .then(() => {
-      console.log('✅ ULTRA Service Worker activated and controlling all clients')
-    })
+      .then(() => {
+        console.log('✅ ULTRA Service Worker activated and controlling all clients')
+      })
   )
 })
 
@@ -103,30 +103,30 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event
   const url = new URL(request.url)
-  
+
   // Skip non-GET requests
   if (request.method !== 'GET') {
     return
   }
-  
+
   // 🎯 API Requests - STALE-WHILE-REVALIDATE for best TTFB
   if (API_CACHE_PATTERNS.some(pattern => pattern.test(request.url))) {
     event.respondWith(handleAPIRequestUltra(request))
     return
   }
-  
+
   // ⚡ Static Resources - CACHE-FIRST for instant loading
   if (STATIC_RESOURCE_PATTERNS.some(pattern => pattern.test(url.pathname))) {
     event.respondWith(handleStaticResourceUltra(request))
     return
   }
-  
+
   // 📄 HTML - STALE-WHILE-REVALIDATE for fast navigation
   if (request.headers.get('accept')?.includes('text/html')) {
     event.respondWith(handleHTMLRequestUltra(request))
     return
   }
-  
+
   // Default: Network with cache fallback
   event.respondWith(
     fetch(request, { cache: 'default' })
@@ -138,11 +138,11 @@ self.addEventListener('fetch', (event) => {
 async function handleAPIRequestUltra(request) {
   const cache = await caches.open(CACHE_NAME)
   const cachedResponse = await cache.match(request)
-  
+
   // ALWAYS serve from cache first if available (0ms TTFB!)
   if (cachedResponse) {
     console.log('⚡ INSTANT API response from cache:', request.url)
-    
+
     // Update in background WITHOUT blocking response
     fetch(request, { cache: 'no-cache' })
       .then(response => {
@@ -154,10 +154,10 @@ async function handleAPIRequestUltra(request) {
       .catch(() => {
         console.warn('⚠️ Background API update failed:', request.url)
       })
-    
+
     return cachedResponse
   }
-  
+
   // No cache - fetch with aggressive timeout
   try {
     console.log('🌐 Fresh API request:', request.url)
@@ -165,25 +165,25 @@ async function handleAPIRequestUltra(request) {
       fetch(request, { cache: 'default' }),
       new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 3000))
     ])
-    
+
     if (networkResponse instanceof Response && networkResponse.ok) {
       // Cache successful responses immediately
       cache.put(request, networkResponse.clone())
       console.log('💾 Cached new API response:', request.url)
       return networkResponse
     }
-    
+
     throw new Error('Network response not ok')
   } catch (error) {
     console.warn('❌ API request failed:', request.url, error.message)
-    
+
     // Return a minimal error response
-    return new Response(JSON.stringify({ 
+    return new Response(JSON.stringify({
       error: 'Service temporarily unavailable',
-      cached: false 
+      cached: false
     }), {
       status: 503,
-      headers: { 
+      headers: {
         'Content-Type': 'application/json',
         'Cache-Control': 'no-cache'
       }
@@ -195,10 +195,10 @@ async function handleAPIRequestUltra(request) {
 async function handleStaticResourceUltra(request) {
   const cache = await caches.open(CACHE_NAME)
   const cachedResponse = await cache.match(request)
-  
+
   if (cachedResponse) {
     console.log('⚡ INSTANT static resource from cache:', request.url)
-    
+
     // Update cache in background (no blocking)
     fetch(request)
       .then(response => {
@@ -206,11 +206,11 @@ async function handleStaticResourceUltra(request) {
           cache.put(request, response.clone())
         }
       })
-      .catch(() => {})
-    
+      .catch(() => { })
+
     return cachedResponse
   }
-  
+
   // No cache available - fetch with short timeout
   try {
     console.log('🔄 Fresh static resource:', request.url)
@@ -218,22 +218,22 @@ async function handleStaticResourceUltra(request) {
       fetch(request),
       new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 2000))
     ])
-    
+
     if (networkResponse instanceof Response && networkResponse.ok) {
       cache.put(request, networkResponse.clone())
       console.log('💾 Cached static resource:', request.url)
       return networkResponse
     }
-    
+
     throw new Error('Network response not ok')
   } catch (error) {
     console.warn('❌ Static resource failed:', request.url, error.message)
-    
+
     // Return placeholder for critical resources
     if (request.url.includes('placeholder') || request.url.includes('favicon')) {
       return new Response('', { status: 404 })
     }
-    
+
     throw error
   }
 }
@@ -242,11 +242,11 @@ async function handleStaticResourceUltra(request) {
 async function handleHTMLRequestUltra(request) {
   const cache = await caches.open(CACHE_NAME)
   const cachedResponse = await cache.match(request)
-  
+
   // Serve cached HTML instantly for 0ms navigation
   if (cachedResponse) {
     console.log('⚡ INSTANT HTML from cache:', request.url)
-    
+
     // Update HTML in background
     fetch(request, { cache: 'no-cache' })
       .then(response => {
@@ -255,30 +255,30 @@ async function handleHTMLRequestUltra(request) {
           console.log('🔄 Background updated HTML:', request.url)
         }
       })
-      .catch(() => {})
-    
+      .catch(() => { })
+
     return cachedResponse
   }
-  
+
   // Fresh HTML request
   try {
     const networkResponse = await fetch(request, { cache: 'default' })
-    
+
     if (networkResponse.ok) {
       cache.put(request, networkResponse.clone())
       console.log('💾 Cached HTML:', request.url)
     }
-    
+
     return networkResponse
   } catch (error) {
     console.warn('❌ HTML request failed:', request.url)
-    
+
     // Return minimal offline page
     return new Response(`
       <!DOCTYPE html>
       <html><head><title>Offline</title></head>
       <body style="font-family:system-ui;text-align:center;padding:50px;background:#111827;color:white;">
-        <h1>⚡ Carré Sports</h1>
+        <h1>⚡ Setup Dream</h1>
         <p>Connection temporarily unavailable</p>
         <button onclick="location.reload()">Retry</button>
       </body></html>
@@ -298,7 +298,7 @@ self.addEventListener('sync', (event) => {
 
 async function performBackgroundSync() {
   console.log('🔄 Performing ULTRA background sync...')
-  
+
   // Re-cache critical resources
   const cache = await caches.open(CACHE_NAME)
   const criticalURLs = [
@@ -306,7 +306,7 @@ async function performBackgroundSync() {
     'https://projects-backend.mlqyyh.easypanel.host/api/v1/products/?limit=8',
     'https://projects-backend.mlqyyh.easypanel.host/api/v1/categories/?limit=6'
   ]
-  
+
   await Promise.allSettled(
     criticalURLs.map(async (url) => {
       try {
@@ -327,7 +327,7 @@ self.addEventListener('message', (event) => {
   if (event.data?.type === 'SKIP_WAITING') {
     self.skipWaiting()
   }
-  
+
   if (event.data?.type === 'GET_CACHE_PERFORMANCE') {
     caches.open(CACHE_NAME).then(cache => {
       cache.keys().then(keys => {
@@ -344,6 +344,6 @@ self.addEventListener('message', (event) => {
   }
 })
 
-console.log('🚀 ULTRA-AGGRESSIVE Service Worker loaded successfully') 
+console.log('🚀 ULTRA-AGGRESSIVE Service Worker loaded successfully')
 console.log('⚡ Expected TTFB improvement: 756ms → 200-300ms')
 console.log('🎯 Expected DOM improvement: 1939ms → 1200-1400ms') 
